@@ -13,6 +13,7 @@ body{
     background-color: #ececf1;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
 }
@@ -29,7 +30,7 @@ body{
 }
 
 li{
-    border: 1px solid green;
+    /* border: 1px solid green; */
     min-height: 30px;
     list-style-type: none;
     font-size: 20px;
@@ -39,6 +40,7 @@ li{
     border-radius: 4px;
     margin-bottom: 10px;
     color: white;
+    /* box-shadow: 0 0 12px 1px black; */
 }
 
 
