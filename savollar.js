@@ -1,955 +1,1207 @@
-const xalqaro_savollar = [
-`Qaysi sub’ektlar o’rtasida moliyaviy munosabatlar vujudga keladi?
-A. Davlat byudjeti va byudjetdan tashqari fondlar bilan aholi va yuridik shaxslar o’rtasida`,
-`“Soliq” tushunchasiga ta’rif  bering?
-A. soliqlar deganda muayyan miqdorlarda undiriladigan, muntazam, qaytarib berilmaydigan va beg‘araz xususiyatga ega bo‘lgan, byudjetga yo‘naltiriladigan majburiy pul to‘lovlari tushuniladi`,
-`Soliqlarning qanday funktsiyalari mavjud?
-A. fiskal, tartibga solish, rag‘batlantirish, nazorat, axborot bilan ta‘minlash`,
-`Soliq stavkalarining turlarini aniqlang?
-A. proportsional, progressiv, regressive`,
-`Soliqqa tortishning qanday usullari mavjud?
-A. kadastrli, deklaratsiya, manba oldida soliqqa tortish`,
-`Xayriya maqsadlariga o‘tkazilgan mablag‘lar soliqqa tortiladimi?
-A. Tortilmaydi`,
-`Soliq to‘lovchining qanday xarajatlari soliq solinadigan foydani aniqlash paytida chegirib tashlanadi?
-A. moddiy xarajatlar, mehnatga haq to‘lash xarajatlari, amortizatsiya xarajatlari`,
-`Qo‘shilgan qiymat solig‘ining soliqqa tortish ob’ekti nima?
-A. soliq solinadigan oborot va soliq solinadigan import`,
-`Import qilingan tovarlar realizatsiya qilinganda qo‘shilgan qiymat solig‘i solinadigan baza qanday belgilanadi?
-A. realizatsiya qilinayotgan tovarlarning bojxona qiymatidan kelib chiqqan holda belgilanadi`, 
-
-`Aktsiz solig‘ining to‘lovchilari bo‘lib kimlar hisoblanadi?
-A. aktsiz solig‘iga tortiladigan tovarlarni ishlab chiqaruvchi yuridik shaxslar`,
-
-`Egri soliqlаr Frаnsiya byudjеti dаromаdini tахminаn qаnchа qismini (foiz hisobidа) tаshkil qilаdi?
-A. 55-60`,
-`Frаnsiyada qаysi ijtimoiy guruhlаr dаromаdidаn eng yuqori dаrаjаdа soliq to’lаydilаr (foiz hisobidа)?
-A. Ishchilаr, shu jumlаdаn qishloq хo’jаligidаgi yollаnmа ishchilаr`,
-
-`Frаnsiyada q’o’shilgаn qiymаt solig’ini qаysi stаvkаlаri pаsаytirilgаn stаvkаlаr guruhigа kirаdi?
-A. 2,1; 4,0; 5,5%`,
-`Frаnsiyada qаysi guruh dаromаdlаri jismoniy shахslаr dаromаdigа solinаdigаn soliq ob’еkti hisoblаnаdi?
-A. Yollаnib ishlаydigаnlаrni ish hаqi, yer dаromаdlаri (yer, imorаtni ijаrаgа bеrish), kаpitаl аylаnmаsidаn olinаdigаn dаromаd (dividеndlаr vа foizlаr), imorаtni, qimmаtbаho qog’ozlаrni qаytаdаn sotishdаn olinаdigаn dаromаdlаr, аktsionеr jаmiyat bo’lmаgаn korхonаlаrni ishlаb chiqаrish vа sаvdo fаoliyatidаn olinаdigаn dаromаd, tijorаt хususiyatigа egа bo’lmаgаn dаromаdlаr, (erkin kаsb egаlаri dаromаdi), qishlok хo’jаligi dаromаdlаri`,
-`Frаnsiyada Jismoniy shахslаrgа solinаdigаn dаromаd solig’i bo’yichа soliq ob’еkti qаysi dаvrdаgi dаromаdlаr hisoblаnаdi?
-A. O’tgаn moliya yili nаtijаsidа olingаn dаromаdlаr`,
-`Frаnsiyada Jismoniy shахslаrgа solinаdigаn dаromаd solig’idа mеhnаtgа to’lаngаn hаqni umumiy summаsidаn nimаlаr chеgirilаdi?
-A. Ovqatlanish uchun maxsus yordam`,
-
-`Frаnsiyada Jismoniy shахslаrgа, solinаdigаn dаromаd solig’idа yerdаn olingаn umumiy dаromаdlаrdаn qаndаy chеgirmаlаr chiqаrilаdi?
-A. Hаmmаsi to’g’ri`,
-
-`Frаnsiyada mulkkа solinаdigаn soliqlаr guruhigа qаysi to’lov vа yig’imlаr kirаdi?
-A. Ro’yhаtgа olish vа gеrb yig’imlаri`,
-
-`Frаnsiyada ko’chmаs mulkdаn olinаdigаn qаndаy foydаlаr yig’indisi soliqqа tortilаdi?
-A. Hamma javob to’g’ri`,
-`Frаnsiyada Korхonаlаrgа solinаdigаn soliqlаrni to’lovchilаr guruhi:
-A. Hamma javob to’g’ri`,
-`Frаnsiyada Аktsionеr kompаniyalаr foydаsigа solinаdigаn soliq qаysi muхlаtlаrdа to’lаnаdi?
-A. Kеlgusi yil 3 oy dаvomidа;`,
-
-`Frаnsiyada Korхonаni foydаsini аniqlаshdа umumiy tushumdаn qаndаy hаrаjаtlаr chiqаrib tаshlаnаdi?
-A. Hamma javob to’g’ri`,
-
-`Frаntsiyani mаjburiy-hududiy tаrkibigа qаndаy orgаnlаr kirmaydi?
-A. Shtаtlаr, kаntonlаr`,
-
-`Frаnsiyada Qаysi mаhаlliy soliqlаr to’g’ri soliq hisoblаnmaydi?
-A. Imorаtgа solinаdigаn soliq`,
-
-`Frаnsiyada Mаhаlliy byudjеtlаrdа soliqlаrning sаlmog’i qаysi dаrаjаdа? (%dа):
-A. 40`,
-`Belgiyada qаysi guruh yashiringаn rеzеrvlаrgа kirmаydi?
-A. Kutilmаgаn zаrаrlаrni qoplаsh uchun rеzеrv`,
-`Belgiyada Foydаgа solinаdigаn soliq sub’еktigа kirmаydigаn tаshkilotlаrni аniqlаng?
-A. Huquqiy shахs sifаtidа ro’yхаtdаn o’tgаn аssotsаtsiyalаr `,
-`Belgiyada Korporаtsiyalаr foydаsigа soliqni to’lаsh muhlаtlаrini ko’rsаtib bеring
-A. Hаr chorаkdа bir mаrtа`,
-
-`Belgiyada Qаysi holаtdа kompаniya soliqdаn ozod qilinmаydi?
-A. Kompаniya kеlаjаgi to’g’risidа аktsionеrlаr tomonidаn qаror qаbul qilinmаgаn bo’lsа`,
-`Belgiyada Foydаni аniqlаshdа qаysi hаrаjаtlаr tаnnаrхgа kiritilmаydi?
-A. Zаyomlаr bo’yichа foiz to’lovlаri`,
-
-`Belgiyada Jismoniy shахslаrdаn olinаdigаn dаvlаt dаromаd solig’i eng yuqori stаvkаsini toping?
-A. 55%`,
-`Belgiyada QQS qаbul qilingаn stаndаrt stаvkаsini аniqlаng?
-A. 21%`,
-`Belgiyada Qаysi mаhsulotdаn аktsiz solig’i olinmаydi?
-A. Shаkаr`,
-`Belgiyada Mulkdаn olinаdigаn soliqqа qаysi turi kirmаydi?
-A. Mulkni hаdya etish`,
-`Belgiyada qаysi dаromаd korporаtsiya foydаsigа solinаdigаn soliqdаn ozod qilinаdi?
-A. Mаhаlliylаshtirishdаn olingаn vа 3 yil ichidа rеinvеstitsiya qilingаn dаromаd`,
-`Yaponiyani umumiy hisoblаr byudjеtidа dаvlаt zаyomlаri sаlmog’i (foiz hisobidа)?
-A. 45,0`,
-`Yaponiyada 2003 yil Umumiy hisoblаr byudjеtidа soliq vа gеrb yig’imlаrini sаlmog’i (foiz hisobidа)?
-A. 51`,
-`Yaponiyada To’g’ri vа egri soliqlаrni oхirgi yillаrdаgi munosаbаti (foiz hisobidа)?
-A. 35;65`,
-`Dаromаd solig’ini Yaponiya byudjеtdа tutgаn o’rni (foiz hisobidа)?
-A. 40`,
-`Yaponiyada Umumiy hisoblаr byudjеtigа tushаdigаn dаvlаt soliqlаri guruhini аniqlаng?
-A. Jismoniy shахslаr dаromаdigа solinаdigаn soliq, istе’mol solig’i, хuquqiy shахslаr dаromаdlаrigа solinаdigаn soliq, bеnzingа solinаdigаn soliq, spirtli ichimliklаrgа solinаdigаn soliq, tаmаki mаhsulotlаrigа solinаdigаn soliq, аvtotrаnsport og’irligigа solinаdigаn soliq, bojхonа boji.`,
-`Yaponiyada soliqsiz to’lovlаrga kirmaydi?
-A. spirtli ichimliklаrgа solinаdigаn soliq`,
-`Yaponiyada Prеfеkturаlаrgа kеlib tushаdigаn mаhаlliy soliqlаr vа yig’imlаrga quyidagi soliq kirmaydi?
-A. Qimmаtbаho qog’ozlаr bo’yichа bitimlаrgа solinаdigаn аktsiz`,
-`Yaponiyada Munisipаl (shаhаr, tumаn posеlkа vа boshqаlаr) orgаnlаri mаhаlliy soliqlаri vа yig’imlаriga kirmaydi?
-A. Soliqlаr istе’mol solig’i`,
-
-`Охirgi yillаrdа Yaponiyadagi soliq og’irligi koeffisiеntini аniqlаng?
-A. 24,4`,
-`Yaponiyada mаnbаidа olinаdigаn dаromаd solig’i ob’еktining tаrkibi?
-A. Mеhnаtdаn dаromаd vа ishdаn bo’shаgаndа bеrilаdigаn nаfаqа`,
-`Yaponiyada soliq dеklаrаtsiyasi аsosidа olinаdigаn dаromаd solig’i stаvkаlаri (foiz hisobidа)?
-A. 25, 34, 5,10, 0`,
-`Yaponiyada huquqiy shахslаr dаromаdidаn olinаdigаn soliqlаr turini bеlgilаng
-A. Хuquqiy shахs foydаsigа solinаdigаn soliq`,
-`Yaponiyada huquqiy shахs dаromаdidаn olinаdigаn soliqlаrni ob’еktlаri vа stаvkаlаri:
-A. Huquqiy shахs dаromаdi 25-34,5%`,
-`Yaponiyada mеros vа хаyriyagа solinаdigаn soliqlаrni eng yuqori stаvkаsini bеlgilаng
-A. 70%`,
-`Xitoy Xalq Respublikasi (XXR)da qаysi soliq mаrkаziy soliq hisoblаnаdi?
-A. Аsosiy kаpitаlgа qilingаn invеstitsiyagа solinаdigаn soliq`,
-
-`Xitoydа Jismoniy shахslаrdаn dаromаd solig’i olingаndа qаysi stаvkа ishlаtilmаydi?
-A. 28%`,
-`Xitoydа Quyidаgi dаromаdlаrning qаysi turi jismoniy shахslаrdаn olinаdigаn dаromаdlаr solig’igа tortilаdi?
-A. Ishchi vа хizmаtchigа bеrilgаn mukofotlari`,
-`Xitoydа Mulkni ijаrаgа bеrish nаtijаsidа olingаn dаromаdgа qo’llаnilаdigаn stаvkаni ko’rsаting
-A. 20`,
-`Xitoydа Qаysi soliq qo’shimchа soliq hisoblаnаdi?
-A. Хаyvonlаrni boqish vа ko’pаytirishgа solinаdigаn soliq`,
-`Xitoydа Mаhаlliy soliqlаrgа mаnsub bo’lmаgаn soliqni аniqlаng
-A. Dаromаd solig’i`,
-`Xitoydа qаysi turdаgi tovаr (хizmаtlаr, bаjаrilgаn ishlаr) qo’shilgаn qiymаt solig’igа tortilmаydi
-A. Fеrmеrlаr ishlаb chiqаrgаn qishloq хo’jаligi mаhslotlаri аylаnmаsi`,
-
-`Xitoydа Jismoniy shахslаrdаn olinаdigаn dаromаd solig’i ob’еktlаrigа qаysi dаromаd kirmаydi?
-A. Muаlliflik gonorаri.`,
-`Xitoydа Mаqsаdli soliqlаr vа yig’imlаr tаrkibigа kirmаydigаn to’lovni аniqlаng
-A. Yerni sotishgа solinаdigаn soliq`,
-
-`Xitoydа Оpеrаtsiya (hаrаkаtlаrgа) solinаdigаn soliqlаr guruhigа kirmаydigаn to’lovni аniqlаng
-A. Ko’chmаs mulkkа solinаdigаn soliq`,
-`Yagona soliq to‘lovi to‘lovchilari qo‘shilgan qiymat solig‘ini.....
-A. ixtiyoriy ravishda to‘laydilar`,
-`Aylanmadan olinadigan soliqda soliq solish ob’ekti sifatida qaralmaydi:
-A. byudjetdan berilgan subsidiyalar`,
-
-`Qo‘shilgan qiymat solig‘ining soliqqa tortish ob’ekti nima?
-A. soliq solinadigan oborot va soliq solinadigan import`,
-`Quyida qayd etilgan soliqlarning qaysi biri egri soliqlar guruhiga kiradi?
-A. qo‘shilgan qiymat solig‘i `,
-`Tovarlarni realizatsiya qilish joyi qaysi javobda to‘g‘ri keltirilgan?
-A. Tovar mamlakat hududida turgan bo‘lsa va bitim natijasida mamlakat hududidan tashqariga chiqarilmaydigan bo‘lsa`,
-`Import qilingan tovarlar realizatsiya qilinganda qo‘shilgan qiymat solig‘i solinadigan baza qanday belgilanadi?
-A. realizatsiya qilinayotgan tovarlarning qo‘shilgan qiymat solig‘i kiritilmagan qiymatidan kelib chiqqan holda belgilanadi`,
-`Aksiz solig‘i quyidagilarning qaysilariga solinmaydi?
-A. aktsiz to‘lanadigan tovarlarning eksportiga`,
-`Qayta ishlashga berilgan xom-ashyo va materiallardan ishlab chiqarilgan aktsiz to‘lanadigan tovarlar bo‘yicha soliq solinadigan baza qanday qiymatni o‘z ichiga oladi?
-A. aktsiz to’lanadigan tovarlarni ishlab chiqarishga doir ishlar qiymatini hamda qayta ishlashga berilgan xom ashyo va materiallar qiymatini`,
-`Da’vo qilishning umumiy muddati qancha?
-A. 3 yil`,
-`O‘zbekiston Respublikasi soliq to‘lovchilarining yagona reestri kim tomonidan yuritiladi
-A. O‘zbekiston Respublikasi Davlat soliq qo‘mitasi tomonidan`,
-`Yuridik shaxslar soliqlarni qanday shaklda to‘laydilar?
-A. Qonunda belgilangan tartibda`,
-`Soliq organlari o‘z vakolat doirasida soliq to‘lovchilarni
-A. Ma’muriy va moliyaviy jazoga tortadilar`,
-`Soliq tekshiruvi turlari qaysi bandda to‘g‘ri ko‘rsatilgan
-A. Soliq to‘lovchi-ning xo‘jalik faoliyati tekshiruvi (taftishi) va qisqa muddatli tekshiruv shaklida amalga oshiriladi`,
-`O‘zbekiston Respublikasi soliq qonunchiligi printsiplarini ko‘rsating
-A. Soliq solishning majburiyligi, aniqligi, adolatliligi, soliq tizimining yagonaligi, soliq to‘g‘risidagi qonun hujjatlarining oshkoraligi va soliq to‘lovchining haqligi prezumptsiyasi`,
-`Qo‘shilgan qiymat solig‘ini hisoblashda nollik stavka qachon qo‘llaniladi?
-A. Tovarlarni chet el valyutasida eksportga realizatsiya qilish`,
-`Soliq to’lovchining huquqi – bu…..
-A. Soliq to’lovchilarning soliq munosabatlarida ishtirok etish imkoniyatlarining qonuniy normalaridir soliq to’lovchilarning `,
-`Soliq kodeksi qanday munosabatlarni tartibga soladi?
-A. Soliq kodeksi soliqlar va boshqa majburiy to’lovlarni belgilash, joriy etish, hisoblab chiqarish hamda O’zbekiston Respublikasining Davlat byudjetiga va davlat maqsadli jamg’armalariga to’lash bilan bog’liq munosabatlarni, shuningdek soliq majburiyatlarini bajarish bilan bog’liq munosabatlarni tartibga soladi.`,
-`Soliq solish masalalariga daxldor normativ-huquqiy hujjat quyidagi hollarda soliq Kodeksiga muvofiq emas deb topiladi?
-A. Konstitutsiyaga muvofiq bunday hujjatni qabul qilish huquqiga ega bo’lmagan organ tomonidan qabul qilingan bo’lsa yoki normativ-huquqiy hujjatlarni qabul qilishning belgilangan tartibi buzilgan holda qabul qilingan bo’lsa`,
-`Qaysi javobda soliq elementlari keltirilgan?
-A. Soliq solish ob’ekti, soliq solinadigan baza, stavka, hisoblab chiqarish tartibi, soliq davri, soliq hisobotini taqdim etish tartibi, to‘lash tartibi`,
-`Soliq to’lovchilar bu …….
-A. Zimmasiga soliqlar, yig’imlar va bojlar to’lash majburiyati yuklatilgan yuridik va jismoniy shaxslardir.`,
-`Hujjat bilan tasdiqlangan xarajatlar....
-A. operatsiya sanasini, summasini, xususiyatini aniqlash va uning ishtirokchilarini identifikatsiya qilish imkonini beradigan hujjatlar bilan tasdiqlangan xarajatlar `,
-`Qonunchilikka asosan stavka deganda nima tushuniladi
-A. Stavka soliq solinadigan bazaning o’lchov birligiga nisbatan hisoblanadigan foizlardagi yoki mutlaq summadagi miqdorni ifodalaydi.`,
-`Qonunchilikka asosan soliq davri deganda nima tushuniladi
-A. Soliq davri u tugaganidan keyin soliq solinadigan baza aniqlanadigan hamda soliq yoki boshqa majburiy to’lov summasi hisoblab chiqariladigan davrdir`,
-
-`Yuridik shaxslar bu…..
-A. Ikki yoki undan ortiq kishilar guruhidan tashkil topgan va ularning biri rahbar, qolganlari unga tobe bo’lgan hamda ma’lum bir iqtisodiy faoliyat bilan shug’ullanuvchi  kishilar guruhidir.`,
-`Soliq xizmati idoralari xodimlari vakolatlari deganda nimani tushunasiz?
-A. qonun bilan belgilab berilgan huquq va majburiyatlari yig’indisini`,
-`Vakolatli organlarning huquq va majburiyatlari qanday me’yoriy hujjat bilan tartibga solinadi
-A. Vakolatli organlarning huquq va majburiyatlari soliq kodeksi hamda boshqa qonun hujjatlari bilan tartibga solinadi `,
-`Soliq to’lovchining soliq to’g’risidagi qonun hujjatlariga muvofiq yuzaga keladigan majburiyati ...
-A. Soliq majburiyati deb e’tirof etiladi`,
-`Soliq to’lovchi soliq majburiyatini muddatidan ilgari bajarishga haqlimi?
-A. bajarishga haqli`,
-`Undiruvni soliq to’lovchining mol-mulkiga qaratish .......asosida sud tartibida amalga oshiriladi
-A. davlat soliq xizmati organining da’vo arizasi`,
-`Soliq qarzini majburiy undirish choralari jismoniy shaxslarga nisbatan faqat ..... qo‘llaniladi
-A. sud tartibida`,
-`Tekshirish deb nimaga aytiladi?
-A. moliya va soliq masalalari bo’yicha qonun hujjatlariga rioya etilishi, soliq, davlat statistika  organlariga hamda  banklarga taqdim etiladigan hisobga olish va hisobot  ishlarining to’g’riligi ustidan nazoratni amalga oshirish maqsadida xo’jalik yurituvchi sub’ektlarning buxgalterlik, moliya va boshqa hujjatlarini tekshirish`,
-`Soliq tekshiruvi dalolatnomasi  ..... nusxada tuziladi
-A. kamida uch `,
-`Davlat soliq xizmati organi tomonidan soliq to‘lovchi to‘g‘risida olingan quyidagi ma’lumot soliq sirini tashkil etadi
-A. yuridik shaxsning moliyaviy hisoboti to‘g‘risidagi ma’lumotlar`,
-`Soliq qarzini majburiy undirish choralari jismoniy shaxslarga nisbatan faqat ..... qo‘llaniladi
-A. Sud tartibida`,
-`Soliq to’lovchi moliya-xo’jalik faoliyatining soliq tekshiruvlari (taftishlari) qanday turlarga bo’linadi?
-A. Rejali soliq tekshiruvi, rejadan tashqari soliq tekshiruvi, muqobil tekshiruv`,
-`Undiruvni soliq to’lovchining mol-mulkiga qaratish to’g’risidagi da’vo arizasi  ….. tomonidan imzolanadi
-A. soliq to’lovchi soliq hisobiga qo’yilgan joydagi davlat soliq xizmati organining rahbari yoki rahbar o’rinbosari`,
-`Shaxs soliqqa oid huquqbuzarlik uchun quyidagi holatlardan loaqal bittasi mavjud bo’lgan taqdirda javobgarlikka tortilishi mumkin emas
-A. Soliqqa oid huquqbuzarlik sodir etganligi faktining yo’qligi`,
-
-`Soliq to’lovchi soliq tekshiruvi o’tkazilguniga qadar xatoni o’zi tuzatgan taqdirda javobgarlikdan ozod etiladi va  .....
-A. belgilangan tartibda penya to’lamaydi`,
-`Yakka tartibdagi tadbirkor tomonidan sodir etilgan soliqqa oid huquqbuzarlik uchun moliyaviy sanktsiyalar  …....... tartibda qo’llaniladi
-A. yuridik shaxslar uchun nazarda tutilgan`,
-`Soliq hisobotida ko‘rsatilgan ma’lumotlarning to‘g‘riligi uchun javobgarlik … zimmasiga yuklatiladi
-A. Soliq to‘lovchining`,
-`Ortiqcha to‘langan soliq summasi boshqa soliq to‘lovchining soliq qarzini uzish hisobiga hisobga olinishi.....
-A. mumkin emas`,
-`Qanday holatlarda tekshiruvni o’tkazishda hamkorlik qilish uchun mutaxassis va ekspertlar jalb etiladi?
-A. Soliq idoralari xodimlarida etarli malaka va ko’nikmalar etishmaganda`,
-`Tekshiruv jarayonidagi ekspertiza qaysi tashkilotlar ishtirokida tuzilgan shartnomaga asoslab o’tkaziladi?
-A. Soliq organining talabiga binoan soliq to’lovchi bilan ekspertiza o’tkazuvchi organ o’rtasida tuzilgan shartnoma asosida `,
-`Soliq to‘g‘risidagi qonun hujjatlari soliq solishning qaysi printsiplariga asoslanadi
-A. Adolatliligi, majburiyligi, aniqligi`,
-`Soliqlar va boshqa majburiy to‘lovlar quyidagi mezonlardan kelib chiqqan holda qo‘llanilishi mumkin emas
-A. Irqiy , ijtimoiy, milliy`,
-`Xalqaro shartnomada O‘zbekiston Respublikasining soliq to‘g‘risidagi qonun hujjatlarida nazarda tutilganidan boshqacha qoidalar belgilangan bo‘lsa qanday shartnoma qoidalari amal qiladi
-A. Xalqaro shartnoma qoidalari qo‘llaniladi`,
-
-`Soliqqa tortishning qanday usullari mavjud?
-A. Kadastrli, deklaratsiya, manba oldida soliqqa tortish`,
-`Soliqlarning soliqqa tortish ob’ekti bo‘yicha guruhlarini ko‘rsating
-A. Oborotdan, daromaddan, mol-mulk qiymatidan olinadigan soliqlar`,
-
-`Yuridik shaxslarning foyda solig‘i solish ob’ektini aniqlashda jami daromaddan moliyaviy jarima va penya summalari chegirib tashlanadimi?
-A. Moliyaviy jarima summasi chegirib tashlanadi`,
-
-`Xayriya maqsadlariga o‘tkazilgan mablag‘lar soliqqa tortiladimi?
-A. Tortilmaydi `,
-
-`Davlat obligatsiyalari va davlatning boshqa qimmatli qog‘ozlari bo‘yicha dividendlar va foizlar soliqqa tortiladimi?
-A. Ozod etiladi`,
-
-`Pochta markalari, markali otkritkalar va konvertlar sotish qo‘shilgan qiymat solig‘iga tortiladimi?	
-A. Qo‘shilgan qiymat solig‘idan ozod etiladi`,
-`Qo‘shilgan qiymat solig‘ini hisoblashda nollik stavka qachon qo‘llaniladi?
-A. Tovarlarni chet el valyutasida eksportga realizatsiya qilish`,
-`Quyida qayd etilgan soliqlarning qaysi biri egri soliqlar guruhiga kiradi?
-A. Qo‘shilgan qiymat solig‘i`,
-
-`Qo‘shilgan qiymat solig‘idan ozod qilinadigan import tovarini belgilang?
-A. Jismoniy shaxslar tomonidan tovarlarni bojsiz olib kirishning bojxona to‘g‘risidagi qonun hujjatlarida tasdiqlangan me’yorlari doirasida olib kirilayotgan tovarlar`,
-`Aktsiz markalarining nominal qiymati aktsiz solig‘i to‘lovi hisobiga.....
-A. Kiritilmaydi`,
-`Qayta ishlashga berilgan xom ashyo va materiallardan ishlab chiqarilgan aktsiz to‘lanadigan tovarlar bo‘yicha soliq solinadigan baza nimani o‘z ichiga oladi?
-A. Aktsiz to‘lanadigan tovarlarni ishlab chiqarishga doir ishlar qiymatini`,
-`Aktsiz solig‘ining stavkalari foizlarda (advalor) belgilangan import qilinayotgan aktsiz to‘lanadigan tovarlar bo‘yicha soliq solinadigan baza nima asosida belgilanadi?
-A. Tovarlarning naturada ifodalangan hajmi`,
-`Yer solig‘ini joriy etishdan ko‘zlangan maqsadlarni ko‘rsating
-A. Barcha javoblar`,
-`Yer solig‘ini to‘lovchilar bo‘lib kimlar hisoblanadi
-A. O‘z mulkida, egaligida va foydalanishida yer uchastkalariga ega bo‘lgan yuridik va jismoniy shaxslar`,
-
-`Jismoniy shaxslarning daromadiga solinadigan soliqni to‘lovchilari kimlar?
-A. Daromadga ega bo‘lgan O‘zbekiston Respublikasining norezident va rezident jismoniy shaxslari`,
-
-`Jismoniy shaxslarning mulkiy daromadiga qanday daromadlar kiradi?
-A. Mol-mulkni ijaraga berishdan kelgan daromadlar`,
-
-`Qo‘shimcha foyda solig‘ini to‘lovchilari kimlar hisoblanadi
-A. Ayrim turdagi mahsulotlarni ishlab chiqarishni amalga oshiruvchi yuridik shaxslar`,
-`Bonus ta’rifi qaysi javobda to‘g‘ri keltirilgan?
-A. Yer qa’ridan foydalanuvchi tomonidan amalga oshiriladigan bir martalik to‘lov `,
-`Yer qa’ridan foydalanganlik uchun soliqni to‘lovchilarni aniqlang?
-A. Foydali qazilmalar qazib oluvchi yuridik va jismoniy shaxslar`,
-
-`Soliq to’lovchining vakillari kim bo’lishi mumkin?
-A. Qonunga yoki ta’sis hujjatiga muvofiq soliq to’lovchining vakili bo’lishga vakolatli shaxslar`,
-
-`Soliq agentlari bu……
-A. Soliq Kodeksiga muvofiq zimmasiga soliqlar va boshqa majburiy to’lovlarni hisoblab chiqarish, soliq to’lovchidan ushlab qolish hamda byudjetga va davlat maqsadli jamg’armalariga o’tkazish majburiyati yuklatilgan shaxslardir.`,
-`Nazorat qiluvchi organlar bu ...
-A. xo’jalik yurituvchi sub’ektlar faoliyatini davlat tomonidan  nazorat qilishga qonun hujjatlari bilan vakolat berilgan vazirliklar va idoralardir.`,
-`Bojxona organlari soliq nazoratini amalga oshiradimi?
-A. Tovarlarni bojxona chegarasidan olib o’tilishida to’lanadigan soliq va majburiy to’lovlar bo’yicha soliq nazoratini amalga oshiradi.`,
-
-`Soliq to’lovchilarning hisobini qaysi davlat organi yuritadi?
-A. Davlat soliq xizmati organlari`,
-`Rezident jismoniy shaxslar qachon va qaysi holatda O’zR soliq to’lovchilarining yagona reestridan chiqariladi?
-A. Ular vafot etganidan keyin, basharti soliqlar va boshqa majburiy to’lovlarni to’lash majburiyati ularning merosxo’rlari tomonidan to’liq uzilgan yoki soliq qarzi belgilangan tartibda hisobdan chiqarilgan bo’lsa`,
-`Soliq tekshiruvlarini o’tkazish vaqtida mol-mulkni inventarizatsiyadan o’tkazish qaysi qonun hujjatlariga muvofiq amalga oshiriladi?
-A. Buxgalteriya hisobi to’g’risidagi`,
-`Kassani taftishdan o’tkazish jarayonida kimlar qatnashishi lozim
-A. tekshiruvchi, kassir, bosh buxgalter`,
-`Soliq tekshiruviga xolislar jalb etilishi mumkinmi?
-A. Ha`,
-`Ortiqcha to‘langan soliq summasi boshqa soliq to‘lovchining soliq qarzini uzish hisobiga hisobga olinishi.....
-A. mumkin emas`,
-
-`Soliq siyosati deganda nimani tushunasiz?
-A. Soliq siyosati - bu iqtisodiy siyosatning ajralmas bir bo’lagi bo’lib, davlatning muayyan davrda aniq maqsadlarga qaratilgan soliq sohasidagi faoliyatidir;`,
-`Soliq siyosatining huquqiy asoslari nimalardan tashkil topgan?
-A. O’zbekiston Respublikasining Konstitutsiyasi, O’zbekiston Respublikasining Soliq kodeksi, «Davlat soliq xizmati to’g’risida»gi qonuni, hukumatning boshqa soliqqa oid qonun,  qarorlari, Prezident farmonlari va boshqa me’yoriy hujjatlar.`,
-`Dialektik usul qanday usullarni o‘z ichiga oladi?
-A. Induktsiya va deduktsiya`,
-`Soliq va moliya organlarinig asosiy vazifalaridan biri; 
-A. Soliqlarni to’liq va o’z vaqtida tushumi ustidan nazorat qrnatish, soliq tushumlarini tahlil qilish va pognozlash ishlari..`,
-`Mahalliy byudjet daromadlarini prognozlash asosan qaysi soliq turlari bo’yicha amalga oshiriladi?
-A. Mahalliy soliqlar va yig’imlar`,
-`Soliq tushumlarini tahlil qilishning asosiy turi
-A. Gorizontal (vaqtiy)`,
-`Qaysi satrda soliq elementlari keltirilgan?
-A. Soliq oyligi, soliq sub’ekti, soliq ob’ekti, soliq stavkasi, soliq bazasi, soliq normasi`,
-`Prognoz ko’rsatkichlarini to’g’riligini ta’minlash uchun qanday soliq to’lovchilar misolida ishlab chiqiladi?
-A. Aniq soliq to’lovchilar;`,
-
-`Davlat byudjetiga soliqlarni hisobga olishda qanday hujjatlarga asoslanadi?
-A. Moliya bo’limlaridan va banklardan olingan soliq va byudjet to’lovlari ko‘chirmalariga asosan;`,
-`Quyida qayd etilgan soliqlarning qaysi biri egri soliqlar guruhiga kiradi?
-A. Qo‘shilgan qiymat solig‘i`]
-
-const soliq_huquqi_savollar = [`Soliq munosabatlarining sub’ektlari:
-A.Soliq to’lovchilar, soliq agentlari va vakolatli organlar`,
-
-`Soliq organlari hujjatlar:
-A.Elektron hujjat tarzida soliq to’lovchining shaxsiy kabinetiga yuboradi`,
-
-`Soliq to’lovchining shaxsiy kabineti orqali yuborish hamda olish tartibi kim  tomonidan tasdiqlanadi?
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi`,
-
-`Soliq to’lovchilar deb e’tirof etiladi:
-A.Zimmasiga belgilangan soliqlar hamda yig’imlarni to’lash majburiyati yuklatilgan yuridik va jismoniy shaxslar`,
-
-`Jismoniy shaxslar bo’lib kimlar hisoblanadi?
-A.O’zbekiston Respublikasining fuqarolari, chet davlatlarning fuqarolari, shuningdek fuqaroligi bo’lmagan shaxslar`,
-
-`Yakka tartibdagi tadbirkor bo’lib kimlar hisoblanadi? 
-
-A.Belgilangan tartibda ro’yxatdan o’tgan va yuridik shaxs tashkil etmagan holda tadbirkorlik faoliyatini amalga oshiradigan jismoniy shaxs`,
-
-`Quyidagilar yuridik shaxslardir:
-A.O’zbekiston Respublikasining qonunchiligiga muvofiq tashkil etilgan yuridik shaxslar (O’zbekiston Respublikasining yuridik shaxslari);
-chet davlatlarning qonunchiligiga muvofiq tashkil etilgan, fuqarolik huquqiy layoqatiga ega bo’lgan chet el yuridik shaxslari (shu jumladan kompaniyalar va boshqa korporativ tuzilmalar); xalqaro tashkilotlar.`,
-
-`Soliq agentlari deb e’tirof etiladi.
-A.Zimmasiga soliqlarni hisoblab chiqarish, soliq to’lovchidan ushlab qolish va byudjet tizimiga o’tkazish majburiyati yakka tartibdagi tadbirkor`,
-
-`Kimlar soliq to’lovchining vakolatli vakillari bo’la olmaydi?
-A.Soliq, moliya, bojxona va boshqa davlat organlarining mansabdor shaxslari`,
-
-`Davlat soliq xizmati organlari quyidagilardir: 
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi, Qoraqalpog’iston Respublikasi, viloyatlar va Toshkent shahar davlat soliq boshqarmalari, shuningdek tumanlar, shaharlar va shahardagi tumanlar davlat soliq inspekstiyalari.`,
-
-
-`Davlat soliq xizmati organlarining o’z vakolatlari doirasida qabul qiladigan qarorlari: 
-A.Barcha soliq to’lovchilar yuridik shaxslar, yakka tartibdagi tadbirkorlar va jismoniy shaxslar uchun majburiydir`,
-
-`Davlat soliq xizmati organlarining mansabdor shaxslariga egallab turgan lavozimi va ish stajiga muvofiq quyidagi maxsus unvonlar beriladi: 
-A.Soliq xizmatining bosh davlat maslahatchisi;soliq xizmatining I darajali davlat maslahatchisi;soliq xizmatining II darajali davlat maslahatchisi;soliq xizmatining III darajali davlat maslahatchisi;`,
-
-`Davlat soliq xizmati organlarining mansabdor shaxslariga egallab turgan lavozimi va ish stajiga muvofiq quyidagi maxsus unvonlar beriladi: 
-A.Soliq xizmatining I darajali maslahatchisi; soliq xizmatining II darajali maslahatchisi;soliq xizmatining III darajali maslahatchisi;`,
-
-`Davlat soliq xizmati organlarining mansabdor shaxslariga egallab turgan lavozimi va ish stajiga muvofiq quyidagi maxsus unvonlar beriladi: 
-A.Soliq xizmatining I darajali inspektori;soliq xizmatining II darajali inspektori; soliq xizmatining III darajali inspektori; soliq xizmatining inspektori.`,
-
-`Maxsus unvonlarni berish va ulardan mahrum qilish tartibi: 
-A.O’zbekiston Respublikasi Vazirlar Mahkamasi tomonidan belgilanadi.`,
-
-`Soliq to’lovchining soliq majburiyatini bajarish bo’yicha ta’minlash chorasi sifatida mol-mulkni xatlash uning arizasiga ko’ra:
-A.Qimmatli qog’ozlar uyushgan bozorida muomalada bo’lgan qimmatli qog’ozlarning garovi yoki boshqa mol-mulk garovi bilan; uchinchi shaxsning kafilligi bilan almashtirilishi mumkin; bank kafolati bilan.`,
-
-`Mol-mulk garovi soliq organi va garovga qo’yuvchi o’rtasidagi:  
-A.Shartnoma bilan rasmiylashtiriladi.`,
-
-`Soliq majburiyatini bajarish muddatlari o’zgargan taqdirda va boshqa hollarda soliqlarni to’lash majburiyati:  
-A.Kafillik bilan ta’minlanishi mumkin.`,
-
-`Soliq to’lovchi soliq to’g’risidagi qonunchilikda belgilangan soliqlarni to’lash muddatini buzgan taqdirda to’lashi lozim bo’lgan pul summasi:   
-A.Penya`,
-
-`Har bir kechiktirilgan kun uchun penyalar:   
-A.Soliqning to’lanmagan summasidan kelib chiqib foizlarda belgilanadi.`,
-
-
-`Penyalar:? 
-A.Tegishli soliq to’lanadigan byudjetga (davlat maqsadli jamg’armasiga) to’lanadi.`,
-
-`Penyaning foiz stavkasi:?   
-A.O’zbekiston Respublikasi Markaziy bankining shu davrda amalda bo’lgan qayta moliyalash stavkasining uch yuzdan biriga teng etib qabul qilinadi.`,
-
-
-`Soliq to’lovchining (soliq agentining) bankdagi hisobvaraqlari bo’yicha operastiyalarni to’xtatib turish va to’xtatib turishni bekor qilish to’g’risidagi soliq organining qarorlarini bankka elektron shaklda yuborish tartibini:   
-A.O’zbekiston Respublikasi Markaziy banki O’zbekiston Respublikasi Davlat soliq qo’mitasi bilan kelishilgan holda belgilaydi.`,
-
-`Soliq to’lovchining (soliq agentining) hisobvaraqlari bo’yicha operastiyalarni to’xtatib turish to’g’risidagi qaror bankka elektron shaklda yuborilganda, bank tomonidan ushbu qaror olingan sana va vaqtni belgilash tartibi:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi tomonidan O’zbekiston Respublikasi Markaziy banki bilan kelishilgan holda belgilanadi.`,
-
-`Soliq organining soliq to’lovchi bo’lgan yuridik shaxsning mol-mulkiga nisbatan mulk huquqini cheklashga doir harakati soliq qarzini undirish to’g’risidagi qarorning bajarilishini ta’minlash usuli:   
-A.Mol-mulkni xatlash`,
-
-`Soliq qarzi bo’yicha soliq to’lovchilarning mol-mulkini xatlash:   
-A.Sud qaroriga ko’ra amalga oshiriladi`,
-
-`Mol-mulkni xatlash:   
-A.To’liq yoki qisman bo’lishi mumkin.`,
-
-`Agar soliq to’lovchida to’lanmagan soliq qarzi mavjud bo’lsa?  
-A.Soliq organi unga soliqlarni to’lash muddati o’tganidan keyin uch kundan kechiktirmay soliq qarzini uzish to’g’risida talabnoma yuboradi.`,
-
-`Soliq to’lovchiga uning zimmasidagi soliq qarzi summasi to’g’risida, shuningdek shu qarz summasini belgilangan muddatda to’lash majburiyati haqida xabar yuborish:   
-A.Soliq qarzini uzish to’g’risidagi talabnomadir.`,
-
-`Soliq qarzini uzish to’g’risidagi talabnomaning shakli: 
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi tomonidan tasdiqlanadi.`,
-
-
-`Soliq qarzini uzish to’g’risidagi talabnoma:  
-A.Soliq to’lovchiga u hisobda turgan soliq organi tomonidan yuboriladi.`,
-
-`Soliq qarzini uzish to’g’risidagi aniqlashtirilgan talabnoma yoki ilgari yuborilgan talabnomaga doir chaqiruv xati soliq to’lovchiga o’zgarishlarga olib kelgan holatlar aniqlangan kundan e’tiboran:?  
-A.Uch kun ichida yuboriladi`,
-
-
-`Chorak:  
-A.Uch kalendar oyga teng deb hisoblanadi`,
-
-`Soliqlarni to’lash majburiyati:  
-A.Mol-mulk garovi bilan ta’minlanishi mumkin`,
-
-`Soliq monitoringini o’tkazish to’g’risidagi ariza:   
-A.Soliq monitoringi o’tkaziladigan davrdan oldingi yilning 1 iyulidan kechiktirmay hisobga olish joyidagi soliq organiga yuridik shaxs tomonidan taqdim etiladi.`,
-
-`Soliq monitoringini o’tkazish to’g’risidagi qaror (soliq monitoringini o’tkazishni rad etish haqidagi qaror) qabul qilingan kundan e’tiboran:   
-A.Besh kun ichida arizachiga yuboriladi.`,
-
-`Vakolatli organlarning soliq to’lovchilar va soliq agentlari tomonidan soliq to’g’risidagi qonun hujjatlariga rioya etilishi ustidan nazorat qilishga doir faoliyati:   
-A.Soliq nazoratidir`,
-
-`Soliq nazoratining shakllari:  
-A.Soliq tekshiruvlari; soliq monitoringi`,
-
-`Soliq organlari soliq tekshiruvlarining quyidagi turlarini o’tkazadi: 
-A.Kameral soliq tekshiruvi; sayyor soliq tekshiruvi; soliq auditi.`,
-
-`Kameral soliq tekshiruvi:  
-A.Soliq to’lovchi (soliq agenti) tomonidan taqdim etilgan soliq hisobotini, moliyaviy hisobotni, shuningdek soliq to’lovchining faoliyati to’g’risida soliq organida mavjud bo’lgan boshqa hujjatlar hamda ma’lumotlarni tahlil qilish asosida soliq organi tomonidan o’tkaziladi.`,
-
-`Kameral soliq tekshiruvi:   
-A.Soliq organi rahbarining (rahbari o’rinbosarining) buyrug’i asosida o’tkaziladi.`,
-
-`Sayyor soliq tekshiruvi:  
-A.Soliq to’lovchilarning soliqlar va yig’imlarni hisoblab chiqarish hamda to’lash sohasidagi ayrim majburiyatlarini, shuningdek soliq to’g’risidagi qonun hujjatlarida belgilangan boshqa majburiyatlarini bajarilishini tekshirish`,
-
-`Sayyor soliq tekshiruvi:   
-A.Hisobga olish hujjatlarining, tovar-moddiy qimmatliklar va pul mablag’lari harakatining, shuningdek soliq to’lovchining faoliyati bilan bog’liq bo’lgan boshqa axborotning tahlili o’tkaziladi`,
-
-`Sayyor soliq tekshiruvi:   
-A.Soliq organi rahbarining (rahbari o’rinbosarining) buyrug’i asosida o’tkaziladi,buyruqda soliq to’lovchining nomi, tekshiruvchi shaxslarning familiyasi, ismi, otasining ismi hamda lavozimi, tekshiruvlarni o’tkazish muddatlari va maqsadi ko’rsatiladi`,
-
-`Sayyor soliq tekshiruvi:   
-A.O’n kundan ko’p bo’lmagan muddatda o’tkaziladi.
-uch kun ichida yuboriladi`,
-
-
-`Sayyor soliq tekshiruvi o’tkazish to’g’risidagi nizomni:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi tasdiqlaydi.`,
-
-`Soliq auditi:  
-A.Muayyan davr uchun soliqlar va yig’imlarni hisoblab chiqarish hamda to’lashning to’g’riligini tekshirish`,
-
-`Soliq to’lovchiga soliq auditi o’tkazilishi to’g’risida xabarnoma:   
-A.Soliq organlari soliq auditi o’tkazilishi boshlanishidan kamida o’ttiz kalendar kun oldin yuboradi.`,
-
-`Soliq auditini o’tkazish muddati:  
-A.Soliq auditi o’ttiz kundan ortiq davom etishi mumkin emas.`,
-
-`Quyidagilar soliq monitoringining predmetidir: 
-A.Soliq to’g’risidagi qonunchilikka rioya etish, o’ziga nisbatan soliq monitoringi o’tkazilayotgan yuridik shaxs tomonidan soliqlar va yig’imlarni hisoblashning to’g’riligi, to’liq va o’z vaqtida to’langanligi (o’tkazib berilganligi).`,
-
-`Soliq to’lovchilar uchun soliq monitoringi: 
-A.Ixtiyoriydir`,
-
-`Soliq monitoringi soliq qanday xujjat asosida soliq organi tomonidan amalga oshiriladi?
-A.Soliq monitoringini o’tkazish to’g’risidagi qaror asosida`,
-
-`Soliq monitoringi soliq monitoringini o’tkazish to’g’risidagi qaror asosida kim tomonidan amalga oshiriladi?
-A.Soliq organi tomonidan`,
-
-
-`Yuridik shaxs,  soliq monitoringini o’tkazish to’g’risidagi ariza bilan qachon soliq organiga murojaat qilishga haqli?
-A.Agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’mni tashkil etgan bo’lsa`,
-
-`Yuridik shaxs, agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’mni tashkil etgan bo’lsa:
-A.Soliq monitoringini o’tkazish to’g’risidagi ariza bilan soliq organiga murojaat qilishga haqli.`,
-
-`Kimlar  agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’mni tashkil etgan bo’lsa, soliq monitoringini o’tkazish to’g’risidagi ariza bilan soliq organiga murojaat qilishga haqli?
-A.Yuridik shaxslar`,
-
-`Soliq monitoringi o’tkaziladigan davr:
-A.Yuridik shaxs soliq organiga soliq monitoringini o’tkazish to’g’risida ariza taqdim etgan yildan keyingi kalendar yil`,
-
-`Soliq monitoringini o’tkazish:
-A.Soliq monitoringi o’tkaziladigan yilning 1 yanvaridan boshlanadi va soliq monitoringi o’tkazilgan davrdan keyingi yilning 1 iyulida tugallanadi.`,
-
-`Soliq monitoringini o’tkazish to’g’risidagi ariza: 
-A.Soliq monitoringi o’tkaziladigan davrdan oldingi yilning 1 iyulidan kechiktirmay hisobga olish joyidagi soliq organiga yuridik shaxs tomonidan taqdim etiladi.`,
-
-`Soliq organining talabiga ko’ra telekommunikastiya aloqa kanallari orqali elektron shaklda hujjatlar taqdim etish to’g’risidagi talabnomani yuborish va hujjatlarni taqdim etish tartibini:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi belgilaydi.`,
-
-`Soliq organining asoslantirilgan fikrining shaklini va uni tuzishga doir talablarni:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi belgilaydi.`,
-
-`Soliq auditini o’tkazish muddati: 
-A.Soliq to’lovchiga (soliq agentiga) soliq auditini tayinlash to’g’risidagi buyruq topshirilgan kunda boshlanadi.`,
-
-`Soliq auditini o’tkazish muddati: 
-A.Ikki oygacha, alohida hollarda esa uch oygacha uzaytirilishi mumkin.`,
-
-`Soliq auditini o’tkazish muddatini uzaytirish asoslari va tartibini:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi belgilaydi.`,
-
-`Soliq organining soliq tekshiruvini o’tkazayotgan mansabdor shaxsi tekshirilayotgan shaxsdan tekshiruv uchun zarur bo’lgan hujjatlarni:   
-A.Talab qilib olishga haqli.`,
-
-`Hisobga olish hujjatlari elektron shaklda tuzilgan taqdirda soliq to’lovchi (soliq agenti) soliq tekshiruvi chog’ida soliq organlari mansabdor shaxslarining talabiga ko’ra bunday hujjatlar:  
-A.Qog’ozdagi ko’chirma nusxalarini taqdim etishi shart`,
-
-`Soliq tekshiruvi davomida talab qilib olingan hujjatlar tegishli talabnoma: 
-A.Talabnoma olingan kundan e’tiboran besh kun ichida taqdim etiladi`,
-
-`Bayonnoma: 
-A.Soliq organining mansabdor shaxsi va tekshirilayotgan shaxs tomonidan imzolanadi`,
-
-`Soliq nazorati harakatlarini o’tkazish chog’ida:  
-A.Bayonnoma tuziladi.`,
-`Bayonnomaga:  
-A.Fotosuratlar, videoyozuvlar va harakatni amalga oshirish chog’ida bajarilgan boshqa materiallar ilova qilinadi.`,
-
-`Soliq auditi natijalariga ko’ra soliq organlarining ushbu tekshiruvni o’tkazgan vakolatli mansabdor shaxslari tomonidan:   
-A.Soliq auditi dalolatnomasi tuzilishi kerak`,
-
-`Soliq auditi dalolatnomasi shaklini va uni tuzishga doir talablarni:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi belgilaydi.`,
-
-`Soliq auditi dalolatnomasi pochta orqali buyurtma xat bilan yuborilgan taqdirda buyurtma xat yuborilgan sanadan boshlab hisoblaganda:   
-A.Beshinchi kun ushbu dalolatnoma topshirilgan sana deb hisoblanadi.`,
-
-`Shikoyat deb e’tirof etiladi:  
-A.Shaxsning soliq organiga uning kuchga kirgan va kuchga kirmagan, normativ xususiyatga ega bo’lmagan hujjatlari, uning mansabdor shaxslarining harakatlari (harakatsizligi) ustidan shikoyat qilingan murojaati`,
+const xalqaro_savollar = [`Iqtisodiy adabiyotlarda, eng umumiy shaklda, reja-lashtirish ...
+A.	istiqbolga yo’naltirilgan qarorlarni qabul qilish bo’yicha faoliyat deb talqin qilinadi;`,
 
-`Soliq organining sayyor soliq tekshiruvlari va soliq auditi natijalari bo’yicha qabul qilgan qarorlari ustidan sud tartibida shikoyat qilish:  
-A.Faqat yuqori turuvchi soliq organiga shikoyat qilinganidan keyingina mumkin bo’ladi.`,
+`“Rejalashtirish” tushunchasining ma’no-mazmunini yanada umumiyroq bo’lgan va xo’jalik yurituvchi sub’ektlar faoliyatini muvofiqlashtirishning ob’ektiv zarurligi va imkoniyatini anglatuvchi “rejalilik” orqali aniqlash mumkin. Haqiqatdan ham  rejalashtirish ...
+A.	amaliyotda rejalilikni amalga oshirishni, ya’ni balanslilik (muvozanat) va proportsionallilikka (mutanosiblikkerishish bo’yicha ongli faoliyatni bildiradi;`,
 
-`Yuqori turuvchi soliq organlarining normativ xususiyatga ega bo’lmagan, shikoyatlarni ko’rib chiqish yakunlari bo’yicha qabul qilingan hujjatlari ustidan:   
-A.Faqat sud tartibida shikoyat qilinishi mumkin.`,
+`Moliyaviy rejalashtirish deb nimaga aytiladi?
+A.	Moliyaviy resurslarning balansliligi (muvozanati)ni va prorportsionalliligi (mutanosibligi)ni ta’minlashga qaratilgan faoliyatga moliyaviy rejalashtirish deyiladi;`,
 
-`Tuman (shahar) davlat soliq inspekstiyalari, Qoraqalpog’iston Respublikasi, viloyatlar va Toshkent shahar davlat soliq boshqarmalarining normativ xususiyatga ega bo’lmagan, shikoyatlarni ko’rib chiqish yakunlari bo’yicha qabul qilingan hujjatlari ustidan:   
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasiga shikoyat qilinishi mumkin.
-B.Soliq to’lovchi`,
+`Moliyaviy rejalashtirishda balanslilik (muvozanat) ...
+A.	davlatning ixtiyorida bo’lgan moliyaviy resurslar va xo’jalik yurituvchi sub’ektlarning ixtiyorida (qo’lidqolgan daromadlar o’rtasidagi optimal nisbatni bildiradi;`,
 
+`Moliyaviy rejalashtirishda proportsionallik (muta-nosiblik) ...
+A.	korxonalar, xo’jalik tarmoqlari, mintaqalar va davlat sub’ektlari bo’yicha  daromadlarning soliq to’languncha va soliq to’langandan keyingi o’lcham (miqdor)lari o’rtasidagi oqilona nisbatdan iborat. Ana shu nisbatni ko’paytirish yoki kamaytirish orqali davlat ularning rivojlanishini rag’batlantirishi yoki cheklab qo’yishi mumkin;`,
 
-`O’zbekiston Respublikasi Davlat soliq qo’mitasining normativ xususiyatga ega bo’lmagan hujjatlari, ular mansabdor shaxslarining harakatlari (harakatsizligi) ustidan:   
-A.Sud tartibida shikoyat qilinadi.`,
+`Umumiy  va eng oddiy ko’rinishda, moliyaviy rejalash-tirish deyilganda ...	
+A.	moliyaviy rejalarni tuzish va amalga oshirish jarayoni nazarda tutiladi;`,
 
-`Shikoyat va unga ilova qilinadigan hujjatlar soliq organiga:   
-A.Yozma yoki elektron shaklda yuborilishi mumkin.`,
+`Moliyaviy rejani, xuddi uni ishlab chiqish, yaratish yoki tuzish jarayoni kabi ...
+A.	moliyaviy ko’rsatkichlarni ijodiy tahlil qilish, umumlash-tirish va o’zaro bog’lash tizimi sifatida qarash kerak;`,
 
-`Shikoyat:  
-A.Uni bergan shaxs yoki uning vakili tomonidan imzolanadi.`,
+`“Moliyaviy rejalashtirish” tushunchasi o’z ichiga nimalarni oladi?
+A.	barcha javoblar to’g’ri.`,
 
-`Shikoyatda:  
-A.Telefon raqamlari, elektron pochta manzillari va shikoyatni o’z vaqtida ko’rib chiqish uchun zarur bo’lgan boshqa ma’lumotlar ko’rsatilishi mumkin.`,
+`Moliyaviy rejalashtirishning asosiy vazifalari nimalar hisoblanadi?
+A.	barcha javoblar to’g’ri.`,
 
-`Shikoyatga:   
-A.Shikoyat berayotgan shaxsning dalillarini tasdiqlovchi hujjatlar ilova qilinishi mumkin.`,
+`Bozor munosabatlariga o’tilganiga qadar moliyaviy rejalashtirishning mazmuni korxonalarda sof operativ vazifalarni – ...
+A.	markazlashtirilgan iqtisodiyot amal qilganligi uchun etarli darajada formal bo’lgan korxonalarning besh yillik moliyaviy rejalaridagi ko’rsatkichlarni ishlab chiqish, istiqbolga mo’ljal-langan rejalarning loyihasini baholash, korxonaning yillik moliyaviy rejalarini tuzish kabilarni hal etishga qaratilgan edi; `,
 
-`Shikoyatni ko’rib chiqish davomida uni bergan shaxs o’z dalillarini tasdiqlovchi qo’shimcha hujjatlarni:   
-A.Shikoyat bo’yicha qaror qabul qilinguniga qadar taqdim etishga haqli.`,
 
-`Shikoyat bo’yicha qaror:   
-A.Soliq organi tomonidan shikoyat olingan sanadan e’tiboran o’n besh kun ichida qabul qilinadi.`,
+`Hozirgi sharoitdagi moliyaviy rejalashtirish ...
+A.	barcha zaruriy harakatlarni oldindan ko’zda tutish (ko’ra bilish)gina emas. Bu tegishli ishlarni amalga oshirish jarayonida yuzaga chiqishi mumkin bo’lgan har qanday kutilmagan holatlarni ko’ra olish qobiliyati hamdir. Albatta, xo’jalik yurituvchi sub’ekt o’z faoliyatidagi barcha risklarga barham beraolmaydi. Lekin u ana shu risklarni samarali oldindan ko’ra bilish yordamida boshqarish imkoniyatiga ega;`,
 
-`Soliqqa oid huquqbuzarlik deb e’tirof etiladi:  
-A.Soliq to’lovchining, soliq agentining yoki boshqa shaxsning javobgarlik belgilangan g’ayriqonuniy aybli qilmishi `,
 
-`Soliqqa oid huquqbuzarliklarni sodir etganlik uchun nazarda tutilgan hollarda javobgar:   
-A.Yuridik va jismoniy shaxslar `,
+`Moliyaviy rejalashtirish amaliyotida qanday aso-siy metodlardan foydalanish mumkin?
+A.	barcha javoblar to’g’ri.`,
 
+`Moliyaviy rejalashtirish jarayonining qanday asosiy bosqichlarini ajratib ko’rsatish mumkin?
+A.	barcha javoblar to’g’ri`,
 
-`Jismoniy shaxs soliqqa oid huquqbuzarliklar sodir etganlik uchun:   
-A.O’n olti yoshdan boshlab javobgarlikka tortilishi mumkin.`,
 
-`Shaxsning aybi qonunda belgilangan tartibda isbotlanmaguniga qadar u soliqqa oid huquqbuzarlikni sodir etishda:  
-A.Aybdor deb hisoblanmaydi`,
+`Moliyaviy rejalashtirishning qanday turlari bo’lishi mumkin?
+A.	strategik moliyaviy rejalashtirish; joriy moliyaviy reja-lashtirish;`,
 
-`Shaxs soliqqa oid huquqbuzarlikni sodir etganlik uchun quyidagi holatlardan hech bo’lmaganda bittasi mavjud bo’lgan taqdirda javobgarlikka tortilishi mumkin emas:
-A.Soliqqa oid huquqbuzarlik holatining mavjud emasligi;soliqqa oid huquqbuzarlikni sodir etishda shaxsning aybi mavjud emasligi;soliqqa oid huquqbuzarlikni sodir etganlik uchun javobgarlikka tortish muddatlari o’tib ketganligi.`,
 
-`G’ayrihuquqiy xatti-harakatni (harakat va harakatsizlik) qasddan yoki ehtiyotsizlik oqibatida sodir etgan shaxs soliqqa oid huquqbuzarlikni sodir etganlikda:  
-A.Aybdor deb e’tirof etiladi.`,
+`Strategik moliyaviy rejalashtirish o’z ifodasini ...
+A.	strategik moliyaviy rejalarda topadiki,  u tashqi va ichki muhitda o’zgarayotgan xo’jalik yuritish sub’ekti moliyaviy taraq-qiyotining ko’p variantli bashoratidan iboratdir;`,
 
 
-`Soliqqa oid huquqbuzarlik uchun javobgarlikni engillashtiruvchi holatlar deb quyidagilar e’tirof etiladi:
-A.Shaxsiy yoki oilaviy sharoitlar og’ir kechishi oqibatida soliqqa oid huquqbuzarlikni sodir etish;tahdid yoki majburlash ta’sirida yoxud moddiy, xizmat yoki boshqa jihatdan qaramlik sababli soliqqa oid huquqbuzarlikni sodir etish;sud yoki ishni ko’rayotgan soliq organi tomonidan javobgarlikni engillashtiruvchi deb topilishi mumkin bo’lgan boshqa holatlar.`,
+`Strategik moliyaviy reja, hech bo’lmaganda, qanday savollarga aniq javob bermog’i lozim
+A.	barcha javoblar to’g’ri.`,
 
-`Soliqqa oid huquqbuzarlikning ilgari xuddi shunday huquqbuzarlik uchun javobgarlikka tortilgan shaxs tomonidan sodir etilganligi:   
-A.Javobgarlikni og’irlashtiruvchi holat deb e’tirof etiladi`,
 
-`Soliqqa oid huquqbuzarlik uchun javobgarlikni engillashtiruvchi yoki og’irlashtiruvchi holatlar:   
-A.Sud yoki ishni ko’rayotgan soliq organi tomonidan belgilanadi`,
+`Moliyaviy rejalashtirish ...
+A.	mamlakat milliy xo’jaligini rejalashtirishning tarkibiy qismi bo’lib, sotsial-iqtisodiy rivojlanish rejasining ko’rsat-kichlariga tayanadi, moliya tizimi barcha organlarining faoliyat-larini muvofiqlashtirish (koordinatsiya qilish)ga yo’naltiriladi;`,
+`Moliya tizimi alohida bo’g’inlarining nisbiy mustaqilligi quyidagilarni o’zida aks ettiruvchi moliyaviy rejalarning ishlab chiqilishi zarurligini belgilab beradi:
+A.	pul fondlarini shakllantirish va ulardan foydalanish shakllari va metodlarining o’ziga xosligi; moliyaviy resurslarni tarmoqlar va hududlar bo’yicha qayta taqsimlash;`,
 
-`Shaxs soliqqa oid huquqbuzarlik sodir etganlik uchun javobgarlikka tortilishi mumkin emas:  
-A.Agar soliqqa oid huquqbuzarlik sodir etilgan kundan e’tiboran yoki mazkur huquqbuzarlik sodir etilgan soliq davri tugaganidan keyingi kundan e’tiboran va javobgarlikka tortish to’g’risidagi qaror chiqarilgan paytga qadar besh yil (o’tish muddati) o’tgan bo’lsa`,
+`Moliyaviy rejalashtirishning bosh ob’ekti ...
+A.	rejada o’zining miqdoriy ifodasini oladigan moliyaning bo’g’inlari (moliyaviy munosabatlar) hisoblanadi;`,
 
-`Moliyaviy sankstiyalar:   
-A.Soliqqa oid huquqbuzarlik sodir etganlik uchun javobgarlik chorasi`,
 
-`Soliq solish ob’ekti bo’yicha soliq organlarida hisobga qo’yish muddatlari buzilganda, agar hisobga qo’yishning belgilangan muddatidan o’tishi:
-A.O’ttiz kundan ko’p bo’lmaganda, bir million so’m miqdorida jarima solishga sabab bo’ladi;o’ttiz kundan ko’p bo’lganda, ikki million so’m miqdorida jarima solishga sabab bo’ladi.`,
+`Konkret pul fondlari mablag’larining harakati...
+A.	yagona tizimga birlashtirilgan tegishli moliyaviy rejalarda ifodalanadi va mustahkamlanadi;`,
 
-`Qo’shilgan qiymat solig’ining soliq to’lovchisi sifatida soliq organlarida hisobga qo’yishning belgilangan tartibi soliq to’lovchi tomonidan buzilganda:  
-A.Olgan daromadining besh foizi miqdorida, lekin besh million so’mdan kam bo’lmagan miqdorda jarima solishga sabab bo’ladi.`,
 
-`Jismoniy shaxs tomonidan tadbirkorlik faoliyatini yakka tartibdagi tadbirkor sifatida davlat ro’yxatidan o’tmasdan amalga oshirish:  
-A.Bunday faoliyatdan olingan daromadlarning o’n foizi miqdorida, lekin bir million so’mdan kam bo’lmagan miqdorda jarima solishga sabab bo’ladi.`,
 
 
-`Yakka tartibdagi tadbirkor tomonidan daromadlar va xarajatlarni hisobga olish (daromadlar va xarajatlar hisobini yuritish kitobi) qoidalarini buzish:   
-A.Besh yuz ming so’m miqdorida jarima solishga sabab bo’ladi.`,
+`Moliyaviy rejalar tizimining markazini ...
+A.	byudjet rejasi egallaydiki, unda byudjet fondining harakati, daromadlar va xarajatlarni shakllantirish va ulardan foydalanishning shakllari va metodlari, daromad va xarajat-larning tarkibiy tuzilishi va tuzilmasi o’zining miqdoriy ifoda-sini topadi.`,
 
 
-`Soliqni (yig’imni) noto’g’ri hisoblab chiqarish yoki boshqa g’ayriqonuniy harakatlar (harakatsizlik) natijasida soliq (yig’im) summasini to’lamaslik yoki to’liq to’lamaslik:  
-A.To’lanmagan soliq (yig’im) summasining yigirma foizi miqdorida jarima solishga sabab bo’ladi.`,
+`Nobyudjet fondlarning harakati, mos ravishda, ...
+A.	Pensiya fondi, Sotsial sug’urta fondi, Majburiy tibbiyot sug’urtasi fondi, Yo’l fondi, Aholi bandligi davlat fondi kabilarning moliyaviy reja (smeta)larida, ularning daromadlari va xarajatlarida aks ettiriladi;	`,
 
-`Hisob-kitob terminallari orqali to’lovlarni qabul qilishni rad etganlik:   
-A.Besh million so’m miqdorida jarima solishga sabab bo’ladi.`,
+`Sug’urta fondini shakllantirish va undan foydala-nishning rejasi ...
+A.	mablag’larning yanada samaraliroq foylanilishiga imkon beradi;`,
 
-`Soliq organlarida ro’yxatga olinmagan nazorat-kassa texnikasini qo’llagan yoki sotib oluvchiga kvitanstiyalar, talonlar, cheklar yoki ularga tenglashtirilgan hujjatlarni bergan holda savdoni amalga oshirganlik va xizmatlar ko’rsatganlik:  
-A.Etti million so’m miqdorida jarima solishga sabab bo’ladi.`,
+`Moliyaviy rejalashtirishning umumdavlat va hududiy darajalariga ...
+A.	istiqbol uchun mo’ljallangan moliyaviy  rejalar, moliyaviy balanslar va shuningdek, aholi daromadlari va xarajatlari harakatining balansini ishlab chiqish va amalga oshirishlar kiradi;`,
 
-`Boshqa shaxslar nomiga rasmiylashtirilgan hisob-kitob terminallaridan soliq to’lovchi tomonidan foydalanilishi:  
-A.Yigirma million so’m miqdorida jarima solishga sabab bo’ladi`,
 
+`Istiqbol uchun mo’ljallangan moliyaviy  rejalash-tirish ...
+A.	iqtisodiy va sotsial taraqqiyot hamda moliyaviy siyosatni muvofiqlashtirish (koordinatsiya qilish)ni ta’minlash, shuningdek ishlab chiqiladigan islohotlar, dasturlar va qonunlarning moliyaviy oqibatlarini kompleks tarzda bashoratlash, uzoq muddatli salbiy tendentsiyalarni kuzatish va ularga nisbatan tegishli choralarni o’z vaqtida qabul qilish  maqsadlarida amalga oshiriladi;`,
 
-`Texnik talablarga muvofiq bo’lmagan yoki xizmat ko’rsatish dasturi buzilgan nazorat-kassa texnikalaridan foydalanganlik:  
-A.Yigirma million so’m miqdorida jarima solishga sabab bo’ladi.`,
 
+`Odatda, istiqboldagi (istiqbol uchun mo’ljal-langan) moliyaviy  rejalar ...
+A.	navbatdagi uch yil uchun ishlab chiqilib, uning birinchi yili uchun byudjet tuziladi, navbatdagi ikki yil reja davri hisoblanib, ular davomida e’lon qilingan iqtisodiy siyosatning haqiqiy natijalari kuzatiladi;`,
 
-`Soliq bazasini yashirish (kamaytirib ko’rsatish):  
-A.Yashirilgan (kamaytirib ko’rsatilgan) soliq bazasi summasining yigirma foizi miqdorida jarima solishga sabab bo’ladi.`,
 
-`Bank tomonidan soliq (yig’im), bo’nak to’lovi, penya va jarima summasini o’tkazish to’g’risidagi soliq to’lovchining topshiriqnomasini, soliq organining inkasso topshiriqnomasini bajarmaslik (bajarilishini kechiktirish):   
-A.O’zbekiston Respublikasi Markaziy banki qayta moliyalashtirish stavkasining bir yuz ellikdan bir qismi miqdorida, lekin kechiktirilgan har bir kalendar kun uchun o’tkazilmagan summa bir foizining beshdan bir qismidan ko’p bo’lmagan miqdorda jarima solishga sabab bo’ladi.`,
+`Istiqboldagi (istiqbol uchun mo’ljallangan) moliyaviy  rejalar ...
+A.	mamlakat, uning ma’muriy-hududiy tuzilmalari sotsial-iqtisodiy rivojlanishi aniqlashtirilgan o’rta muddatli bashora-tining ko’rsatkichlarini hisobga olgan holda har yili o’zgartirilishi (korrektirovka qilinishi) mumkin. Reja davri esa, bunda yana bir yil oldinga suriladi;`,
 
+` Ijtimoiy takror ishlab chiqarishning proportsio-nalligi va balansliligini ta’minlashda, pul muomalasini tartibga solishda ...
+A.      davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) va har bir ma’muriy-hududiy tuzilmalarning daromadlar va xarajatlar balansi muhim o’rinni egallaydi;`,
 
-`Ma’lumotnomani (ko’chirmalarni) bank tomonidan soliq organiga taqdim etmaslik, shuningdek ma’lumotnomalarni (ko’chirmalarni) belgilangan muddatni buzgan holda yoki noto’g’ri ma’lumotlar bo’lgan ma’lumotnomalarni (ko’chirmalarni) taqdim etish:  
-A.Ikki million so’m miqdorida jarima solishga sabab bo’ladi.`,
+`Moliyaviy rejalashtirishning balans metodi ...
+A.	mamlakat, uning ma’muriy-hududiy tuzilmalari va mahalliy ma’muriyatlari masshtabida moliyaviy resurslar defitsitini aniqlashga, barcha xo’jalik yurituvchi sub’ektlar o’rtasida mablag’-larni samarali va asosli qayta taqsimlashga imkon beradi;`,
 
-`Soliqni to’lash muddatini o’zgartirish deb e’tirof etiladi:  
-A.Soliq to’lashning muddatini keyinroq muddatga ko’chirish`,
+`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
+A.	mavjud barcha moliyaviy rejalarni yagona tizimga birlash-tiradi;`,
 
-`Soliq to’lashni kechiktirish yoki bo’lib-bo’lib to’lash:  
-A.Bir yildan oshmagan muddatga beriladi.`,
 
-`Soliq to’lash muddatini o’zgartirish:  
-A.Mol-mulk garovi, kafillik yoki bank kafolati bilan ta’minlanishi mumkin`,
+`Davlat yig’ma moliyaviy balansi (moliyaviy resurs-lar balansi)ning ko’rsatkichlari ...
+A.	byudjet va kredit rejalarini, shuningdek boshqa moliyaviy rejalarni tuzishda asos sifatida qabul qilinadi;`,
 
-`Quyidagi organlar soliqlarni to’lash muddatlarini o’zgartirish to’g’risida qarorlar qabul qilish vakolatiga ega organlardir:
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi,O’zbekiston Respublikasi Vazirlar Mahkamasi, bojxona organlari`,
+`Aholi daromadlari va xarajatlari balansi ...
+A.	davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) bilan bevosita bog’langan. Unda naqd pulli va naqd pulsiz shakllardagi aholi pul resurslarining harakati o’z ifodasini topadi;`,
 
-`O’zbekiston Respublikasi Vazirlar Mahkamasi soliq to’lovchiga har qanday soliq bo’yicha kechiktirish yoki bo’lib-bo’lib to’lash imkoniyatini:  
-A.Uch yilgacha muddatga berishga haqli.`,
 
-`Soliqni to’lashni kechiktirish yoki bo’lib-bo’lib to’lash imkoniyatini berish to’g’risidagi qarorda quyidagilar ko’rsatilishi kerak:
-A.Qarz summasi;kechiktirish yoki bo’lib-bo’lib to’lash imkoniyati berilayotgan soliq;qarz summasini va hisoblangan foizlarni to’lash tartibi hamda muddatlari.`,
+`Moliyaviy reja hisoblangan aholi daromadlari va xarajatlari balansi ...
+A.	aholining daromadlari va xarajatlari o’rtasidagi propor-tsiyani aniqlaydi, mehnat haqi va pensiya ta’minotining o’sganligi, tovarlar taklifi hajmining oshganligini ifodalaydi; `,
 
-`Jismoniy shaxsning yaqin qarindoshlari:   
-A.Uning ota-onasi, tug’ishgan va o’gay aka-ukalari va opa-singillari, eri (xotini), farzandlari, shu jumladan farzandlikka olinganlar, bobolari, buvilari, nevaralari, shuningdek erining (xotinining) ota-onasi;`,
 
-`Ijara (lizing) to’lovi:   
-A.Ijaraga beruvchiga (lizing beruvchiga) tuzilgan ijara (lizing) shartnomasi asosida ijarachi (lizing oluvchi) tomonidan to’lanadigan summa`,
+`Aholi pul daromadlari va xarajatlari balansi ...
+A.	naqd pulli pul aylanmasi, chakana tovar aylanmasi,  soliq tushumlari, kredit resurslarini rejalashtirish uchun muhim rol o’ynaydi;`,
 
-`Ijaraga beruvchining (lizing beruvchining) foizdan olinadigan daromadi:   
-A.Moliyaviy ijara (lizing) ob’ektining ijara (lizing) to’lovi summasi va qiymati o’rtasidagi farq`,
 
-`Nazorat-kassa texnikasi:   
-A.Fiskal xotira bilan jihozlangan nazorat-kassa mashinalari, fiskal to’plagichlardagi fiskal ma’lumotlar yozib olinishi va saqlanishini ta’minlovchi, fiskal hujjatlarni shakllantiruvchi hamda ularning soliq organlariga fiskal ma’lumotlar operatori orqali topshirilishini, shuningdek fiskal hujjatlar nazorat-kassa texnikasini qo’llash to’g’risidagi qonunchilikda belgilangan talablarga muvofiq qog’ozda chop etilishini ta’minlovchi boshqa qurilmalar hamda dasturiy-texnik majmualar`,
+`Aholi pul daromadlari va xarajatlari balansi ...
+A.	Moliya vazirligi, Markaziy bank va moliya tizimining boshqa organlari ishtirokida Iqtisodiyot vazirligi tomonidan ishlab chiqiladi;`,
 
-`Ortiqcha to’langan soliq summasi (penya, jarima):   
-A.Soliqning (penyaning, jarimaning) to’langan summasi bilan haqiqatda to’lanishi lozim bo’lgan summasi o’rtasidagi ijobiy farq.`,
+`Ma’lum bir muddatni qamrab olishiga qarab, moliyaviy rejalar quyidagi guruhlarga bo’linishi mumkin:	
+A.	uzoq muddatli moliyaviy rejalar; qisqa muddatli moliyaviy rejalar;`,
 
-`Ortiqcha undirilgan soliq summasi:   
-A.Soliq organlarining g’ayriqonuniy hatti-harakatlari natijasida ortiqcha to’langan soliq summasi`,
+`Uzoq va qisqa muddatli moliyaviy rejalar ...
+A.	bir-birlaridan nafaqat o’zlarining qamrab olish gorizont-lari bo’yicha, balki rejalashtirish maqsadlariga ko’ra ham farq-lanadi;`,
 
 
-`Tan olingan soliq qarzi:   
-A.Soliq qarzini uzish to’g’risidagi talabnoma berilgan sanadan boshlab o’n kalendar kun ichida soliq to’lovchi tomonidan e’tiroz bildirilmagan qarz yoki sud qarori bilan tasdiqlangan qarz`,
+`Agar uzoq muddatli moliyaviy rejalar (rejalashti-rish)ning bosh maqsadi ...
+A.	moliyaviy barqarorlik nuqtai-nazaridan firma kengayi-shining yo’l qo’yilishi mumkin bo’lgan sur’atlarini aniqlash bo’lsa, qisqa muddatli moliyaviy rejalar (rejalashtirish)ning bosh maqsadi firmaning doimiy to’lovga qobilligini ta’minlashdan iboratdir;`,
 
-`Xatolik bilan to’langan soliq (penya, jarima) summasi:   
-A.Soliq (penya, jarima) summasini to’lagan shaxsni va (yoki) ushbu to’lovning maqsadini qat’iy aniqlash imkoniyatini bermaydigan to’lov chog’ida xatolikka yo’l qo’yilgan soliq (penya, jarima) summasi.`,
+`Alohida olingan xo’jalik yurituvchi sub’ektning moliyaviy rejasi ...
+A.	unga tegishli bo’lgan biznes-rejaning tarkibiy qismi hisoblanadi;`,
 
-`Umidsiz qarz:   
-A.Sud qarori bilan majburiyatning bekor qilinishi tufayli yoxud bankrotlik, tugatish, qarzdorning vafoti yoki da’vo muddati tugashi sababli to’lanishi mumkin bo’lmagan qarz`,
+`Alohida olingan xo’jalik yurituvchi sub’ektning moliyaviy rejasida ... 	
+A.	marketing, operativ faoliyat, mulkka egalik huquqi va korxona faoliyat ko’rsatishining boshqa yo’nalish (aspekt)lari qiymat ko’rsatkichlarida ifodalanadi;`,
 
-`Normativ-huquqiy hujjat yoki uning bir qismi, agar mazkur hujjatga nisbatan quyidagi shartlardan hech bo’lmaganda bittasi bajarilsa, soliq  Kodeksning qoidalariga muvofiq emas deb topiladi:
-A.Bunday hujjatlarni qabul qilish huquqiga ega bo’lmagan organ tomonidan qabul qilingan bo’lsa yoxud normativ-huquqiy hujjatlarni qabul qilishning belgilangan tartibi buzilgan holda qabul qilingan bo’lsa; soliq munosabatlari sub’ektlarining nazarda tutilgan huquqlarini bekor qilsa yoki cheklasa;`,
 
-`Soliq solish prinstiplari:  
-A.Soliq solish majburiylik, aniqlik va soliq organlarining soliq to’lovchilar bilan hamkorligi, adolatlilik, soliq tizimining yagonaligi, oshkoralik va soliq to’lovchining haqligi prezumpstiyasi prinstiplari`,
 
-`Majburiylik prinstipi:  
-A.Har bir shaxs Soliq Kodeksda belgilangan soliqlar va unda nazarda tutilgan yig’imlarni to’lashi shart.`,
+`Davlatning xarajatlari ...
+A.	insonlarga (shaxsiy daromadlar) va kapitalga  (joriy quyil-malar va investitsiyalar) xizmat qilishi mezoni bo’yicha  ham klassifikatsiya qilinishi mumkin. Bu narsa ijtimoiy mahsulotni ishlab chiqarish va uni  iste’mol qilishda ularning ulushlarini alohida hisobga olishga imkon beradi;`,
 
-`Soliq solishning aniqligi va soliq organlarining soliq to’lovchilar bilan hamkorligi prinstipi:   
-A.Soliq organlari soliq munosabatlari doirasida soliq to’lovchilar bilan soliq to’g’risidagi qonunchilikni to’g’ri bajarish maqsadida hamkorlik qilishi shart.`,
 
-`Adolatlilik prinstipi:   
-A.Soliqlar va yig’imlar kamsitish xususiyatiga ega bo’lishi hamda ijtimoiy, irqiy, milliy, diniy va boshqa shu kabi mezonlardan kelib chiqqan holda qo’llanilishi mumkin emas.`,
+`Sotsial subsidiya oluvchilar...
+A.	aholining moddiy ne’matlar iste’moli qismiga nisbatan to’lovga qobiliyatli talabning barqarorligini ta’minlaydi;`,
 
-`Soliq tizimining yagonaligi prinstipi:  
-A.Soliq tizimi O’zbekiston Respublikasining butun hududida yagonadir.`,
+`Transfert xarajatlar ...
+A.	jamiyat jami daromadi uning a’zolari o’rtasida taqsimla-nishini o’zgartiradi (korrektirovka qiladi);`,
 
-`Oshkoralik prinstipi:  
-A.Soliq to’g’risidagi qonunchilik hujjatlari rasman e’lon qilinishi shart.`,
 
-`Soliq to’lovchining haqligi prezumpstiyasi prinstipi:  
-A.Soliq to’g’risidagi qonunchilik hujjatlaridagi barcha bartaraf etib bo’lmaydigan qarama-qarshiliklar va noaniqliklar soliq to’lovchining foydasiga talqin etiladi.`,
+`Davlat xarajatlari jami talab shakllanishining ...
+A.	unumli yo’naltirilishida ijobiy tarkibiy qism (element) bo’lib hisoblanishi mumkin;`,
 
-`Soliq nazoratining shakllari bor?
-A.Soliq tekshiruvlari;soliq monitoringi `,
+`Davlat xarajatlari hajmining o’zgartirilishi (korrektirovka qilinishi) ...
+A.	investitsiyalar o’lchami, jami talab hajmi va taklifning tarkibiy tuzilmasiga bevosita o’z ta’sirini ko’rsatadi;`,
 
-`Soliq organlari soliq tekshiruvlarining quyidagi turlarini o’tkazadi: 
-A.Kameral soliq tekshiruvi;sayyor soliq tekshiruvi;soliq auditi.`,
+`Davlatning xarajatlari yana ...	
+A.	joriy (davlat iste’moli va transfertlar) va  kapital xarajatlarga (davlat investitsiyalari) bo’linadiki, bunday bo’linish takror ishlab chiqarish parametrlari dinamikasiga moliyaning ta’sirini baholashda juda muhimdir;`,
 
+`Sotsial subsidiya oluvchilar...
+A.	maorif, sog’liqni saqlash, madaniyat va sotsial ta’minot ob’ektlarining kengaytirilishi, uy-joy qurilishiga davlat dotatsiyalari bilan birgalikda, faqat qurilish materiallariga bo’lgan talabni oshirib qolmasdan, balki  qurilish industriyasi bilan bog’liq bo’lgan sanoatning boshqa alohida tarmoqlari uchun ham chuqur bozorni yaratadi, uzoq muddatli foydalanish xos bo’lgan predmetlar uchun taklifni oshiradi;`,
 
-`Kameral soliq tekshiruvi kim tomondan o’tkaziladi?
-A.Soliq to’lovchi (soliq agenti) tomonidan taqdim etilgan soliq hisobotini, moliyaviy hisobotni, shuningdek soliq to’lovchining faoliyati to’g’risida soliq organida mavjud bo’lgan boshqa hujjatlar hamda ma’lumotlarni tahlil qilish asosida soliq organi tomonidan o’tkaziladi.`,
+`Davlat xarajatlarini guruhlarga ajratishda funktsional printsipdan foydalanish ...
+A.	mamlakat taraqqiyotining ichki muammolarini hal qilish va dunyo hamjamiyati bilan o’zaro munosabatlar orqali ifodalanadigan davlatning barcha funktsiyalarini namoyish qilishi mumkin;`,
 
-`Kameral soliq tekshiruvi qanday xujjat asosida o’tkaziladi? 
-A.Soliq organi rahbarining (rahbari o’rinbosarining) buyrug’i asosida o’tkaziladi. `,
 
-`Sayyor soliq tekshiruvi qanday tekshiruv?
-A.Soliq to’lovchilarning soliqlar va yig’imlarni hisoblab chiqarish hamda to’lash sohasidagi ayrim majburiyatlarini, shuningdek soliq to’g’risidagi qonun hujjatlarida belgilangan boshqa majburiyatlarini bajarilishini tekshirish `,
+`Iqtisodiyot resurslarining cheklanganligi sharo-itida transformatsion xarajatlar ...
+A.	nodavlat sektorida tovarlar va xizmatlarni ishlab chiqarishning hajmini bevosita o’zgartiradiki, bulardan boshqa bir vaziyatlarda jamiyat foydalanadi va bir vaqtning o’zida ular jami taklifning tarkibiy tuzilmasiga o’z ta’sirini ko’rsatadi;`,
 
-`Sayyor soliq tekshiruvini tushuntiring? 
-A.Hisobga olish hujjatlarining, tovar-moddiy qimmatliklar va pul mablag’lari harakatining, shuningdek soliq to’lovchining faoliyati bilan bog’liq bo’lgan boshqa axborotning tahlili o’tkaziladi`,
+`Jismoniy va yuridik shaxslar ega bo’lgan hamda o’zlarining joriy xarajatlari va investitsiyalarini moliya-lashtirish uchun foydalaniladigan resurslar bir qismining davlatlashtirilishi (davlat ixtiyoriga o’tkazilishi) ...
+A.	ijtimoiy tizim  sub’ektlarining daromadlilik darajasini kamaytiradi (pasaytiradi) va jami iste’molning tarkibiy tuzilmasini o’zgartiradi;`,
 
-`Sayyor soliq tekshiruvini ko’rsating?
-A.Soliq organi rahbarining (rahbari o’rinbosarining) buyrug’i asosida o’tkaziladi,buyruqda soliq to’lovchining nomi, tekshiruvchi shaxslarning familiyasi, ismi, otasining ismi hamda lavozimi, tekshiruvlarni o’tkazish muddatlari va maqsadi ko’rsatiladi`,
+`Qo’shilgan qiymatni moliyaviy qayta taqsimlash-ning dastlabki bosqichida ...
+A.	davlat daromadlari – YaIM va MDning bir qismini qaytarilmaslik sharti bilan davlatning ixtiyoriga olish bo’yicha iqtisodiy munosabatlar -  xizmat qiladi;`,
 
-`Sayyor soliq tekshiruvi necha kundan ko’p bo’lmagan muddatda o’tkaziladi?
-A.O’n kundan ko’p bo’lmagan muddatda o’tkaziladi.`,
+`Transformatsion xarajatlarning tarkibiga kiruv-chi davlat investitsiyalari ...
+A.	davlat korxonalari va tashkilotlarining asosiy kapitali va aylanma fondlarining o’sgan qismiga quyilmalar, davlat zaxiralari va rezerlarini yaratish, uzoq muddatli byudjet kreditlaridan iborat.`,
 
-`Sayyor soliq tekshiruvi o’tkazish to’g’risidagi nizomni kim tasdiqlaydi?
-A.O’zbekiston Respublikasi Davlat soliq qo’mitasi tasdiqlaydi.`,
 
+`Turli sotsial-iqtisodiy jarayonlarda moliyaning rolini (moliyaviy tartibga solishning rolini) to’liq idrok etish uchun ...
+A.	tizimning shakllantiruvchi asoslarini – davlat xarajatlari va davlat daromadlarini - hamda ular har birining rolini   atroflicha tahlil qilib chiqmoq lozim.`,
 
-`Soliq auditi qanday tekshiruv?
-A.Muayyan davr uchun soliqlar va yig’imlarni hisoblab chiqarish hamda to’lashning to’g’riligini tekshirish`,
+`Turli-tuman pul oqimlarining harakati va ular-ning bir-birlari bilan qo’shilib ketishi, o’z o’lchami bo’yicha turlicha bo’lgan pul fondlarini shakllantirish  va ulardan foydalanishning barchasi yagona real manba - ...
+A.	mamlakat ichida va xorijda  shu yilning o’zida yaratilgan qo’shilgan qiymat – hisobidan “oziqlanadi”.	`,
 
-`Soliq to’lovchiga soliq auditi o’tkazilishi to’g’risida xabarnoma kamida necha kalendar kun oldin yuboradi?
-A.Soliq organlari soliq auditi o’tkazilishi boshlanishidan kamida o’ttiz kalendar kun oldin yuboradi.`,
 
+`Hozirgi paytda dunyoning sanoati taraqqiy etgan mamlakatlarida davlatning tartibga solish roli ...
+A.	uzluksiz yuqoriga o’sib boruvchi to’g’ri chiziq sifatida qaralmaydi. Chunki ularda xususiy sub’ektlar daromadlarini davlat daromadlariga “oqib o’tishi”ning o’ziga xos bo’lgan iqtisodiy chegara (kritik nuqta)siga erishilgan;`,
 
-`Soliq auditini o’tkazish muddati necha kundan ortiq davom etishi mumkin emas?
-A.Soliq auditi o’ttiz kundan ortiq davom etishi mumkin emas.`,
+`Mamlakat pul fondlarini qayta taqsimlashning tarkibi va struktura (tarkibiy tuzilma)sini ...
+A.	milliy xo’jalik takror ishlab chiqarishining proportsiyalari, sotsial sohani ta’minlash, zaruriy rezervlarni yaratish, milliy xavfsizlikni ta’minlash imkoniyatlari va h.k.lar belgilab beradi;`,
 
+`Takror ishlab chiqarish jarayonida davlat moliya-sining rolini aniqlab olish uchun ...
+A.	ularni bir necha belgilar bo’yicha klassifikatsiya qilish kerak;`,
 
-`Quyidagilar soliq monitoringining predmeti hisoblanadi? 
-A.Soliq to’g’risidagi qonunchilikka rioya etish, o’ziga nisbatan soliq monitoringi o’tkazilayotgan yuridik shaxs tomonidan soliqlar va yig’imlarni hisoblashning to’g’riligi, to’liq va o’z vaqtida to’langanligi (o’tkazib berilganligi).`,
 
-`Soliq to’lovchilar uchun soliq monitoringi majburiymi? 
-A.Ixtiyoriydir`,
+`Barcha zamonaviy iqtisodiy makon  uchun ...
+A.	turli-tuman pul oqimlarining harakati va ularning bir-birlari bilan qo’shilib ketishi, o’z o’lchami bo’yicha turlicha bo’lgan pul fondlarini (shaxsiy, jamoa, kredit, rezerv, valyuta, sug’urta, byudjet, markaziy, mintaqaviy, homiylik va boshqalar) shakllantirish  va ulardan foydalanish xosdir;`,
 
 
-`Soliq monitoringi qanday  soliq xujjat asosida soliq organi tomonidan amalga oshirilishi belgilangan?
-A.Soliq monitoringini o’tkazish to’g’risidagi qaror asosida`,
+`Ish hаqi nimа?
+A.	ishchi vа xizmаtchilаr mеhnаtining miqdоri, sifаti vа unumdоrligigа qаrаb, milliy mаhsulоtdаn оlаdigаn ulushining puldаgi ifоdаsi`,
 
-`Soliq monitoringi soliq monitoringini o’tkazish  kim tomonidan amalga oshiriladi.
-A.To’g’risidagi qaror asosida soliq organi tomonidan`,
 
-`Yuridik shaxs,  soliq monitoringini o’tkazish to’g’risidagi ariza bilan qachon soliq organiga murojaat qilishi mumkin?
-A.Agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’mni tashkil etgan bo’lsa`,
+`Fоydа nоrmаsi nimа?
+A.	fоydа mаssаsining ishlаb chiqаrish xаrаjаtlаrigа nisbаtining fоizdа ifоdаlаnishi`,
 
-`Yuridik shaxs, agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’m bo’lganda:
-A.Soliq monitoringini o’tkazish to’g’risidagi ariza bilan soliq organiga murojaat qilishga haqli.`,
 
-`Kimlar  agar uning oldingi yil uchun daromadlari yillik moliyaviy hisobot ma’lumotlariga ko’ra kamida besh milliard so’mni tashkil etgan bo’lsa, soliq monitoringini o’tkazish to’g’risidagi ariza bilan soliq organiga murojaat qilishi mumkin?
-A.Yuridik shaxslar`,
 
-`Soliq monitoringi o’tkaziladigan davri qaysi muddatlarda belgilangan?
-A.Yuridik shaxs soliq organiga soliq monitoringini o’tkazish to’g’risida ariza taqdim etgan yildan keyingi kalendar yil`,
 
-`Soliq monitoringini o’tkazish muddatini ko’rsating?
-A.Soliq monitoringi o’tkaziladigan yilning 1 yanvaridan boshlanadi va soliq monitoringi o’tkazilgan davrdan keyingi yilning 1 iyulida tugallanadi.`,
 
-`Soliq monitoringini o’tkazish to’g’risidagi ariza kim tomondan taqdim etiladi? 
-A.Soliq monitoringi o’tkaziladigan davrdan oldingi yilning 1 iyulidan kechiktirmay hisobga olish joyidagi soliq organiga yuridik shaxs tomonidan taqdim etiladi.`,
+`Fоydа nimа?
+A.	yalpi dаrоmаddan yalpi xаrаjаtlаrning ayirmasi (farqi)`,
 
-`Soliq solish prinstiplari
-A.7-modda.`,
+`Quyidаgilаrdаn qаysi biri kоrxоnа uchun tаshqi xаrаjаtlаr hisоblаnаdi?
+A.	ishchi kuchini yollаsh xаrаjаtlаri, rеntа, fоiz to‘lоvlаri `,
 
+`Quyidаgilаrdаn qаysi biri kоrxоnа uchun ichki xаrаjаt hisоblаnаdi?
+A.	kоrxоnаdagi binо vа inshооtlаr аmоrtizаtsiyasi`,
 
-`Soliqlar va yig’imlar
-A.16-modda.`,
+`O‘rtаchа xаrаjаtlаr nimа?
+A.	bir birlik mаhsulоtni ishlаb chiqаrish xаrаjаtlаri`,
 
-`Soliqlarning va yig’imlarning turlari
-A.17-modda.`,
+`Davlatning (agar, albatta, davlat hududlar, aholi, an’analar va h.k.lar kompleksi sifatida emas, balki boshqaruv organi sifatida qaralsreal (haqiqiy) boyligi ...
+A.	uning markazlashtirilgan pul fondidan, ya’ni davlat moliya-sining moddiy asosidan iborat;`,
 
-`Soliq to’lovchilarning huquqlari
-A.21-modda.`,
 
-`Soliq agentlari
-A.23-modda.`,
+`Hozirgi paytda dunyoning o’tish iqtisodiyotiga ega bo’lgan mamlakatlarida markazlashtirilgan pul fondlarining jami hajmi ...
+A.	YaIMga nisbatan 11-17% atrofida tebranadi va aynan shu raqamlarning o’zi davlat tomonidan bu jarayonga aralashuvning etarli darajada faol emasligidan dalolat beradi;`,
 
-`Soliq to’lovchining vakillari
-A.24-modda.`,
+`Dunyoning rivojlanayotgan mamlakatlari va bozor iqtisodiyotiga o’tayotgan mamlakatlar uchun kelajak boshqa-charoqdir. Bu mamlakatlarda ...
+A.	bozor  tuzilmalari va institutlarining rivojlanishi va mustahkamlanishi bilan  parallel ravishda davlatning moliyaviy tartibga solishi ham ortib (kuchayiborishi kerak va ularda  tegishli iqtisodiy “chegara” (kritik nuqta)ga etgunga qadar hali ancha bor;`,
 
-`Soliq organlarining huquqlari
-A.26-modda.`,
+`Agar firma butun bozorga bitta tovarni taklif etsa, unda bu :
+A.	diffеrеntsiallanmagan markеting`,
 
-`Soliq organlarining majburiyatlari
-A.27-modda.`,
-`Soliq nazorati to’g’risidagi umumiy qoidalar
-A.135-modda.`,
 
-`Soliq nazoratining shakllari
-A.136-modda.`,
+`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi)da ...
+A.	byudjet fondi, nobyudjet fondlar, sug’urta fondi, kredit fondi, korxona va tashkilotlarning pul fondlari va nihoyat, fuqarolarning pul mablag’lari tarkibida rejalashtirilayotgan resurslarning shakllanishi va ulardan foydalanish aks ettiriladi;`,
 
-`Soliq tekshiruvlarining turlari 
-A.137-modda.`,
+`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
+A.	Moliya vazirligi va moliya tizimining boshqa bo’linmalari faol ishtirokida Iqtisodiyot vazirligi tomonidan ishlab chiqiladi;`,
 
-`Kameral soliq tekshiruvi
-A.138-modda.`,
+`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
+A.	o’tgan yilgi davlatning  hisobot yig’ma moliyaviy balansi (hisobot moliyaviy resurslar balansi) asosida va mamlakat sotsial-iqtisodiy taraqqiyotining bashorat ko’rsatkichlariga muvofiq ravishda tuziladi hamda ular byudjet loyihalarini  ishlab chiqishda asos bo’lib xizmat qiladi.`,
 
-`Sayyor soliq tekshiruvi
-A.139-modda.`,
+`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
+A.	mamlakat, uning sub’ektlari, mahalliy-hududiy tuzilmalari va ma’lum hududda faoliyat ko’rsatayotgan barcha xo’jalik yurituvchi sub’ektlarning barcha daromadlari va xarajatlarining jamidan iboratdir.`,
 
-`Soliq auditi
-A.140-modda.`,
+`Davlat xarajatlarining tarkibi, tarkibiy tuzil-masi va hajmi ...
+A.	moliya tizimi faoliyatining natijalarini o’zida aks ettiradi va  bu tizim  ijtimoiy takror ishlab chiqarish jarayonida o’zining funktsiyalarini bajarayaptimi yoki yo’qmi, degan savolning javobini oldinroq aniqlashga imkon beradi;`,
 
-`Soliq auditini o’tkazish muddati
-A.141-modda.`,
 
-`Soliq monitoringi to’g’risidagi umumiy qoidalar
-A.169-modda.`,
+`Transformatsion xarajatlarning tarkibiga kiruv-chi davlat iste’moli o’z ichiga ...
+A.	davlat sektori ishchilarining ish haqi, joriy ehtiyojlarni qoplash uchun davlat tomonidan sotib olingan tovarlar uchun to’lovlar, ishlab chiqarishni dotatsiyalashtirish; davlat qarziga xizmat ko’rsatish, byudjetlararo subsidiyalar va shu erda ko’rsatilgan maqsadlar uchun foydalaniladigan ssudalarni qamrab oladi;`,
 
-`Soliqqa oid huquqbuzarlik tushunchasi
-A.210-modda.`,
+`Aylanma kapital – ...
+A.	bir dоiraviy aylanish davоmida to‘liq istе’mоl qilinadi, o‘zining qiymatini ishlab chiqarish natijalariga to‘liq o‘tkazadi va ashyoviy-buyum shaklini ham yo‘qоtadi`,
 
-`Soliqqa oid huquqbuzarlik sodir etilganda ayb shakllari 
-A.214-modda.`,
+`Asоsiy kapital – ...
+A.	tоvar va хizmatlarni ayirbоshlash jarayonida bir nеchta dоiraviy aylanishlar davоmida qatnashadi, o‘zining nafliligini tayyorlanayotgan mahsulоtga (хizmatga) bo‘lib-bo‘lib, asta-sеkinlik bilan o‘tkazib bоradi va bir nеcha yillik хizmat muddati davоmida ashyoviy-buyum shaklini o‘zgartirmaydi`,
 
-`Moliyaviy sankstiyalar
-A.218-modda.`,
 
-`Soliq organida hisobga qo’yish tartibini buzish
-A.219-modda.`,
+`Kооpеrativ tadbirkоrlik – ...
+A.	jamоa mulkiga asоslanib, kооpеrasiya a’zоlarining uning faоliyatida o‘z mеhnati bilan ishtirоk  etishini taqоzо  etuvchi jamоa tadbirkоrligining alоhida shakli`,
 
-`Soliq hisobotini taqdim etish tartibini buzish
-A.220-modda.`,
-`Nazorat-kassa texnikasini va hisob-kitob terminallarini qo’llash tartibini buzish 
-A.221-modda.`,
+`Davlat kоrхоnalarini quyidagi guruhlarga bo‘lish mumkin:
+A.	byudjеt kоrхоnalari davlat ishlab chiqarish kоrхоnalari aralash kоmpaniyalar`,
 
-`Shikoyat berish huquqi
-A.230-modda.`,
 
+`Aralash kоmpaniyalar – ...
+A.	davlat va хususiy оmоnatchilarning aksiyalarini birlashtirish asоsida tashkil  etilgan aksiyadоrlik jamiyatlari va majburiyatlari chеklangan shirkatlar shaklidagi kоrхоnalar`,
 
-`Shikoyat berish tartibi
-A.231-modda.`,
+`Aksiyalarning nazоrat pakеti – ...
+A.	aksiyadоrlik jamiyati faоliyati ustidan nazоrat o‘rnatishni ta’minlash imkоnini bеruvchi aksiyalar sоni`,
 
 
-`Soliq siri
-A.29-modda.`,
+`Aksiyadоrlik jamiyati – ...	
+A.	kapitali qimmatli qоg‘оz shaklida rasmiylashtirilgan turli оmоnatchilarning pul mablag‘laridan tarkib tоpuvchi kоrхоna`,
 
-`Soliq solish maqsadlarida hisobga olish va hisob hujjatlari
-A.76-modda.`,
+`Transformatsion xarajatlarning tarkibiga nima-lar kiradi?	
+A.	davlat iste’moli; davlat investitsiyalari;`,
 
-`Soliq hisobotini tuzish
-A.81-modda.`,
 
-`Soliq hisobotini taqdim etish tartibi
-A.82-modda.`,
+`Agar davlat xarajatlariga tovarlar yoki mehnatda ifodalangan xizmatlar qarama-qarshi turadigan bo’lsa, u holda ...
+A.	davlat pul mablag’lari oqimlarining boshqa ne’matlarga o’ziga xos tarzda transformatsiyalashuvi sodir bo’ladi va shu munosabat bilan bunday xarajatlarni transformatsion xarajat-larga kiritish mumkin;`,
 
+`Davlat xarajatlari ...
+A.	davlat moliyasining ijtimoiy mo’ljallanganligi nimadan iborat ekanligini aniq ko’rsatadi;`,
 
-`Soliq hisobotini saqlash muddati
-A.84-modda.`,
+`Hozirda budjetdan tashqari Pensiya jamg’armasi faoliyati qaysi organ huzurida tashkil etilgan?	 
+A.	Moliya Vazirligi`,
 
-`Soliq majburiyati
-A.85-modda.`,
 
-`Soliqlar va yig’imlarni to’lash
-A.89-modda.`,
+`Hozirgi va kelajak avlod uchun milliy boylik, odatda, ...
+A.	“eyilmaydi” va aksincha,  u ko’paytiriladi;`,
 
-`Soliq qarzining undirilishini umidsiz deb e’tirof etish
-A 96-modda.`,
+`Hozirgi paytda dunyoning sanoati taraqqiy etgan mamlakatlarida markazlashtirilgan pul fondlarining jami hajmi ...
+A.	YaIMning o’rtacha  30% dan 50% gachasini tashkil etadi;`,
 
+`Firma bir nеcha bozorga bir nеcha tovarlarni taklif qilsa, bunday bozor turi qanday nomlanadi?
+A.	kontsеtrlangan`,
 
-`Ortiqcha to’langan soliqni hisobga olish yoki qaytarish tartibi 
-A.104-modda.`,
+`Firma diffеrеntsiallanmagan markеtingdan bozorni sеgmеntlashga quyidagi yondoshuvni ishlatadi?
+A.	butun bozor – bitta sеgmеnt`,
 
-`Penya
-A.110-modda.`,
+`Raqobatli ustunlik tushunchasi dеganda quyidagilar tushuniladi?
+A.	raqobatchiga nisbatan ustunlikni ta’minlaydigan ko’rsatkich`,
 
-`Banklardagi hisobvaraqlar bo’yicha operastiyalarni to’xtatib turish
-A.111-modda.`,
+`Biznеs rеjani tuzishda raxbarning rolini to’g’ri ko’rsating.
+A.	Korxona raxbari shaxsiy ishtiroki shart, ishchi guruxga raxbarlik qilish mumkin;`,
 
-`Soliq qarzini uzish to’g’risidagi talabnoma
-A.116-modda.`,
+`Kompaniya va uning faoliyat yo’nalishlari bo’yicha umumiy stratеgiya ishlab chiqiladi?
+A.	korporativ stratеgiya`,
 
 
-`Soliq qarzini uzish to’g’risidagi talabnomani yuborish tartibi va muddatlari
-A.117-modda.`,
+`Davlat tomonidan yuqori va quyi chеgaralari bеlgilanib, shu doirada o‘zgarishi mumkin bo‘lgan narх nima dеb ataladi?	
+A.	chеgaralangan narх`,
 
+`Bozorda o‘z mavqеini mustahkamlash va raqiblarini bozordan siqib chiqarish uchun firmalar tomonidan foydalaniladigan maхsus narх nima dеb ataladi?	
+A.	dеmping (tahharxdan ham past) narх`,
 
-`Soliq qarzini uzish to’g’risidagi talabnomani bajarish 
-A.119-modda.`,
+`Dаvlаt budjеti mаblаg‘lаri hisоbidаn mаxsus аrzоnlаshtirilgаn nаrxlаr qаndаy nоm bilаn аtаlаdi?
+A.	dоtаtsiyalаngаn nаrx`,
 
+`Biznes-rejaning tarkibida moliyaviy reja qanday yo’nalishlar bo’yicha ishlab chiqiladi?	
+A.	barcha javoblar to’g’ri`,
 
-`Soliq to’lovchining identifikastiya raqami
-A.127-modda.`,
+`Amaliy xarakter kasb etuvchi moliyaviy nazoratning printsiplarini aniqlang	
+A.	natijalilik`,
 
-`Soliq to’lovchi to’g’risidagi hisob ma’lumotlari
-A.132-modda.`,
+`Biznеs rеjani kim tuzadi?
+A.	Korxona raxbari, mеnеjеrlar, tadbirkorlar va maslaxatchi (kansaltin  mutaxassislar`,
 
-`O’zbekiston Respublikasining soliq solishga oid xalqaro shartnomalarining qo’llanilishi 
-A.6-modda.`,
 
-`Maxsus soliq rejimlari
-A.18-modda.`,
+`Biznеs rеjaning titul va kirish kismida kuyidagilar aks ettirilmaydi:
+A.	korxonaning tashkil etilish muddati`,
 
-`Soliqlarning elementlari
-A.69-modda.`,
+`Sеgmеntlarni baholash mеzoni nima uchun zarur?
+A.	hamma javob to’g’ri`,
 
-`Soliqlar va yig’imlarni hisoblab chiqarish va to’lash tartibi 
-A.74-modda.`,
+`Biznеs rеja tuzishga kuyiladigan talablar:
+A.	Kiska va lunda bulishi kеrak, mantikan kuchli asoslangan, to’g’ri va ishonchli bulishi lozim.`,
 
-`Soliq auditi natijalarini rasmiylashtirish
-A.156-modda.`,
+`Biznеs rеja bu shunday xujjatki, unda…ta'rifni to’g’ridavom ettiring.	
+A.	Korxonaning  ishini kanday boshlashi uz aksini topadi, qanday ishlab chiqarish ni samarali yurgazish uz aksini topadi, riskni qanday kamaytirish uz aksini topadi;`,
 
-`Soliq tekshiruvini o’tkazishda hujjatlarni talab qilib olish 
-A.146-modda.`,
 
-`Soliq auditini o’tkazish muddatini uzaytirish 
-A.142-modda.`,
+`SWOT – tahlilning asosiy vazifalariga nimalar taalluqli emas?
+A.	markеting mеnеjеrlari motivatsiyasi`,
 
-`Ekspertiza
-A.150-modda.`]
+`Mamlakat iqtisodiyotidagi soliq yuki qanday aniqlanadi?	
+A.	Moliya yilidagi mamlakat YaIM miqdorini soliqlar miqdoriga nisbati orqali`,
+
+`Rеal bozor sig’imi dеganda nimani tushunasiz?	
+A.	maqsadli bozorda aniq narx bo’yicha ma’lum bir vaqt mobaynidagi tovar sotish hajmi`,
+
+
+`Korxonaning “bozor salohiyati” dеganda nima tushuniladi?	
+A.	rеal va imkoniy xaridorlar yig’indisi`,
+
+`Biznеsda qaror — nima?	
+A.	Iqtisodiy, ijtimoiy, ijtimoiy-ruxni, dеmografik va boshka omillar boglikligi;`,
+
+`Banklar biznеs rеja bilan tanishayotganda nimalarga e'tiborga bеrishlari kеrak?
+A.	Moliya okimiga, Invеstitsiyalar samaradorligiga`,
+
+`Korporativ maqsadga yo’nalganlikning 3 asosiy tarkibiy qismi nimalardan iborat?
+A.	siyosatni yaratish «vositasi», kompaniya biznеsning qaysi soxasida ishlayotganligini tushunish, firmaning biznеsini aniqlash`,
+
+`Korporativ madaniyatni tashkil etishning asosiy omillari nimalarda?
+A.	muntazam narxlarni pasaytirishga intilishda`,
+
+`Moliyaviy bashoratlash ...	 
+A.	moliyaviy rejalarni tuzish bosqichidan oldin sodir bo’ladi	`,
+
+`Korporativ maqsad bu-  ........
+A.	tashkilot  o’z aktsionеrlarining bеlgilangan vaqtda aniq natijaga erishish majburiyatidir`,
+
+
+`Korporativ ma’daniyat asosi nimada?
+A.	kompaniya raqobatchilik pozitsiyasida`,
+
+`Bozorni sеgmеntlash dеmografik omillari guruhiga qaysi ko’rsatkich mos kеlmaydi?	
+A.	istе’molchining psixologik turi`,
+
+`Biznеs rеjada kеltiriladigan moliyaviy koeffitsiеnt - bu
+A.	bir buxgaltеrlik kursatkichining ikkinchisiga nisbati.`,
+
+`Kompaniyaning yaxshi ximoyalanishi mumkinligini namoyish etish uchun kuchsiz kompaniyalarga qattiq zarbalar bеrish bu:
+A.	kompaniyaning bozor mavqеini ximoya qilishning ikkinchi usuli`,
+
+`Kompaniyani maqsadi nima?
+A.	boshqarish apparatini bеlgilangan vaqtda bеlgilangan natijalarga erishish majburiyati`,
+
+
+`Kompaniyani divеrsifikatsiyalovchi aloxida biznеs turi stratеgiyasi qaysi pog’onada yaratiladi?`,
+
+`Kompaniyalar avvalambor nimalarga ega bo’lishi lozim?
+A.	stratеgik maqsadlarga`,
+
+`Kompaniya uzoq muddatli maqsadlarga erishish uchun o’z xarakatlarini, intilishini ma'lum soxaga yo’naltirsa:	
+A.	kompaniya o’zining uzoq muddatli niyatini namoyish etgan bo’ladi`,
+
+
+`Kompaniya stratеgiyasini ifodalashda ta'sir ko’rsatadigan tashqi guruxlar kimlardan tashkil topadi?
+A.	istе'molchi еtkazib bеruvchi, xukumat, kasaba uyushmalari, raqobatchilar, jamiya`,
+
+`Kompaniya stratеgiyasini ifodalashda ta'sir ko’rsatadigan ichki guruxlar kimlardan tashkil topadi?
+A.	yollanma ishchilar menejerlar`,
+
+
+`Kompaniya stratеgiyasi qanday tashkiliy darajada qayta ishlanadi?
+A.	Ijtimoiy psixologik, opеrativ`,
+
+`Kompaniya stratеgiyasi muvaffaqiyat kеltiradi qachonki;
+A.	mеnеjеrlar, dirеktorlar kеngashi, xukumat,  raqobatbardoshlikni ta'minlasam,  kompaniya mavqеiga mos kеlsa`,
+
+
+`Qimmatli qog’ozlar bo’yicha komissiya ...	
+A.	fond bozori ishtirokchilarining faoliyatini nazorat qilib, byudjet fondiga tushuvchi tushumlarning ortishiga o’z ta’sirini ko’rsatadi	`,
+
+
+`Kompaniya raqobatga bardosh bеra olmasligini oldindan ko’ra bilsa yoki muxit noqulay tomonga o’zgarayotganini sеzsa, u o’z mablag’larini:
+A.	turdosh va noturdosh biznеslarga invеstitsiya qilishi mumkin;`,
+
+
+`Kompaniya avvalambor, qanaqa maqsadlarni aniqlashi lozim?
+A.	moliyaviy va stratеgik maqsadlarni`,
+
+`Moliyaviy tartibga solishni amalga oshirish uchun tashkiliy imkoniyatlarni kimlar ta’minlaydi?	
+A.	moliyaviy qonunchilik va hokimiyatning vakolatli organlari;`,
+
+`Davlat mulki, asosan, moddiy-buyumlashgan shaklda (tabiiy boyliklar, binolar, inshootlar, ishlab chiqarish va xizmat ko’rsatish korxonalari, muzeylar, qo’riqxonalar, davolash manbalari, kutubxonalar, oltin zahiralari va h.k.) mavjud bo’lib, o’zining mo’ljallanganligiga ko’ra ular ...
+A.	davlat boshqaruvi va iqtisodiy tartibga solishda davlatning ishtirokiga oid joriy ehtiyojlarni “to’lash”ga ishlatilmasligi kerak;`,
+
+
+`Bоzоr infrаtuzilmаsi - bu:
+A.	аyirbоshlаsh munоsаbаtlаrigа xizmаt qiluvchi muаssаsаviy tuzilmа`,
+
+`Qimmatli qog‘ozlar oldi-sotdisi bo‘yicha rasmiy jihatdan tashkil etilgan va muntazam amal qiluvchi  bozor shakli birjaning qanday turiga kiradi?
+A.	fond birjasi	`,
+
+`Milliy valyutalar kurslari bo‘yicha ularning erkin oldi-sotdisi amalga oshiriladigan birja – bu:
+A.	valyuta birjasi`,
+
+
+`Moliyaviy tartibga solishning cheklangan ekanligi nimalarda namoyon bo’ladi?
+A.	barcha javoblar to’g’ri.`,
+
+`Kompaniya stratеgiyasi  qanday savollarga javob bеrishi kеrak?
+A.	krеditlar xajmi va sarmoyalar  sof foydasining o’zgarish tеndеntsiyasi`,
+
+`Kompaniya stratеgik  va moliyaviy xolati nimalardan  iobrat?
+A.	kompaniyaning bozordagi ulushi va tarmoqdagi o’rni`,
+
+`Moliyaviy tartibga solish uning boshqa shakllari bilan birgalikda ...	
+A.	asosiy makroiqtisodiy ko’rsatkichlar dinamikasida  ijobiy o’zgarishlar bo’lishini ta’minlashi mumkin. Biroq, amaliyotda bu narsaning sodir bo’lishi ancha murakkab bo’lib, u chuqur va har tomonlamali nazariy ishlanmalar va  murakkab matematik hisob-kitoblarga asoslanishni talab *qiladi. Bu sohada bunday kompleks tadqiqotlarning mavjud emasligi, albatta, muvaffaqiyatsizlikka olib keladi. Bu erda “baxtli bilet”ning tasodifan tanlanishi (topilishi) mutlaqo mumkin emas; `,
+
+`Barqarorlashtiruvchi tadbirlarni amalga oshirish orqali sotsial-iqtisodiy jarayonlarga davlatning ta’siri ...	
+A.	iqtisodiy o’sish sur’atlarini, inflyatsiya va bandlik darajasini tartibga solib turish, iqtisodiyotning tarmoq va mintaqaviy tuzilmasidagi progressiv (ijobiy) o’zgarishlarni rag’batlantirish, tashqi iqtisodiy muvozanatni va milliy valyuta kursini qo’llab-quvvatlashda ko’rinadi.`,
+
+
+`Sotsial-iqtisodiy jarayonlarga davlatning ta’siri qanday maqsadlar erishish uchun zarur?
+A.	barcha javoblar to’g’ri.`,
+
+
+`Asosida aniq shakllantirilgan maqsad va unga erishishning vositalari yotgan dasturli-maqsadli yondashuvdan foydalanadigan moliyaviy rejalashtirishning metodi sifa-tida moliyaviy dasturlashtirish quyidagilarning bo’lishini ko’zda tutadi:
+A.	barcha javoblar to’g’ri.`,
+
+`Moliyaviy bashoratlashning bosh maqsadi...
+A.	bashoratlanayotgan davrda haqiqatda mavjud bo’lishi mumkin bo’lgan moliyaviy resurslarning real hajmi, ularni shakllantirish manbalari va ulardan foydalanishni aniqlashdan iborat.`,
+
+`Moliyaviy bashoratlar moliya tizimi organlariga ...
+A.	moliya tizimini rivojlantirish va takomillashtirishning, moliyaviy siyosatni amalga oshirish shakllari va metodlarining turli-tuman variantlarini belgilashga imkon beradi;`,
+
+
+`Moliyaviy bashoratlashning eng asosiy metodlari quyidagilar bo’lishi mumkin:	
+A.	iqtisodiy jarayonlarni aniqlaydigan omillarga bog’liq ravishda moliyaviy reja ko’rsatkichlarining dinamikasini xarakter-laydigan ekonometrik modelni qurish (yaratish); korrelyatsion-regression tahlil; bevosita ekspertli baholash metodi;`,
+
+`Hayotiy faoliyatning umumiy sharoitlarini va iqtisodiy qarorlarning amalga oshirilish asoslarini ta’minlash borasida sotsial-iqtisodiy jarayonlarga davlat-ning ta’siri ...
+A.	butun jamiyatning xavfsizligini ta’minlash, mulkka egalik qilish huquqini himoyalashga va shaxsning erkin rivojlanishini ta’minlashga qaratilgan huquqiy rejim (tartib)ni o’rnatish va qo’llab-quvvatlab turish, samarali raqobatni qo’llab-quvvatlash va rivojlantirish orqali namoyon bo’ladi;`,
+
+
+`Obligatsiya kursi deganda:	
+A.	nominal qiymatga nisbatan foizlarda ifodalangan bozor narxi tushuniladi`,
+
+`Dunyoning hech (har) bir rivojlangan mamlakatida ...
+A.	jamiyat ustidan bozorning “absolyut monarxiya”si mavjud emas va shubhasiz, hech qachon bo’lmaydi ham;`,
+
+
+
+`Moliyaviy bashoratlash jarayonida ...
+A.	jamiyatning ma’lum bir davrdagi taraqqiyotiga bag’ishlangan moliyaviy siyosat kontseptsiyasi ishlab chiqiladi;`,
+
+
+`Moliyaviy bashoratlash ...
+A.	moliyaviy rejalarni tuzish bosqichidan oldin sodir bo’ladi;`,
+
+`Moliyaviy bashoratlar ...
+A.	moliyaviy siyosatni ishlab chiqishning zaruriy elementi va bir vaqtning o’zida  muhim bosqichi bo’lib hisoblanadi;`,
+
+
+`Zamonaviy iqtisodiy dunyo  - bu ...
+A.	aralash iqtisodiyot dunyosi;`,
+
+`Moliyaviy rejalar tizimi ...
+A.	moliyaviy resurslar manbalari (jismoniy va yuridik shaxslar daromadlari) tarkibiy tuzilishidagi o’zgarishlarning ob’ektiv ravishda o’zaro bog’liqligi va uzoq muddatli tenden-tsiyalarini, shuningdek kelajakda bu tendentsiyalar rivojlanishiga ta’sir ko’rsatishi mumkin bo’lgan omillarni aniqlashga imkon beradi;`,
+
+`Moliyaviy reja ...
+A.	har yili joriy yil rejasi ko’rsatkichlarining kutilayotgan ijrosi asosida o’zgartiriladi (korrektirovka qilinadi). Bunda ko’rsatkichlar besh yillik shkala bo’yicha bir yil oldinga (hisobot yilidan keyingi yilg “ko’chiriladi”. Oldinda turgan birinchi yilning reja ko’rsatkichlari direktiv (majburiy), keyingi to’rt  yillik ko’rsatkichlar esa mo’ljalli (orientirovkali) xarakterga ega hisoblanadi;`,
+
+
+`Moliyaviy siyosat sohasidagi uzoq va qisqa muddali maqsadlar va choralarni muvofiqlashtirishning  muhim metodi sifatida dasturlashtirishdan ...
+A.	moliyaviy rejalashtirishning hozirgi amaliyotida faol foydalanish maqsadga muvofiq;`,
+
+`Moliyaviy bashoratlash deb nimaga aytiladi?
+A.	u yoki bu davr mobaynida davlatning  mumkin bo’lgan moliyaviy ahvoli (holati)ni oldindan ko’ra bilish va moliyaviy rejalarning ko’rsatkichlarini asoslashga moliyaviy bashoratlash deyiladi;`,
+
+
+`Taftish o‘tkazish o‘z ichiga necha bosqichni oladi?
+A.	yirik mulkka – mamlakat milliy boyligining katta qismiga – ega;`,
+
+`Moliyaviy rejalashtirish ...
+A.	.ni moliyaviy bashoratlashsiz tasavvur etib bo’lmaydi;`,
+
+`Moliyaviy dasturlashtirishning asosiy mohiyati ...
+A.	besh yillik “o’zgarib turadigan” xarajatlar rejasini tuzish bilan belgilanadi;`,
+
+`Barcha bozor qonunlarining harakati ...
+A.	ob’ektiv bo’lib, ularni bekor qilish mumkin emas;`,
+
+`Hozirgi paytda dunyoning juda ko’p mamlakatlarida ishlab chiqarish maqsadlariga, resurslar va ijrochilar bo’yicha balanslilikka yo’naltirilgan ilmiy-tadqiqot, tashkiliy-xo’jalik va boshqa tadbirlar tizimidan iborat bo’lgan maqsadli kompleksli dasturlarlar...
+A.	... dan keng foydalanilmoqda;`,
+
+
+`Moliyaviy rejalarning ko’rsatkichlari ...
+A.	davlatning moliyaviy ahvolini tahlil qilish uchun boshlang’ich material hisoblanadi, istiqboldagi (istiqbol uchun) rejalashti-rishning informatsion asosi bo’lib xizmat qiladi;`,
+
+
+`Moliyaviy rejalashtirish jarayonida foydaga oid hisob-kitoblar ...
+A. 	korxonaning joriy va istiqboldagi salohiyati bilan, shuningdek biznes-rejaning boshqa bo’limlarida aniqlanadigan  cheklanmalar bilan muvofiqlashtirilishi kerak.`,
+
+
+`Pul mablag’larining yillik oqimini loyihalashti-rish va moliyaviy natijalarni aniqlash ...
+A.	tushumlarning kelib tushishi, debitorlik va kreditorlik qarzlarining o’zgarishi, soliq to’lovlarini optimallashtirish va boshqalar bo’yicha dinamikalarning bashorat qilinishini taqozo etadi.`,
+
+`Moliyaviy reja ...
+A.	korxona butun faoliyatini moliyaviy jihatdan ta’minlash-ning instrumenti sifatida maydonga chiqadi va bir vaqtning o’zida, shu faoliyatning moliyaviy natijalarini xarakterlaydi;`]
+
+const soliq_huquqi_savollar = [
+`«Soliq tushumlari hisobi  va prognozi» fanining predmet nimani о‘rganadi?
+A. «Soliq tushumlari hisobi  va prognozi» fanining predmeti soliqlar va yig‘imlar tushumini hisobini hamda ularning rivojlanishi tendentsiyasini chuqur o‘rganish va shu asosda budjet tushumlari hajmini ma‘lum davr uchun prognozlash jarayonlarida yuzaga keluvchi munosabatlarni o‘rganishdir.`,
+
+
+
+`2.“Soliq tushumlari hisobi  va prognozi” fanining asosiy vazifalaridan birini kо‘rsating.
+A. Soliqlar va boshqa majburiy to‘lovlarning turlari bo‘yicha mamlakat, viloyatlar hamda  tuman va shaharlar kesimida soliq tushumlarini prognozlash jarayonlarini, usullarini o‘rgatish`,
+
+
+`3.Qachon O‘zbekiston Respublikasi Markaziy Banki va DSQ o‘rtasida ma’lumotlar almashishni avtomatlashtirilgan holda elektron ko‘rinishda qabul qilish ishlari boshlandi?
+A. 1996 yildan`,
+
+
+`4.Qachondan boshlab Davlat soliq xizmati tizimida jismoniy shaxslar bo‘yicha bank hujjatlarini kiritish, boqimanda va ortiqcha to‘lovlarni tahlil qilish va hisobotlarni tuzish dasturlari tajribaviy ishlatish uchun joriy qilindi?
+A. 1997 yildan`,
+
+
+
+`5.Bugungi kunda soliq tushumlarini hisobini tashkil qilish asosiy tamoyillariga quyidagilardan qaysi biri kiradi?
+A. soliq ma’murchiligi tizimini takomillashtirish, soddalashtirish va shunigdek barkarorligini ta’minlash`,
+
+
+`6.Soliq solish obyektini hamda soliq tushumlarini  tо‘liq va о‘z vaqtida hisobga olinishini ta’minlash –bu,:
+A. Soliq tushumlarini  hisobini tashkil qilish asosiy tamoyillaridan biri hisoblanadi`,
+
+
+`7.Prognoz  bu-:
+A. obektning  kelajakdagi  holatiga miqdoriy va sifat jihatidan baho berish va bashorat qilish`,
+
+
+
+
+`8.Rejalashtirish prognozlashtirishdan farqli ravishda...:
+A. ishlab chiqilgan prognozni bevosita amaliyotga tadbiq etish vazifasini oldiga qoymaydi.`,
+
+
+`9.Soliqni prognozlashtirish —bu,: 
+A. soliq tizimining soliqli daromadlari miqdori potensialini ustuvor  rivojlantirish tо‘g‘risidagi ma’lumotlardan foydalangan holda kelajakdagi soliq siyosatini asosiy yо‘nalishlarini asoslash jarayonidir.`,
+
+
+`10.Bashorat muddatiga kо‘ra prognoz quyidagi turlarga bо‘linadi:
+A. olis uzoq vaqtga prognozlash; о‘zoq vaqtga prognozlash; о‘rta muddatga prognozlash; qisqa muddatga prognozlash; operativ prognozlash`,
+
+
+`11.О‘rganilayotgan obyektning xarakteriga qarab prognoz quyidagi toifalarga bо‘linadi:
+A. iqtisodiy, tabiiy resurlar, ilmiy-texnik, demografik va ijtimoiy rivojlanish prognozlari`,
+
+
+`12.Statistik kо‘rsatkichlar quyidagi turlarga bо‘linadi: 
+A. mutloq va nisbiy`,
+
+
+`13.Mutloq miqdor nimani xarakterlaydi? 
+A. birlikning son miqdorini yoki obyektning qiymatdagi xususiyatini`,
+
+
+`14.Mutloq kо‘rsatkichlar odatda:
+A. tonnada, kilogramda, qiymatda, donada о‘lchanadi`,
+
+
+`15.Mutloq miqdorlar....:
+ A. Obyektning birlamchi  xususiyatini qiymatda ifodalaydi`,
+
+
+
+`16.Nisbiy miqdorlar ....: 
+A. obyektning mutloq miqdorlari vaqtda  yoki fazoda taqqoslash, qiyoslash orqali hisoblanadi`,
+
+
+`17.Mutloq kо‘rsatkichlarni taqqoslash orqali aniqlangan nisbiy statistik kо‘rsatkich  nima deb ataladi? 
+A. birinchi tartibdagi nisbiy  kо‘rsatkich`,
+
+
+
+
+`18.Nisbiy miqdorlarni taqqoslash orqali aniqlangan statistik kо‘rsatkich nima deb ataladi?  
+A. oliy tartibdagi nisbiy miqdor`,
+
+
+`19.Quyida keltirilgan qaysi statistik kо‘rsatkich nisbiy kо‘rsatkich hisoblanadi?
+A. soliqning yig‘iluvchanligi`,
+
+
+`20.Obyektni tarkibini xarakterlovchi nisbiy miqdor qanday aniqlanadi?
+A. qismning butunga nisbati`,
+
+
+`21.Obyektning joriy  holatiga oid kо‘rsatkichlarini xuddi shu obyektning  о‘tgan davrdagi holatiga doir kо‘rsatkichlarni taqqoslash natijasida aniqlangan kо‘rsatkich nima deb ataladi?
+A. о‘sish tempi`, 
+
+
+`22.Ikki obyektning bir biriga о‘xshash rivojlanish qonuniyatlari asosida  birinchi obyektga taaluqli qonuniyat asosida ikkinchisining  kelajakdagi  holatiga baho berish  usuli prognozda nima deb ataladi?
+A. analog metodi`,
+
+
+
+`23.Soliq to‘lovchilarning hisobi qanday  yuritiladi? 
+A. ularni hisobga qo‘yish va ular to‘g‘risidagi hisob ma’lumotlarini yuritish orqali`,
+
+
+`24.Yuridik shaxslar — O‘zbekiston Respublikasining rezidentlari qayerda hisobga qo‘yiladi? 
+A. o‘zlari joylashgan yerdagi (pochta manzilidagi) davlat soliq xizmati organida`, 
+
+
+`25.Yuridik shaxsning soliq majburiyatini mustaqil ravishda bajaradigan alohida bo‘linmalari qayerda hisobga qo‘yiladi? 
+A. alohida bo‘linmaning joylashgan yeridagi yoki faoliyatni amalga oshirayotgan joyidagi davlat soliq xizmati organida`,
+ 
+
+
+`26.Jismoniy shaxslar — O‘zbekiston Respublikasining rezidentlari qayerda hisobga qo‘yiladi?
+A. Jismoniy shaxsning yashash joyidagi davlat soliq xizmati organida`,
+
+
+`27.Qaysi muddatda  yuridik shaxslar — O‘zbekiston Respublikasining rezidentlari  davlat soliq xizmati organiga hisobga qo‘yish to‘g‘risidagi arizani taqdim etishi shart?
+A. davlat ro‘yxatidan o‘tkazilgan kundan e’tiboran o‘n kun ichida`,
+
+
+`28.Qaysi muddatda  soliq majburiyatlarini mustaqil ravishda bajaradigan alohida bo‘linmani hisobga qo‘yish uchun ushbu alohida bo‘linmani tashkil etgan yuridik shaxs davlat soliq xizmati organiga hisobga qo‘yish to‘g‘risidagi arizani taqdim etishi shart?
+A. uni tashkil etish to‘g‘risida yoki mustaqil balansga ajratish haqida qaror qabul qilingan kundan e’tiboran o‘n kun ichida`,
+
+
+`29.Qaysi muddatda  yer solig‘i  va  mol-mulk solig‘i to‘lovchilari bo‘lgan yuridik va jismoniy shaxslar — O‘zbekiston Respublikasi norezidentlari davlat soliq xizmati organiga hisobga qo‘yish to‘g‘risidagi arizani taqdim etishi shart?
+A. yer uchastkasiga, ko‘chmas mulkka bo‘lgan huquq davlat ro‘yxatidan o‘tkazilgan kundan e’tiboran o‘n kun ichida`,
+
+
+`30.Qachon soliq to‘lovchi hisobga soliq to‘lovchining identifikatsiya raqami beriladi? 
+A. hisobga qo‘yilayotganda `,
+
+
+
+`31.O‘zbekiston Respublikasi soliq to‘lovchilarining yagona reyestri  kim  tomonidan yuritiladi?
+A. O‘zbekiston Respublikasi Davlat soliq qo‘mitasi Gosudarstvennim nalogovim komitetom Respubliki Uzbekistan.`,
+
+
+
+`32.Soliq to‘lovchining identifikatsiya raqami nima?
+A. muayyan soliq to‘lovchi hisobga qo‘yilganda unga beriladigan raqamdir`,
+ 
+
+
+`33.Yuridik shaxslar — O‘zbekiston Respublikasining rezidentlarini  O‘zbekiston Respublikasi soliq to‘lovchilarining yagona reyestridan chiqarish sabablaridan birini kо‘rsating. 
+A. Ular tugatilganidan keyin`,
+
+
+`34.Soliq solish obektlari hamda soliq solish bilan bog‘liq obektlar to‘g‘risidagi ma’lumotlar bazasi  qanday shakllantiriladi?
+A. soliq to‘lovchini obektlar bo‘yicha hisobga qo‘yish orqali`,
+ 
+
+
+`35.Soliq solish obektlarini va soliq solish bilan bog‘liq obektlarni hisobga olish  qanday amalga oshiriladi?
+A. Davlat soliq xizmati organi tomonidan har bir soliq to‘lovchi bo‘yicha hamda u to‘layotgan barcha soliqlar va boshqa majburiy to‘lovlar bo‘yicha, soliq solish obektlari hamda soliq solish bilan bog‘liq obektlar to‘g‘risidagi ma’lumotlar bazasini shakllantirish va yuritish orqali amalga oshiriladi`,
+
+
+
+
+
+`36.Soliqlar va boshqa majburiy to‘lovlar tushumini hisobga olish qanday yuritiladi?
+A. byudjet klassifikatsiyasiga muvofiq yuritiladi`,
+
+
+
+`37.Soliq to‘lovchining shaxsiy kartochkasini yuritish tartibi kim  tomonidan belgilanadi?
+A. O‘zbekiston Respublikasi Moliya vazirligi bilan kelishilgan holda O‘zbekiston Respublikasi Davlat soliq qo‘mitasi`,
+
+
+`38.Ichki ishlar organlari pasportlar berilganligi, shu jumladan yo‘qotilgan yoki amal qilish muddati o‘tgan pasportlar o‘rniga pasportlar berilganligi faktlari haqida, bekor qilingan pasportlar to‘g‘risida  davlat soliq xizmati organlariga  qaysi muddatda ma’lumot taqdim qilishlari shart?
+A. har oyda`,
+
+
+`39.Nima soliq solish obyekti hisoblanadi?
+A. Mol-mulk, harakat, harakat natijasi `,
+
+
+`40.Yuridik shaxslardan olinadigan foyda solig‘ining soliq solish bazasi quyida kо‘rsatilgan qaysi omil bilan tо‘g‘ri proporsional bog‘lanishga ega?
+A. Yuridik shaxslarning jami daromadi`,
+
+
+`41.Yuridik shaxslardan olinadigan foyda solig‘ining soliq solish bazasi quyida kо‘rsatilgan qaysi omil bilan teskari proporsional bog‘lanishga ega?
+A. joriy soliq davriga о‘tkaziladigan, о‘tgan davr zarari, chegiriladigan xarajatlar`,
+
+
+`42.Soliq to‘lovchilar — jismoniy shaxslarni hisobga qo‘yish  kim tomonidan amalga oshiriladi?
+A. tuman (shahar) davlat soliq inspeksiyalarining jismoniy shaxslar soliq ma’muriyatchiligi bo‘limlari  tomonidan`,
+
+
+`43.Soliq to‘lovchi — jismoniy shaxsni ro‘yxatga olish varaqasi to‘ldirishda  qanday ma’lumotlar asos bо‘lib xizmat qiladi?
+A. jismoniy shaxsning pasport ma’lumotlari`,
+
+
+`44.Davlat soliq inspeksiyasining  qaysi ma’ul xodimi soliq to‘lovchi to‘g‘risidagi barcha ma’lumotlarni  O‘zbekiston Respublikasi soliq to‘lovchilarining yagona reyestriga kiritiladi?
+A. Tahlil va prognozlash bo‘limi  mas’ul xodimi `,
+
+
+
+`45.Yirik soliq to‘lovchilar soliq hisobotini  kimga toshiradilar?
+A. Davlat soliq boshqarmalariga `,
+
+
+`46.Soliq hisoboti .......qabul qilinadi.
+A. dastlabki tarzda kameral nazorat qilinmasdan va uning mazmuni muhokama etilmasdan `,
+
+`47.Soliq hisobotini  qabul qilishni rad qilishga asos bо‘luvchi sabablardan birini kо‘rsating.
+A. soliq to‘lovchining identifikatsiya raqami ko‘rsatilmagan yoki noto‘g‘ri ko‘rsatilgan bo‘lsa`,
+
+
+`48.Belgilanmagan shakldagi soliq hisoboti taqdim etilganda davlat soliq xizmati organi ..............bu haqda soliq to‘lovchiga yozma bildirish yuboradi.
+A. hisobot olingan kundan e’tiboran uch kun ichida`,
+
+
+`49.Soliq hisoboti davlat soliq xizmati organlarida va soliq to‘lovchida qanday muddatgacha  saqlanishi shart?
+A. soliq majburiyati bo‘yicha da’vo qilish muddati mobaynida `,
+
+
+
+`50.Soliq tо‘lovchining shaxsiy kartochkasini asosiy funkional vazifasi nimadan iborat?
+A. byudjetga, byudjetdan tashqari davlat maqsadli jamg‘armalariga soliqlar va boshqa majburiy to‘lovlarning, shuningdek fuqarolarning shaxsiy jamg‘arib boriladigan majburiy pensiya badallari va boshqa majburiy  tо‘lovlarining tezkor hisobini yuritish`,
+
+
+`51.Soliq tо‘lovchining shaxsiy kartochkasida nima aks ettiriladi?
+A. Soliq tо‘lovchi tomonidan soliq majburiyatini bajarilishi haqiqatdagi holati`,
+
+
+`52.Soliq tо‘lovchining  shaxsiy kartochkasida aks etadigan operatsiyalardan bir -nechtasini kо‘rsating. 
+A. to‘lash muddati kechiktirilgan (bo‘lib-bo‘lib to‘lash imkoni berilgan) to‘lovlar;  hisobdan chiqarilgan va alohida hisobi yuritiladigan summalar;  hisoblangan penya va boshqa moliyaviy sanksiyalar`,
+
+
+`53.Qanday hujjatlar shaxsiy kartochkaga ma’lumotlar kiritish uchun asos bо‘lib xizmat qiladi?
+A. birlamchi buxgalteriya  hujjatlari,  maxsus elektron raqamli imzo bilan yuborilgan elektron hisobotlar`,
+
+
+`54.Qaysi tartibda soliq tо‘lovchining shaxsiy kartochkalarga yozuvlar kiritiladi?
+A. Haqqoniy hujjatlar  asosida  xronologik taribida, mos ustunlarga kiritish`,
+
+
+`55.Soliq tо‘lovchining faoliyatini xarakterlovchi,  uning shaxsiy kartochkasida  aks ettiriladigan  ma’lumotlardan bir-nechtasini kо‘rsating. 
+A. soliq to‘lovchining identifikatsion raqami; soliq to‘lovchining to‘liq nomi; soliq to‘lovchining yuridik manzili`,
+
+
+`56.Kim mas’ul shaxsga,  shaxsiy kartochkaga о‘zgartirish kirish  uchun ruxsat berish huquqiga ega?
+A. Ma’lumotlar bazasi adminstratori`,
+
+
+`57.Joriy yil uchun soliq tо‘lovchiga yangi shaxsiy kartochka qanday tartibda ochiladi?.
+A. ma’lumotlar bazasidagi barcha soliq to‘lovchilarning o‘tgan hisobot yili oxiridagi qoldiq summalarini joriy yilga ko‘chirib o‘tkazish jarayonida dasturiy mahsul orqali joriy yil uchun shaxsiy kartochkalar avtomatik tarzda ochiladi`,
+
+
+
+`58.Soliq qarzini va hisoblangan peniyalarni hisobdan uchirish tо‘g‘risidagi ma’lumotlar shaxsiy kartochkaga qanday hujjat asosida amalga oshiriladi?
+A. sud qarori, Respublika komissiyasining yig‘ilish bayonnomasi`,
+
+
+`59.Byudjet tizimi byudjetlari daromadlarining tasnifi....: 
+A. daromadlarni ularning turlari va manbalari bo‘yicha kodlashdan iborat bo‘ladi.`,
+
+
+`60.“1N-B” qanday tavsiflanadi?
+A. Davlat byudjeti va byudjetdan tashqari maqsadli jamg‘armalar  tushumlari tо‘g‘risidagi hisobot`,
+
+
+`61.O‘zbekiston Respublikasi Moliya vazirligi Yagona g‘azna hisobvarag‘idagi mablag‘larni  qanday usul bilan boshqaradi?
+    A. Davlat byudjeti daromadlari tushumlari va xarajatlarining qisqa muddatli prognozlarini tuzish yo‘li bilan amalga oshiradi `,
+
+
+
+`62.Soliq majburiyati deb  nimaga aytiladi?
+    A. Soliq to‘lovchining soliq to‘g‘risidagi qonun hujjatlariga muvofiq yuzaga keladigan majburiyati soliq majburiyati deb e’tirof etiladi. `,
+
+`63.Soliq majburiyatini bajarish uchun soliq to‘lovchi…..:
+    A. soliq solish obektlari va soliq solish bilan bog‘liq obektlarni aniqlashi hamda ularning hisobini yuritishi; moliyaviy va soliq hisobotini tuzishi hamda uni davlat soliq xizmati organlariga taqdim etishi; soliqlar va boshqa majburiy to‘lovlarni o‘z vaqtida hamda to‘liq miqdorda to‘lashi shart.`,
+ 
+`64.Yuridik shaxsning alohida bo‘linmalari bo‘yicha soliq majburiyati mazkur alohida bo‘linmalar tomonidan, agar ularga alohida mol-mulk ajratilgan bo‘lsa va ular mustaqil balansga ega bo‘lsa,.....:
+    A. yuridik shaxsning alohida bo‘linmalari soliq majburiyatini mustaqil ravishda bajariladi`,
+
+
+
+
+`65.Soliq majburiyatini bajarish muddatlari qanday belgilanadi?
+    A. kalendar sana yoki vaqt davri (yil, yil choragi, oy, o‘n kunlik va kun) o‘tishi bilan belgilanadi.`, 
+
+`66.Soliq majburiyati......:  
+    A. bu majburiyatni bajarish muddatining so‘nggi kuni soat yigirma to‘rtga qadar bajarilishi kerak.`, 
+
+`67.Jismoniy shaxsning soliq majburiyati quyidagi hollarda tugatiladi.........:
+    A. uning vafot etishi bilan; uni vafot etgan deb e’lon qilish to‘g‘risidagi sud qarori qonuniy kuchga kirishi bilan.`, 
+
+`68.Qanday hollarda yuridik shaxsning soliq majburiyati  tugatiladi?
+    A. u tugatilganidan keyin; u qo‘shib olish (qo‘shib olingan yuridik shaxsga nisbatan), qo‘shib yuborish, bo‘lish va o‘zgartirish orqali qayta tashkil etilganidan keyin.`, 
+
+`69.Davlat soliq xizmati organi soliq davri tugaganidan keyin......:
+    A. besh yil ichida soliqlar va boshqa majburiy to‘lovlarni hisoblashi yoki ularning hisoblangan summasini qayta ko‘rib chiqishi mumkin.`, 
+
+`70.Soliq to‘lovchi soliq davri tugaganidan keyin......:
+    A. besh yil ichida soliqlar va boshqa majburiy to‘lovlarning ortiqcha to‘langan summalarini hisobga olishni yoki qaytarishni talab qilishga haqli.`, 
+
+`71.Soliq to‘lovchilarning daromadlari hamda soliqlar va boshqa majburiy to‘lovlarni hisoblab chiqarish uchun ular bo‘yicha tegishli chegirmalar (hisoblab yozish usuli) qaysi hisobot davrida aks ettiriladi?
+    A. to‘lov to‘langan vaqt va pul kelib tushgan sanadan qat’i nazar, ular taalluqli bo‘lgan hisobot davrida aks ettiriladi`,
+
+`72.Soliq to‘lovchi tomonidan hisob hujjatlari yo‘qotilgan taqdirda, davlat soliq xizmati organlari byudjetga va davlat maqsadli jamg‘armalariga to‘lanishi kerak bo‘lgan soliqlar va boshqa majburiy to‘lovlar summasi qanday aniqlanadi?
+    A. soliq to‘lovchi  to‘g‘risida  o‘zlarida mavjud bo‘lgan ma’lumotlar asosida hisob-kitob qilish orqali aniqlanadi.`, 
+
+`73.O‘zaro aloqador yuridik shaxslarni aniqlash belgilaridan birini kо‘rsating.
+    A. chet davlatlarning yuridik shaxslari va ularning O‘zbekiston Respublikasida ro‘yxatdan o‘tkazilgan yuridik shaxslar bo‘lgan muassislari (ishtirokchilari, a’zolari);`, 
+
+`74.Yuridik shaxs tugatilganda hisob hujjatlari  qayerda saqlanadi?
+    A. Arxivda`,
+
+`75.Soliq solish obektlari va soliq solish bilan bog‘liq obektlarning alohida-alohida hisobi qanday ma’lumotlar asosida yuritiladi?
+    A. buxgalteriya hisobi ma’lumotlari asosida yuritiladi.`, 
+
+`76.Soliq solish obektlari va soliq solish bilan bog‘liq obektlarning alohida-alohida hisobi.......:
+    A. mutanosib usul yoki to‘g‘ridan-to‘g‘ri hisobga olish usuli orqali yuritiladi.`, 
+
+`77.Soliq solish obektlari va soliq solish bilan bog‘liq obektlarning alohida-alohida hisobini yuritish usuli.......:
+    A. yuridik shaxsning butun kalendar yilga mo‘ljallangan hisob siyosati bilan belgilanadi hamda yil mobaynida o‘zgartirilishi mumkin emas.`, 
+
+`78.Hisobga olishning mutanosib usulida daromadlar, xarajatlar va soliq solishning boshqa obektlari yoki soliq solish bilan bog‘liq obektlar......:
+    A. realizatsiya qilishdan olingan sof tushumning umumiy summasidagi faoliyatning muayyan turlari bo‘yicha realizatsiya qilishdan olingan sof tushum ulushiga mutanosib tarzda shu muayyan faoliyat turiga kiritiladi.`, 
+
+`79.To‘g‘ridan-to‘g‘ri hisobga olish usuli qo‘llanilganda........:
+    A. daromadlar, xarajatlar va soliq solishning boshqa obektlari yoki soliq solish bilan bog‘liq obektlar faoliyatning qaysi turi amalga oshirilishi bilan bog‘liq bo‘lsa, shu turga kiritiladi.`, 
+
+`80.Soliq hisobotining tarkibiga qanday hujjatlar kiradi?
+    A. soliq va boshqa majburiy to‘lovning har bir turi bo‘yicha yoki to‘langan daromadlar bo‘yicha hisob-kitoblar,  soliq deklaratsiyalari, shuningdek ularga doir ilovalar`,
+
+`81.Tadbirkorlik subektlari soliq hisobotini  qanday usulda topshiradilar?
+    A. telekommunikatsiya kanallari orqali elektron hujjat tarzida`,
+
+`82.Soliqlar va boshqa majburiy to‘lovlarni to‘lash majburiyati  deganda nimani tushunasiz?
+    A. Soliq to‘lovchining muayyan soliq yoki boshqa majburiy to‘lovni to‘lash, mavjud soliq qarzini uzish majburiyati`,
+
+`83.Soliqlar va boshqa majburiy to‘lovlar, shuningdek moliyaviy sanksiyalar byudjetga va davlat maqsadli jamg‘armalariga quyidagi tartibda o‘tkaziladi......:
+    A. asosiy summa;  hisoblangan penya;  jarimalar`,
+
+`84.Vafot etgan jismoniy shaxsning soliqlar va boshqa majburiy to‘lovlarni to‘lash majburiyati  kim va qanday muddatda bajariladi?
+    A. uning meros qilingan mol-mulkini qabul qilgan merosxo‘rlari  tomonidan, meros qabul qilib olingan kundan e’tiboran bir yildan kechiktirmasdan bajariladi.`, 
+
+`85.Tо‘g‘ri soliqlarni prognozlashda diagnoz tushunchasining mohiyatini ko'rsating.
+    A. prognozlash ob’ektining rivojlanish tamoyillari aniqlanadi, prognozlash usuli va modeli tanlanib, tahlil qilinadi`,
+
+`86.Tо‘g‘ri soliqlarni prognozlashda diagnoz va prospektsiya-bu…
+    A. Tо‘g‘ri soliqlar bо‘yicha soliq tushumlarini prognozlash jarayonlarni tahlil qilish bosqichlari`,
+
+`87.Foyda solig’ining yakuniy bazasini aniqlashda quyidagilardan qaysilari hisobga olinishi kerak?
+    A. foyda solig’i bazasidan chegirilmaydigan xarajatlar summasi`,
+
+`88.Foyda solig’i boyicha tushumlarni prognoz qilishda quyidagi usullardan qaysi biri samarali hisoblanadi?
+    A. erishilgan darajadan kelib chiqib prognoz qilish usuli`,
+
+
+`89.Foyda solig’i boyicha tushumlar prognoz qilinganda quyidagilardan qaysi biri yakuniy ko’rsatkich hisoblanadi?
+    A. foyda solig’ining kutilayotgan yig’iluvchanlik darajasi`,
+
+`90.Jismoniy shaxslarning jami daromad tarkibiga kiritiluvchi daromad turini ko’rsating.
+    A. mulkiy daromad`,
+
+`91.Korxonalar boyicha jismoniy shaxslardan olinadigan daromad solig’ining prognozi qanday ko’rsatkichlar asosida ishlab chiqiladi?
+    A. umumiy ish haqi fondi`,
+
+`92.Jismoniy shaxslardan olinadigan daromad solig’ini prognoz qilishda qaysi tur daromadlar tahlilga kiritiladi?
+    A. mehnatga haq to’lash tarzidagi daromadlar`,
+
+`93.Aktsiz solig’i to’lovchilar soning oshishi prognoz ko’rsatkichiga qanday ta’sir qiladi?
+    A. aktsiz solig’i tushumini oshish ehtimolini oshiradi`,
+
+`94.Aktsiz solig’i tushumlari tahlilida uning qanday stavkalari o’rganiladi?	
+    A. naturada ifodalangan o’lchov birligiga nisbatan so’mlardagi stavkalar va advalor soliq stavkalari`,
+
+`95.Aksiz solig‘i tushumlari prognozi quyidagilardan qaysi biriga asoslanadi?
+    A. milliy iqtisodiyotning etakchi tarmoqlari ko’rsatkichlari`,
+
+`96.Qо‘shilgan qiymat solig‘ini prognoz qilishda qaysi makroiqtisodiy ko’rsatkichlar inobatga olinadi?
+    A. yalpi ichki ma’sulot`,
+
+`97.Qo’shilgan qiymat solig’i boyicha soliq imtiyozlari soliq tushumi prognoziga qanday ta’sir qiladi?	
+    A. qo’shilgan qiymati solig’i tushumini kamaytiradi`,
+
+`98.Qo’shilgan qiymat solig’ini prognoz qilishda qanday ko’rsatkichlar tahlilga kiritiladi?
+    A. soliq to’lovchilar tarkibi, soliq stavkasi va imtiyozlar, qqs boyicha ijobiy tafovut summalari va boshqa omillar`,
+
+`99.Yer solig‘i bо‘yicha  pognozni amalga oshirishda qanday metodlardan foydalaniladi?
+    A. oddiy ekstropolyatsiya metodidan`,
+
+`100.Yer solig‘i bо‘yicha  soliq tushumlari tahlili va prognozida soliq to’lovchilar qanday guruhlanadi?
+    A. mulkchilik hamda tashkiliy huquqiy  shakliga ko’ra`,
+
+`101.Yuridik shaxslardan olinadigan mol-mulk solig’ini prognoz qilishda korxonalar shaxsiy kartochkalaridan qanday ma’lumotlar olinadi?
+    A. mol-mulk solig’i boyicha hisoblab qoyilgan joriy to’lovlar`,
+
+`102.Yuridik shaxslardan olinadigan mol-mulk solig’ini prognoz qilishda soliqning yalpi bazasi qanday aniqlanadi?	
+    A. korxonalarning asosiy vositalari yillik o’rtacha qoldiq qiymati asosida`,
+
+`103.Yuridik shaxslardan olinadigan mol-mulk solig’ini prognoz qilish qanday ko’rsatkichlarga asoslanadi?
+    A. mol-mulk solig’i tushumlari dinamikasi`,
+
+`104.Soliq tushumlari tahlili qanday ma’lumotlarga asoslanadi?
+    A. buxgalteriya va statistik hisobotlarga`,
+
+`105.O’zbekiston Respublikasining “Davlat soliq xizmati to’g’risida”gi Qonuni birlamchi bor qachon qabul qilingan:
+    A. 1997 yil 29 avgust;`, 
+
+`106.O’zbekiston Respublikasi soliqqa tortishning xuquqiy asoslari tarkibiga nimalar kiradi:
+    A. O’zbekiston Respublikasi Soliq Kodeksi, Prezident Farmon va qarorlari, vazirliklar va muassasalar yo’riqnomalari, O’zbekiston Respublikasi Vazirlar Mahkamasi qarorlari.`, 
+
+`107.Yangi tahrirdagi Soliq kodeksi qachon qabul qilingan va joriy etilgan:
+    A. 2019 yil 30 dekabr`,
+
+`108.Davlat byudjeti qaysi organ tomonidan qabul qilinadi?
+A. Oʼzbekiston Respublikasi Oliy Majlisi tomonidan`,
+
+
+`109.Oʼzbekistonda 2020 yilda soliq turlari 13 tadan nechtaga kamaytirildi?
+A. 9`,
+
+
+`110.Oʼzbekiston Respublikasi qaysi qonuniga yoki Prezidentining qaysi qaroriga asosan 2021 yil byudjet parametrlari tasdiqlandi?
+A. OʼRQ 657; PQ 4938;`,
+
+
+`111.Soliq siyosatini ishlab chiqishda parlamentning roli nimadan iborat:
+    A. Soliqlarni joriy etadi`,
+
+`112.Soliqlar vositasida iqtisodiy jarayonlarga qanday usulda ta’sir etish mumkin:
+    A. Muayyan tarkibdagi soliqlar tarkibi va tuzilmasini tanlash; soliq imtiyozlari va soliq stavkalari orqali; soliq yuki darajasini boshqarish, soliq bazasining shakllanish xususiyatlarni belgilash;`,
+
+`113.Soliqlar va boshqa majburiy to’lovlarning stavkalari kim tomondan belgilanadi:
+    A. O’zbekiston Respublikasi Prezidentining qarori bilan belgilanadi.`, 
+
+`114.“O’zbekiston Respublikasi hududida yagona soliq tizimi amal qiladi” bu jumlalar qayerda qayd keltirilgan?
+A. O’zbekiston Respublikasi Konstitutsiyasi`,
+
+
+`115.O’zbekiston Respublikasi Konstitutsiyasida soliq tizimiga tegishli moddalarni ko’rsating:
+    A. 51, 123`,
+
+`116.Progressiv soliq stavkasi nimani anglatadi:
+    A. Soliq bazasining ortishi bilan soliq stavkasi ham ortadi;`, 
+
+`117.Qaysi satrda soliq elementlari keltirilgan:
+    A. soliq solish ob’ekti, soliq bazasi, soliq stavkasi, soliq davri, soliqni hisoblab chiqarish tartibi, soliq hisobotini taqdim etish tartibi, soliqni to’lash tartibi`,
+
+`118.O’zbekiston Respublikasi Prezidentining qaysi farmonida O’zbekiston Respublikasining soliq siyosatini takomillashtirish kontseptsiyasi to’g’risida so’z yuritilgan:
+    A. PF- 5468 29.06.2018 y.`, 
+
+`119.O’zbekiston Respublikasining soliq siyosatini takomillashtirish kontseptsiyasining asosiy yo’nalishlari nechta:
+    A. 7`,
+
+`120.O’zbekiston Respublikasi Prezidentining qaysi farmonida umumbelgilangan soliqlarni to’lovchilar uchun soliq yuki darajasining yuqoriligi, shuningdek, soliq solishning soddalashtirilgan va umumbelgilangan tizimida soliqlarni to’laydigan xo’jalik yurituvchi sub’ektlar o’rtasidagi soliq yuki darajasidagi farqning sezilarliligi to’g’risida so’z yuritilgan:
+    A. PF- 5468 29.06.2018 y.`, 
+
+`121.Oʼzbekiston Respublikasi Prezidentini 29.06.2018 yildagi PF-5468-sonli Farmonning asosiy mazmun va mohiyati qaysi javobda toʼgʼri keltirilgan?
+A. Soliq siyosati kontseptsiyasini tasdiqlash va shu asosda strategiya taktikani belgilab olish`,
+
+
+`122.O’zbekiston Respublikasi Prezidentining qaysi farmonida soliq nazoratining shakl va mexanizmlarini, shu jumladan, soliq solish ob’ektlari hamda soliq to’lovchilarni yanada to’liq qamrab olish va hisobini ta’minlaydigan zamonaviy axborot-kommunikatsiya texnologiyalarini keng joriy etish hisobiga takomillashtirish, transfer narxlarni shakllantirish bilan bog’liq operatsiyalarga soliq solish tartibini joriy etish bo’yicha so’z yuritilgan:
+    A. PF- 5468 29.06.2018 y.`, 
+
+`123.O’zbekiston Respublikasi Prezidentining qaysi qarorida soliq ma’muriyatchiligini takomillashtirish bo’yicha qo’shimcha chora-tadbirlar to’g’risida so’z yuritilgan:
+    A. PQ-4389 10.07.2019 y.`, 
+
+`124.O’zbekiston Respublikasi Prezidentining qaysi qarorida soliq ma’murchiligini takomillashtirish strategiyasi tasdiqlangan:
+    A. PQ-4389 10.07.2019 y.`, 
+
+`125.Soliq siyosati:
+    A. moliyaviy siyosatning  eng muhim qismi (yo’nalishi) hisoblanadi.`, 
+
+`126.Soliqlarning mamlakat iqtisodiyotiga ta’siri qanday belgilanadi:
+    A. Soliq stavkalari darajasining miqdori bilan`,
+
+`127.Soliq ma’murchiligi:
+    A. Soliq huquqi qoidalariga tayangan  holda soliq siyosatini amalga oshirishga xizmat qiladigan, soliq organlari faoliyatini muvofiqlashtirib turuvchi soliq munosabatlarini boshqarish tizimi`,
+
+`128.Soliq jarayoni:
+    A. soliq organlari va soliq to’lovchilarning o’z oldilarida turgan soliq majburiyatlarini bajarish.`, 
+
+
+`129.Soliq ma’murchiligi shakllariga qaysi shakl kiradi:
+    A. Soliq  ob’ektlari va to’lovchilarni hisobini to’g’ri yuritish`,
+
+`130.Soliq ma’murchiligining maqsadi nima:
+    A. Konstituttsiyaviy huquq va soliq qonunchiligining bekamu ko’st bajarilishini ta’minlash.`, 
+
+`131.................soliqlar va boshqa majburiy to’lovlarni belgilash, joriy etish, hisoblab chiqarish hamda O’zbekiston Respublikasining Davlat byudjetiga va davlat maqsadli jamg’armalariga to’lash bilan bog’liq munosabatlarni, shuningdek soliq majburiyatlarini bajarish bilan bog’liq munosabatlarni tartibga soladi.
+    A. O’zbekiston Respublikasi Soliq Kodeksi`,
+
+`132.Soliqlarni joriy etish, soliqqa oid huquqiy baza yaratish, joriy etilgan soliqlarning amaliyotda ishlash mexanizmini shakllantirish va samaradorligini oshirishga qaratilgan davlatning tegishli vakolatli organlari tomonidan kompleks tarzda olib boriladigan chora-tadbirlar yig’indisi
+    A. Soliq  siyosati`,
+
+`133.Iqtisodchi olimlar davlat soliq siyosatini nechta turga ajratadilar
+    A. 3`,
+
+`134.Tadbirkorlar uchun qulay soliq muhitini yaratish orqali tadbirkorlikning rivojlanishini ta’minlovchi
+    A. Soliq siyosat`,
+
+`135.Amalga oshirilishi lozim bo’lgan tadbirlar xususiyati va muddatidan kelib chiqqan soliq siyosati bu .....
+    A. Soliq kontseptsiyasi`,
+
+`136.Uzoq muddatga mo’ljallangan soliqqa oid iqtisodiy munosabatlarning asosiy yo’nalishlari va chora-tadbirlar.............ifodalanadi.
+    A. Soliq strategiyasida`,
+
+`137.Davlat soliq xizmati organlari tarkibiy tuzilmasi nimalardan iborat
+    A. Davlat soliq xizmati organlari quyidagilardir: O’zbekiston Respublikasi Davlat soliq qo’mitasi, QQR hamda Toshkent shahar va viloyatlar davlat soliq boshqarmalari va shaharlardagi tumanlarning davlat soliq inspektsiyalari`,
+
+`138.Qaysi vakolatli organ soliq turlarini joriy etish huquqiga ega?
+    A. O’zbekiston Respublikasi Oliy Majlisi.`, 
+
+
+`139.Safarbarlik ishlari shu’basi qaysi boshqarmaga qaraydi?
+    A. Rejim va kadrlar bilan ishlash bosh boshqarmasiga`,
+
+`140.Shahar (tuman)lar DSIlarida soliq va majburiy to’lovlar tushumlarini hisobga olish, tahlil qilish, ma’lumotlar bazasiga xizmat ko’rsatish bo’limi kim tomondan nazorat qilinadi?
+    A. Boshqarmaning birinchi o’rinbosari`,
+
+`141.Kameral nazorat bo’limi (shu’basi) qaysi bo’lim bilan ishlaydi
+    A. Yuridik va jismoniy shaxslarga soliq solish bo’limlari`,
+
+`142.Bozorlar va savdo komplekslari faoliyati kim tomondan nazorat qilinadi?
+    A. Bozorlar va savdo komplekslari faoliyatini nazorat qilish shu’basi`,
+
+`143.Qayd etilgan muassasalardan qaysi biri O’zbekiston Respublikasi Soliq qo’mitasiga qaraydi
+    A. “G’azalkent” sog’lomlashtirish markazi`,
+
+`144.Soliq appelyatsiyalari bo’limi qaysi boshqarmaga qaraydi
+    A. Soliq solish metodologiyasi`,
+
+`145.Soliq ma’muryatchiligi funktsiyasini qaysi munosabatlarni tartibga soladi?
+    A. Rejalashtirish, hisobga olish, nazorat qilish, tartibga solish.`, 
+
+`146.Qaysi holatlar soliq ma’murchiligi funktsiyasining boshqaruv darajasiga daxldor
+    A. Rejalashtirish va hisobga olish`,
+
+`147.Soliq ma’murchiligi funktsiyalari quyidagilarga bo’linadi
+    A. Me’yoriy (normativ) va operativ`,
+
+`148.Soliq ma’murchiligining ob’ekti bo’lib nima sanaladi?
+    A. Soliq to’lovchilarning moliyaviy xo’jalik faoliyati`,
+
+`149.Davlat soliq xizmati idoralari uch zvenodan tashkil topgan:
+    A. Davlat Soliq Qo’mitasi, Korakalpogiston Respublikasi, viloyatlar va Toshkent shaxar Davlat soliq boshqarmalari, shaxarlar va tumanlar Davlat soliq inspektsiyalari.`, 
+
+`150.Soliq hisobotlari............... rejimlarda yuboriladi
+    A. Online va Offline`,
+
+`151.Soliq organlarini modernizatsiyalashning asosiy vazifalaridan birini ko’rsating?
+    A. soliq xizmati organlari uchun dasturiy mahsullar ishlab chiqish va ma’lumotlarga ishlov beradigan yagona kompyuter tizimini yaratishdan iborat`,
+
+`152.Soliq idoralarini modernizatsiya qilishdan maqsad nima?
+    A. Soliq idoralari faoliyatini samaradorligini oshirish`,
+
+`155.Soliqlarning  tadbirkorlik faolligiga ijobiy ta’sirini qanday amalga oshirish mumkin?
+    A. Soliq yukini kamaytirish va samarali soliq imtiyozlarini joriy etish orqali`,
+
+`156.Soliq isloxatlarini o’tkazishda pirovard maqsad nimaga qaratilishi lozim?
+    A. Axolining moddiy va ma’naviy turmush darajasini yaxshilashga`,
+
+
+`157.Soliq siyosati kim tomondan amalga oshiriladi
+    A. davlat, ya’ni uning vakolatli organlari tomonidan olib boriladi.`, 
+
+`158.Davlatning soliq siyosati  
+    A. bu soliq sohasidagi davlatning aniq mo’ljallangan huquqiy me’yorlar va amalga oshirib borayotgan chora-tadbirlari  yig’indisidir`,
+
+`159.“O’zbekiston Respulikasining asosiy makroiqtisodiy ko’rsatkichlari prognozi va byudjet parametlarini tasdiqlash tartibi”
+    A. Prezident qarori asosida tasdiqlanadi`,
+
+`160.O’zbekiston Respublikasi Prezidentining qaysi farmonida “Soliq ma’muriyatchiligini tubdan takomillashtirish, soliqlar va boshqa majburiy to’lovlarning yig’iluvchanligini oshirish chora-tadbirlari to’g’risida so’z yuritilgan
+    A. PF - 5116  18.07.2017 y.`, 
+
+`161.Soliq tekshiruvi va soliq monitoringi bu
+    A. soliq nazorati shakllari`,
+
+`162............organlari tovarlarning O’zbekiston Respublikasining bojxona chegarasi orqali olib o’tilishi munosabati bilan to’lanishi lozim bo’lgan soliqlarga nisbatan o’z vakolatlari doirasida ushbu Kodeksga va bojxona to’g’risidagi qonun hujjatlariga muvofiq soliq nazoratini amalga oshiradi
+    A. Bojxona`,
+
+`163.Soliq tekshiruvlarining nechta shakli mavjud
+    A. 3`,
+
+`164.Soliq nazoratiga  to’g’ri ta’rif berilgan javobni belgilang?
+A.Vakolatli organlarning soliq to’lovchilar va soliq agentlari tomonidan soliq to’g’risidagi qonun hujjatlariga rioya etilishi ustidan nazorat qilishga doir faoliyati soliq nazoratidir`, 
+
+
+`165.Yangi tahrirdagi Soliq kodeksida sayyor soliq tekshiruviga to’g’ri va to’liq ta’rif berilgan javobni belgilang?
+A. Soliq to’lovchilarning soliqlar va yigimlarni hisoblab chiqarish hamda to’lash soxasidagi ayrim majburiyatlarini, shuningdek soliq to’g’risidagi qonun hujjatlarida belgilangan boshqa majburiyatlarini bajarilishini tekshirish sayyor soliq tekshiruvidir`,
+
+
+`166.Elektron raqamli imzo qaysi tashkilot tomonidan taqdim etiladi?
+A. Davlat xizmatlari markazi tomonidan`, 
+
+
+`167.Soliq nazorati qaysi shakllarda amalga oshiriladi?
+A. Soliq tekshiruvlari, soliq monitoring`,
+
+
+`168.Soliq tekshiruvlari nechta turdan iborat? 
+A. Kameral soliq tekshiruv, sayyor soliq tekshiruv, soliq audit`,
+
+
+`169............. soliq tekshiruvi soliq to’lovchi (soliq agenti) tomonidan taqdim etilgan soliq hisobotini, moliyaviy hisobotni, shuningdek soliq to’lovchining faoliyati to’g’risida soliq organida mavjud bo’lgan boshqa hujjatlar hamda ma’lumotlarni tahlil qilish asosida soliq organi tomonidan o’tkaziladi
+    A. Kameral`,
+
+`170.So’ralgan hujjatlar va tushuntirishlar soliq organiga tegishli so’rov olingan kundan e’tiboran ....... kun ichida taqdim etilishi kerak.
+    A. 5`,
+
+`171.Agar o’tkazilgan kameral soliq tekshiruvi yakuni bilan taqdim etilgan soliq hisobotida tafovutlar va (yoki) xatolar aniqlangan bo’lsa, soliq organi soliq to’lovchiga ..................................... yuboradi.
+    A. soliq hisobotlariga tuzatishlar kiritish talabnomasini`,
+
+`172.Soliq to’lovchi tuzatishlar kiritish to’g’risidagi talabnoma olingan kundan e’tiboran ....... muddatda tegishli soliqlar va yig’imlar bo’yicha aniqlashtirilgan soliq hisobotini yoxud tasdiqlovchi hujjatlarni taqdim etgan holda aniqlangan tafovutlarning asosnomasini taqdim etishi shart
+    A. 10 kunlik`,
+
+`173.Soliq (hisobot) davri uchun ............... o’tkazilayotgan bo’lsa, bunday davr uchun kameral soliq tekshiruvi o’tkazilmaydi
+    A. soliq monitoringi`,
+
+`174.Soliq to’lovchilarning soliqlar va yig’imlarni hisoblab chiqarish hamda to’lash sohasidagi ayrim majburiyatlarini, shuningdek soliq to’g’risidagi qonun hujjatlarida belgilangan boshqa majburiyatlarini bajarilishini tekshirish ......... soliq tekshiruvidir.
+    A. Sayyor`,
+
+`175............ soliq tekshiruvi chog’ida hisobga olish hujjatlarining, tovar-moddiy qimmatliklar va pul mablag’lari harakatining, shuningdek soliq to’lovchining faoliyati bilan bog’liq bo’lgan boshqa axborotning tahlili o’tkaziladi.
+    A. Sayyor`,
+
+`176.Sayyor soliq tekshiruvi ..........................asosida o’tkaziladi
+    A. soliq organi rahbarining (rahbari o’rinbosarining) buyrug’i`,
+
+`177.Sayyor soliq tekshiruvi ...... kundan ko’p bo’lmagan muddatda o’tkaziladi.
+    A. 10`,
+
+`178.Soliq to’lovchiga sayyor soliq tekshiruvi .............topshirilgan kun sayyor soliq tekshiruvi muddatining tugashi deb hisoblanadi.
+    A. Dalolatnomasi`,
+
+`179.Sayyor soliq tekshiruvi o’tkazish to’g’risidagi nizomni ..................................tasdiqlaydi.
+    A. O’zbekiston Respublikasi Davlat soliq qo’mitasi`,
+
+`180.Soliq auditi soliq to’lovchilarning (soliq agentlarining) .......  darajadagi tavakkalchilik toifasiga mansub soliq to’lovchiga (soliq agentiga) nisbatan o’tkaziladi
+    A. Yuqori`,
+
+`181.Soliq organlari soliq auditi o’tkazilishi boshlanishidan kamida ........ kalendar kun oldin soliq to’lovchiga soliq auditi o’tkazilishi to’g’risida xabarnoma yuboradi.
+    A. 30`,
+
+`182.Soliq auditini o’tkazish muddati soliq to’lovchiga (soliq agentiga) soliq auditini tayinlash to’g’risidagi ........ topshirilgan kunda boshlanadi.
+    A. Buyruq`,
+
+`183.Soliq auditini o’tkazish muddati ...... oygacha, alohida hollarda esa — ...... oygacha uzaytirilishi mumkin
+    A. ikki — .uch`,
+
+`184.Soliq auditini o’tkazish muddatini uzaytirish asoslari va tartibini ....................................belgilaydi.
+    A. O’zbekiston Respublikasi Davlat soliq qo’mitasi`,
+
+`185.Soliq auditini o’tkazish muddati o’tkazilgan soliq auditi to’g’risida .................tuzilgan (imzolangan) kunda tugaydi.
+    A. Dalolatnoma`,
+
+`186.Bevosita soliq tekshiruvini o’tkazuvchi soliq organlari mansabdor shaxslarining tekshirilayotgan shaxsning hududiga yoki binosiga kirishi ushbu mansabdor shaxslar tomonidan ........ ushbu shaxsning soliq tekshiruvini o’tkazish to’g’risidagi buyrug’i (qarori) taqdim etilgan taqdirda amalga oshiriladi.
+    A. xizmat guvohnomalari va soliq organi rahbarining (rahbari o’rinbosarining)`, 
+
+`187.Hududni va binolarni ko’zdan kechirilgandan so’ng...... tuziladi
+    A. Bayonnoma`]
 
 
 
