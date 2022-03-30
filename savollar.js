@@ -1,553 +1,433 @@
-const xalqaro_savollar = [`Iqtisodiy adabiyotlarda, eng umumiy shaklda, reja-lashtirish ...
-A.	istiqbolga yo’naltirilgan qarorlarni qabul qilish bo’yicha faoliyat deb talqin qilinadi;`,
-
-`“Rejalashtirish” tushunchasining ma’no-mazmunini yanada umumiyroq bo’lgan va xo’jalik yurituvchi sub’ektlar faoliyatini muvofiqlashtirishning ob’ektiv zarurligi va imkoniyatini anglatuvchi “rejalilik” orqali aniqlash mumkin. Haqiqatdan ham  rejalashtirish ...
-A.	amaliyotda rejalilikni amalga oshirishni, ya’ni balanslilik (muvozanat) va proportsionallilikka (mutanosiblikkerishish bo’yicha ongli faoliyatni bildiradi;`,
-
-`Moliyaviy rejalashtirish deb nimaga aytiladi?
-A.	Moliyaviy resurslarning balansliligi (muvozanati)ni va prorportsionalliligi (mutanosibligi)ni ta’minlashga qaratilgan faoliyatga moliyaviy rejalashtirish deyiladi;`,
-
-`Moliyaviy rejalashtirishda balanslilik (muvozanat) ...
-A.	davlatning ixtiyorida bo’lgan moliyaviy resurslar va xo’jalik yurituvchi sub’ektlarning ixtiyorida (qo’lidqolgan daromadlar o’rtasidagi optimal nisbatni bildiradi;`,
-
-`Moliyaviy rejalashtirishda proportsionallik (muta-nosiblik) ...
-A.	korxonalar, xo’jalik tarmoqlari, mintaqalar va davlat sub’ektlari bo’yicha  daromadlarning soliq to’languncha va soliq to’langandan keyingi o’lcham (miqdor)lari o’rtasidagi oqilona nisbatdan iborat. Ana shu nisbatni ko’paytirish yoki kamaytirish orqali davlat ularning rivojlanishini rag’batlantirishi yoki cheklab qo’yishi mumkin;`,
-
-`Umumiy  va eng oddiy ko’rinishda, moliyaviy rejalash-tirish deyilganda ...	
-A.	moliyaviy rejalarni tuzish va amalga oshirish jarayoni nazarda tutiladi;`,
-
-`Moliyaviy rejani, xuddi uni ishlab chiqish, yaratish yoki tuzish jarayoni kabi ...
-A.	moliyaviy ko’rsatkichlarni ijodiy tahlil qilish, umumlash-tirish va o’zaro bog’lash tizimi sifatida qarash kerak;`,
-
-`“Moliyaviy rejalashtirish” tushunchasi o’z ichiga nimalarni oladi?
-A.	barcha javoblar to’g’ri.`,
-
-`Moliyaviy rejalashtirishning asosiy vazifalari nimalar hisoblanadi?
-A.	barcha javoblar to’g’ri.`,
-
-`Bozor munosabatlariga o’tilganiga qadar moliyaviy rejalashtirishning mazmuni korxonalarda sof operativ vazifalarni – ...
-A.	markazlashtirilgan iqtisodiyot amal qilganligi uchun etarli darajada formal bo’lgan korxonalarning besh yillik moliyaviy rejalaridagi ko’rsatkichlarni ishlab chiqish, istiqbolga mo’ljal-langan rejalarning loyihasini baholash, korxonaning yillik moliyaviy rejalarini tuzish kabilarni hal etishga qaratilgan edi; `,
-
-
-`Hozirgi sharoitdagi moliyaviy rejalashtirish ...
-A.	barcha zaruriy harakatlarni oldindan ko’zda tutish (ko’ra bilish)gina emas. Bu tegishli ishlarni amalga oshirish jarayonida yuzaga chiqishi mumkin bo’lgan har qanday kutilmagan holatlarni ko’ra olish qobiliyati hamdir. Albatta, xo’jalik yurituvchi sub’ekt o’z faoliyatidagi barcha risklarga barham beraolmaydi. Lekin u ana shu risklarni samarali oldindan ko’ra bilish yordamida boshqarish imkoniyatiga ega;`,
-
-
-`Moliyaviy rejalashtirish amaliyotida qanday aso-siy metodlardan foydalanish mumkin?
-A.	barcha javoblar to’g’ri.`,
-
-`Moliyaviy rejalashtirish jarayonining qanday asosiy bosqichlarini ajratib ko’rsatish mumkin?
-A.	barcha javoblar to’g’ri`,
-
-
-`Moliyaviy rejalashtirishning qanday turlari bo’lishi mumkin?
-A.	strategik moliyaviy rejalashtirish; joriy moliyaviy reja-lashtirish;`,
-
-
-`Strategik moliyaviy rejalashtirish o’z ifodasini ...
-A.	strategik moliyaviy rejalarda topadiki,  u tashqi va ichki muhitda o’zgarayotgan xo’jalik yuritish sub’ekti moliyaviy taraq-qiyotining ko’p variantli bashoratidan iboratdir;`,
-
-
-`Strategik moliyaviy reja, hech bo’lmaganda, qanday savollarga aniq javob bermog’i lozim
-A.	barcha javoblar to’g’ri.`,
-
-
-`Moliyaviy rejalashtirish ...
-A.	mamlakat milliy xo’jaligini rejalashtirishning tarkibiy qismi bo’lib, sotsial-iqtisodiy rivojlanish rejasining ko’rsat-kichlariga tayanadi, moliya tizimi barcha organlarining faoliyat-larini muvofiqlashtirish (koordinatsiya qilish)ga yo’naltiriladi;`,
-`Moliya tizimi alohida bo’g’inlarining nisbiy mustaqilligi quyidagilarni o’zida aks ettiruvchi moliyaviy rejalarning ishlab chiqilishi zarurligini belgilab beradi:
-A.	pul fondlarini shakllantirish va ulardan foydalanish shakllari va metodlarining o’ziga xosligi; moliyaviy resurslarni tarmoqlar va hududlar bo’yicha qayta taqsimlash;`,
-
-`Moliyaviy rejalashtirishning bosh ob’ekti ...
-A.	rejada o’zining miqdoriy ifodasini oladigan moliyaning bo’g’inlari (moliyaviy munosabatlar) hisoblanadi;`,
-
-
-`Konkret pul fondlari mablag’larining harakati...
-A.	yagona tizimga birlashtirilgan tegishli moliyaviy rejalarda ifodalanadi va mustahkamlanadi;`,
-
-
-
-
-`Moliyaviy rejalar tizimining markazini ...
-A.	byudjet rejasi egallaydiki, unda byudjet fondining harakati, daromadlar va xarajatlarni shakllantirish va ulardan foydalanishning shakllari va metodlari, daromad va xarajat-larning tarkibiy tuzilishi va tuzilmasi o’zining miqdoriy ifoda-sini topadi.`,
-
-
-`Nobyudjet fondlarning harakati, mos ravishda, ...
-A.	Pensiya fondi, Sotsial sug’urta fondi, Majburiy tibbiyot sug’urtasi fondi, Yo’l fondi, Aholi bandligi davlat fondi kabilarning moliyaviy reja (smeta)larida, ularning daromadlari va xarajatlarida aks ettiriladi;	`,
-
-`Sug’urta fondini shakllantirish va undan foydala-nishning rejasi ...
-A.	mablag’larning yanada samaraliroq foylanilishiga imkon beradi;`,
-
-`Moliyaviy rejalashtirishning umumdavlat va hududiy darajalariga ...
-A.	istiqbol uchun mo’ljallangan moliyaviy  rejalar, moliyaviy balanslar va shuningdek, aholi daromadlari va xarajatlari harakatining balansini ishlab chiqish va amalga oshirishlar kiradi;`,
-
-
-`Istiqbol uchun mo’ljallangan moliyaviy  rejalash-tirish ...
-A.	iqtisodiy va sotsial taraqqiyot hamda moliyaviy siyosatni muvofiqlashtirish (koordinatsiya qilish)ni ta’minlash, shuningdek ishlab chiqiladigan islohotlar, dasturlar va qonunlarning moliyaviy oqibatlarini kompleks tarzda bashoratlash, uzoq muddatli salbiy tendentsiyalarni kuzatish va ularga nisbatan tegishli choralarni o’z vaqtida qabul qilish  maqsadlarida amalga oshiriladi;`,
-
-
-`Odatda, istiqboldagi (istiqbol uchun mo’ljal-langan) moliyaviy  rejalar ...
-A.	navbatdagi uch yil uchun ishlab chiqilib, uning birinchi yili uchun byudjet tuziladi, navbatdagi ikki yil reja davri hisoblanib, ular davomida e’lon qilingan iqtisodiy siyosatning haqiqiy natijalari kuzatiladi;`,
-
-
-`Istiqboldagi (istiqbol uchun mo’ljallangan) moliyaviy  rejalar ...
-A.	mamlakat, uning ma’muriy-hududiy tuzilmalari sotsial-iqtisodiy rivojlanishi aniqlashtirilgan o’rta muddatli bashora-tining ko’rsatkichlarini hisobga olgan holda har yili o’zgartirilishi (korrektirovka qilinishi) mumkin. Reja davri esa, bunda yana bir yil oldinga suriladi;`,
-
-` Ijtimoiy takror ishlab chiqarishning proportsio-nalligi va balansliligini ta’minlashda, pul muomalasini tartibga solishda ...
-A.      davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) va har bir ma’muriy-hududiy tuzilmalarning daromadlar va xarajatlar balansi muhim o’rinni egallaydi;`,
-
-`Moliyaviy rejalashtirishning balans metodi ...
-A.	mamlakat, uning ma’muriy-hududiy tuzilmalari va mahalliy ma’muriyatlari masshtabida moliyaviy resurslar defitsitini aniqlashga, barcha xo’jalik yurituvchi sub’ektlar o’rtasida mablag’-larni samarali va asosli qayta taqsimlashga imkon beradi;`,
-
-`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
-A.	mavjud barcha moliyaviy rejalarni yagona tizimga birlash-tiradi;`,
-
-
-`Davlat yig’ma moliyaviy balansi (moliyaviy resurs-lar balansi)ning ko’rsatkichlari ...
-A.	byudjet va kredit rejalarini, shuningdek boshqa moliyaviy rejalarni tuzishda asos sifatida qabul qilinadi;`,
-
-`Aholi daromadlari va xarajatlari balansi ...
-A.	davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) bilan bevosita bog’langan. Unda naqd pulli va naqd pulsiz shakllardagi aholi pul resurslarining harakati o’z ifodasini topadi;`,
-
-
-`Moliyaviy reja hisoblangan aholi daromadlari va xarajatlari balansi ...
-A.	aholining daromadlari va xarajatlari o’rtasidagi propor-tsiyani aniqlaydi, mehnat haqi va pensiya ta’minotining o’sganligi, tovarlar taklifi hajmining oshganligini ifodalaydi; `,
-
-
-`Aholi pul daromadlari va xarajatlari balansi ...
-A.	naqd pulli pul aylanmasi, chakana tovar aylanmasi,  soliq tushumlari, kredit resurslarini rejalashtirish uchun muhim rol o’ynaydi;`,
-
-
-`Aholi pul daromadlari va xarajatlari balansi ...
-A.	Moliya vazirligi, Markaziy bank va moliya tizimining boshqa organlari ishtirokida Iqtisodiyot vazirligi tomonidan ishlab chiqiladi;`,
-
-`Ma’lum bir muddatni qamrab olishiga qarab, moliyaviy rejalar quyidagi guruhlarga bo’linishi mumkin:	
-A.	uzoq muddatli moliyaviy rejalar; qisqa muddatli moliyaviy rejalar;`,
-
-`Uzoq va qisqa muddatli moliyaviy rejalar ...
-A.	bir-birlaridan nafaqat o’zlarining qamrab olish gorizont-lari bo’yicha, balki rejalashtirish maqsadlariga ko’ra ham farq-lanadi;`,
-
-
-`Agar uzoq muddatli moliyaviy rejalar (rejalashti-rish)ning bosh maqsadi ...
-A.	moliyaviy barqarorlik nuqtai-nazaridan firma kengayi-shining yo’l qo’yilishi mumkin bo’lgan sur’atlarini aniqlash bo’lsa, qisqa muddatli moliyaviy rejalar (rejalashtirish)ning bosh maqsadi firmaning doimiy to’lovga qobilligini ta’minlashdan iboratdir;`,
-
-`Alohida olingan xo’jalik yurituvchi sub’ektning moliyaviy rejasi ...
-A.	unga tegishli bo’lgan biznes-rejaning tarkibiy qismi hisoblanadi;`,
-
-`Alohida olingan xo’jalik yurituvchi sub’ektning moliyaviy rejasida ... 	
-A.	marketing, operativ faoliyat, mulkka egalik huquqi va korxona faoliyat ko’rsatishining boshqa yo’nalish (aspekt)lari qiymat ko’rsatkichlarida ifodalanadi;`,
-
-
-
-`Davlatning xarajatlari ...
-A.	insonlarga (shaxsiy daromadlar) va kapitalga  (joriy quyil-malar va investitsiyalar) xizmat qilishi mezoni bo’yicha  ham klassifikatsiya qilinishi mumkin. Bu narsa ijtimoiy mahsulotni ishlab chiqarish va uni  iste’mol qilishda ularning ulushlarini alohida hisobga olishga imkon beradi;`,
-
-
-`Sotsial subsidiya oluvchilar...
-A.	aholining moddiy ne’matlar iste’moli qismiga nisbatan to’lovga qobiliyatli talabning barqarorligini ta’minlaydi;`,
-
-`Transfert xarajatlar ...
-A.	jamiyat jami daromadi uning a’zolari o’rtasida taqsimla-nishini o’zgartiradi (korrektirovka qiladi);`,
-
-
-`Davlat xarajatlari jami talab shakllanishining ...
-A.	unumli yo’naltirilishida ijobiy tarkibiy qism (element) bo’lib hisoblanishi mumkin;`,
-
-`Davlat xarajatlari hajmining o’zgartirilishi (korrektirovka qilinishi) ...
-A.	investitsiyalar o’lchami, jami talab hajmi va taklifning tarkibiy tuzilmasiga bevosita o’z ta’sirini ko’rsatadi;`,
-
-`Davlatning xarajatlari yana ...	
-A.	joriy (davlat iste’moli va transfertlar) va  kapital xarajatlarga (davlat investitsiyalari) bo’linadiki, bunday bo’linish takror ishlab chiqarish parametrlari dinamikasiga moliyaning ta’sirini baholashda juda muhimdir;`,
-
-`Sotsial subsidiya oluvchilar...
-A.	maorif, sog’liqni saqlash, madaniyat va sotsial ta’minot ob’ektlarining kengaytirilishi, uy-joy qurilishiga davlat dotatsiyalari bilan birgalikda, faqat qurilish materiallariga bo’lgan talabni oshirib qolmasdan, balki  qurilish industriyasi bilan bog’liq bo’lgan sanoatning boshqa alohida tarmoqlari uchun ham chuqur bozorni yaratadi, uzoq muddatli foydalanish xos bo’lgan predmetlar uchun taklifni oshiradi;`,
-
-`Davlat xarajatlarini guruhlarga ajratishda funktsional printsipdan foydalanish ...
-A.	mamlakat taraqqiyotining ichki muammolarini hal qilish va dunyo hamjamiyati bilan o’zaro munosabatlar orqali ifodalanadigan davlatning barcha funktsiyalarini namoyish qilishi mumkin;`,
-
-
-`Iqtisodiyot resurslarining cheklanganligi sharo-itida transformatsion xarajatlar ...
-A.	nodavlat sektorida tovarlar va xizmatlarni ishlab chiqarishning hajmini bevosita o’zgartiradiki, bulardan boshqa bir vaziyatlarda jamiyat foydalanadi va bir vaqtning o’zida ular jami taklifning tarkibiy tuzilmasiga o’z ta’sirini ko’rsatadi;`,
-
-`Jismoniy va yuridik shaxslar ega bo’lgan hamda o’zlarining joriy xarajatlari va investitsiyalarini moliya-lashtirish uchun foydalaniladigan resurslar bir qismining davlatlashtirilishi (davlat ixtiyoriga o’tkazilishi) ...
-A.	ijtimoiy tizim  sub’ektlarining daromadlilik darajasini kamaytiradi (pasaytiradi) va jami iste’molning tarkibiy tuzilmasini o’zgartiradi;`,
-
-`Qo’shilgan qiymatni moliyaviy qayta taqsimlash-ning dastlabki bosqichida ...
-A.	davlat daromadlari – YaIM va MDning bir qismini qaytarilmaslik sharti bilan davlatning ixtiyoriga olish bo’yicha iqtisodiy munosabatlar -  xizmat qiladi;`,
-
-`Transformatsion xarajatlarning tarkibiga kiruv-chi davlat investitsiyalari ...
-A.	davlat korxonalari va tashkilotlarining asosiy kapitali va aylanma fondlarining o’sgan qismiga quyilmalar, davlat zaxiralari va rezerlarini yaratish, uzoq muddatli byudjet kreditlaridan iborat.`,
-
-
-`Turli sotsial-iqtisodiy jarayonlarda moliyaning rolini (moliyaviy tartibga solishning rolini) to’liq idrok etish uchun ...
-A.	tizimning shakllantiruvchi asoslarini – davlat xarajatlari va davlat daromadlarini - hamda ular har birining rolini   atroflicha tahlil qilib chiqmoq lozim.`,
-
-`Turli-tuman pul oqimlarining harakati va ular-ning bir-birlari bilan qo’shilib ketishi, o’z o’lchami bo’yicha turlicha bo’lgan pul fondlarini shakllantirish  va ulardan foydalanishning barchasi yagona real manba - ...
-A.	mamlakat ichida va xorijda  shu yilning o’zida yaratilgan qo’shilgan qiymat – hisobidan “oziqlanadi”.	`,
-
-
-`Hozirgi paytda dunyoning sanoati taraqqiy etgan mamlakatlarida davlatning tartibga solish roli ...
-A.	uzluksiz yuqoriga o’sib boruvchi to’g’ri chiziq sifatida qaralmaydi. Chunki ularda xususiy sub’ektlar daromadlarini davlat daromadlariga “oqib o’tishi”ning o’ziga xos bo’lgan iqtisodiy chegara (kritik nuqta)siga erishilgan;`,
-
-`Mamlakat pul fondlarini qayta taqsimlashning tarkibi va struktura (tarkibiy tuzilma)sini ...
-A.	milliy xo’jalik takror ishlab chiqarishining proportsiyalari, sotsial sohani ta’minlash, zaruriy rezervlarni yaratish, milliy xavfsizlikni ta’minlash imkoniyatlari va h.k.lar belgilab beradi;`,
-
-`Takror ishlab chiqarish jarayonida davlat moliya-sining rolini aniqlab olish uchun ...
-A.	ularni bir necha belgilar bo’yicha klassifikatsiya qilish kerak;`,
-
-
-`Barcha zamonaviy iqtisodiy makon  uchun ...
-A.	turli-tuman pul oqimlarining harakati va ularning bir-birlari bilan qo’shilib ketishi, o’z o’lchami bo’yicha turlicha bo’lgan pul fondlarini (shaxsiy, jamoa, kredit, rezerv, valyuta, sug’urta, byudjet, markaziy, mintaqaviy, homiylik va boshqalar) shakllantirish  va ulardan foydalanish xosdir;`,
-
-
-`Ish hаqi nimа?
-A.	ishchi vа xizmаtchilаr mеhnаtining miqdоri, sifаti vа unumdоrligigа qаrаb, milliy mаhsulоtdаn оlаdigаn ulushining puldаgi ifоdаsi`,
-
-
-`Fоydа nоrmаsi nimа?
-A.	fоydа mаssаsining ishlаb chiqаrish xаrаjаtlаrigа nisbаtining fоizdа ifоdаlаnishi`,
-
-
-
-
-
-`Fоydа nimа?
-A.	yalpi dаrоmаddan yalpi xаrаjаtlаrning ayirmasi (farqi)`,
-
-`Quyidаgilаrdаn qаysi biri kоrxоnа uchun tаshqi xаrаjаtlаr hisоblаnаdi?
-A.	ishchi kuchini yollаsh xаrаjаtlаri, rеntа, fоiz to‘lоvlаri `,
-
-`Quyidаgilаrdаn qаysi biri kоrxоnа uchun ichki xаrаjаt hisоblаnаdi?
-A.	kоrxоnаdagi binо vа inshооtlаr аmоrtizаtsiyasi`,
-
-`O‘rtаchа xаrаjаtlаr nimа?
-A.	bir birlik mаhsulоtni ishlаb chiqаrish xаrаjаtlаri`,
-
-`Davlatning (agar, albatta, davlat hududlar, aholi, an’analar va h.k.lar kompleksi sifatida emas, balki boshqaruv organi sifatida qaralsreal (haqiqiy) boyligi ...
-A.	uning markazlashtirilgan pul fondidan, ya’ni davlat moliya-sining moddiy asosidan iborat;`,
-
-
-`Hozirgi paytda dunyoning o’tish iqtisodiyotiga ega bo’lgan mamlakatlarida markazlashtirilgan pul fondlarining jami hajmi ...
-A.	YaIMga nisbatan 11-17% atrofida tebranadi va aynan shu raqamlarning o’zi davlat tomonidan bu jarayonga aralashuvning etarli darajada faol emasligidan dalolat beradi;`,
-
-`Dunyoning rivojlanayotgan mamlakatlari va bozor iqtisodiyotiga o’tayotgan mamlakatlar uchun kelajak boshqa-charoqdir. Bu mamlakatlarda ...
-A.	bozor  tuzilmalari va institutlarining rivojlanishi va mustahkamlanishi bilan  parallel ravishda davlatning moliyaviy tartibga solishi ham ortib (kuchayiborishi kerak va ularda  tegishli iqtisodiy “chegara” (kritik nuqta)ga etgunga qadar hali ancha bor;`,
-
-`Agar firma butun bozorga bitta tovarni taklif etsa, unda bu :
-A.	diffеrеntsiallanmagan markеting`,
-
-
-`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi)da ...
-A.	byudjet fondi, nobyudjet fondlar, sug’urta fondi, kredit fondi, korxona va tashkilotlarning pul fondlari va nihoyat, fuqarolarning pul mablag’lari tarkibida rejalashtirilayotgan resurslarning shakllanishi va ulardan foydalanish aks ettiriladi;`,
-
-`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
-A.	Moliya vazirligi va moliya tizimining boshqa bo’linmalari faol ishtirokida Iqtisodiyot vazirligi tomonidan ishlab chiqiladi;`,
-
-`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
-A.	o’tgan yilgi davlatning  hisobot yig’ma moliyaviy balansi (hisobot moliyaviy resurslar balansi) asosida va mamlakat sotsial-iqtisodiy taraqqiyotining bashorat ko’rsatkichlariga muvofiq ravishda tuziladi hamda ular byudjet loyihalarini  ishlab chiqishda asos bo’lib xizmat qiladi.`,
-
-`Davlatning yig’ma moliyaviy balansi (moliyaviy resurslar balansi) ...
-A.	mamlakat, uning sub’ektlari, mahalliy-hududiy tuzilmalari va ma’lum hududda faoliyat ko’rsatayotgan barcha xo’jalik yurituvchi sub’ektlarning barcha daromadlari va xarajatlarining jamidan iboratdir.`,
-
-`Davlat xarajatlarining tarkibi, tarkibiy tuzil-masi va hajmi ...
-A.	moliya tizimi faoliyatining natijalarini o’zida aks ettiradi va  bu tizim  ijtimoiy takror ishlab chiqarish jarayonida o’zining funktsiyalarini bajarayaptimi yoki yo’qmi, degan savolning javobini oldinroq aniqlashga imkon beradi;`,
-
-
-`Transformatsion xarajatlarning tarkibiga kiruv-chi davlat iste’moli o’z ichiga ...
-A.	davlat sektori ishchilarining ish haqi, joriy ehtiyojlarni qoplash uchun davlat tomonidan sotib olingan tovarlar uchun to’lovlar, ishlab chiqarishni dotatsiyalashtirish; davlat qarziga xizmat ko’rsatish, byudjetlararo subsidiyalar va shu erda ko’rsatilgan maqsadlar uchun foydalaniladigan ssudalarni qamrab oladi;`,
-
-`Aylanma kapital – ...
-A.	bir dоiraviy aylanish davоmida to‘liq istе’mоl qilinadi, o‘zining qiymatini ishlab chiqarish natijalariga to‘liq o‘tkazadi va ashyoviy-buyum shaklini ham yo‘qоtadi`,
-
-`Asоsiy kapital – ...
-A.	tоvar va хizmatlarni ayirbоshlash jarayonida bir nеchta dоiraviy aylanishlar davоmida qatnashadi, o‘zining nafliligini tayyorlanayotgan mahsulоtga (хizmatga) bo‘lib-bo‘lib, asta-sеkinlik bilan o‘tkazib bоradi va bir nеcha yillik хizmat muddati davоmida ashyoviy-buyum shaklini o‘zgartirmaydi`,
-
-
-`Kооpеrativ tadbirkоrlik – ...
-A.	jamоa mulkiga asоslanib, kооpеrasiya a’zоlarining uning faоliyatida o‘z mеhnati bilan ishtirоk  etishini taqоzо  etuvchi jamоa tadbirkоrligining alоhida shakli`,
-
-`Davlat kоrхоnalarini quyidagi guruhlarga bo‘lish mumkin:
-A.	byudjеt kоrхоnalari davlat ishlab chiqarish kоrхоnalari aralash kоmpaniyalar`,
-
-
-`Aralash kоmpaniyalar – ...
-A.	davlat va хususiy оmоnatchilarning aksiyalarini birlashtirish asоsida tashkil  etilgan aksiyadоrlik jamiyatlari va majburiyatlari chеklangan shirkatlar shaklidagi kоrхоnalar`,
-
-`Aksiyalarning nazоrat pakеti – ...
-A.	aksiyadоrlik jamiyati faоliyati ustidan nazоrat o‘rnatishni ta’minlash imkоnini bеruvchi aksiyalar sоni`,
-
-
-`Aksiyadоrlik jamiyati – ...	
-A.	kapitali qimmatli qоg‘оz shaklida rasmiylashtirilgan turli оmоnatchilarning pul mablag‘laridan tarkib tоpuvchi kоrхоna`,
-
-`Transformatsion xarajatlarning tarkibiga nima-lar kiradi?	
-A.	davlat iste’moli; davlat investitsiyalari;`,
-
-
-`Agar davlat xarajatlariga tovarlar yoki mehnatda ifodalangan xizmatlar qarama-qarshi turadigan bo’lsa, u holda ...
-A.	davlat pul mablag’lari oqimlarining boshqa ne’matlarga o’ziga xos tarzda transformatsiyalashuvi sodir bo’ladi va shu munosabat bilan bunday xarajatlarni transformatsion xarajat-larga kiritish mumkin;`,
-
-`Davlat xarajatlari ...
-A.	davlat moliyasining ijtimoiy mo’ljallanganligi nimadan iborat ekanligini aniq ko’rsatadi;`,
-
-`Hozirda budjetdan tashqari Pensiya jamg’armasi faoliyati qaysi organ huzurida tashkil etilgan?	 
-A.	Moliya Vazirligi`,
-
-
-`Hozirgi va kelajak avlod uchun milliy boylik, odatda, ...
-A.	“eyilmaydi” va aksincha,  u ko’paytiriladi;`,
-
-`Hozirgi paytda dunyoning sanoati taraqqiy etgan mamlakatlarida markazlashtirilgan pul fondlarining jami hajmi ...
-A.	YaIMning o’rtacha  30% dan 50% gachasini tashkil etadi;`,
-
-`Firma bir nеcha bozorga bir nеcha tovarlarni taklif qilsa, bunday bozor turi qanday nomlanadi?
-A.	kontsеtrlangan`,
-
-`Firma diffеrеntsiallanmagan markеtingdan bozorni sеgmеntlashga quyidagi yondoshuvni ishlatadi?
-A.	butun bozor – bitta sеgmеnt`,
-
-`Raqobatli ustunlik tushunchasi dеganda quyidagilar tushuniladi?
-A.	raqobatchiga nisbatan ustunlikni ta’minlaydigan ko’rsatkich`,
-
-`Biznеs rеjani tuzishda raxbarning rolini to’g’ri ko’rsating.
-A.	Korxona raxbari shaxsiy ishtiroki shart, ishchi guruxga raxbarlik qilish mumkin;`,
-
-`Kompaniya va uning faoliyat yo’nalishlari bo’yicha umumiy stratеgiya ishlab chiqiladi?
-A.	korporativ stratеgiya`,
-
-
-`Davlat tomonidan yuqori va quyi chеgaralari bеlgilanib, shu doirada o‘zgarishi mumkin bo‘lgan narх nima dеb ataladi?	
-A.	chеgaralangan narх`,
-
-`Bozorda o‘z mavqеini mustahkamlash va raqiblarini bozordan siqib chiqarish uchun firmalar tomonidan foydalaniladigan maхsus narх nima dеb ataladi?	
-A.	dеmping (tahharxdan ham past) narх`,
-
-`Dаvlаt budjеti mаblаg‘lаri hisоbidаn mаxsus аrzоnlаshtirilgаn nаrxlаr qаndаy nоm bilаn аtаlаdi?
-A.	dоtаtsiyalаngаn nаrx`,
-
-`Biznes-rejaning tarkibida moliyaviy reja qanday yo’nalishlar bo’yicha ishlab chiqiladi?	
-A.	barcha javoblar to’g’ri`,
-
-`Amaliy xarakter kasb etuvchi moliyaviy nazoratning printsiplarini aniqlang	
-A.	natijalilik`,
-
-`Biznеs rеjani kim tuzadi?
-A.	Korxona raxbari, mеnеjеrlar, tadbirkorlar va maslaxatchi (kansaltin  mutaxassislar`,
-
-
-`Biznеs rеjaning titul va kirish kismida kuyidagilar aks ettirilmaydi:
-A.	korxonaning tashkil etilish muddati`,
-
-`Sеgmеntlarni baholash mеzoni nima uchun zarur?
-A.	hamma javob to’g’ri`,
-
-`Biznеs rеja tuzishga kuyiladigan talablar:
-A.	Kiska va lunda bulishi kеrak, mantikan kuchli asoslangan, to’g’ri va ishonchli bulishi lozim.`,
-
-`Biznеs rеja bu shunday xujjatki, unda…ta'rifni to’g’ridavom ettiring.	
-A.	Korxonaning  ishini kanday boshlashi uz aksini topadi, qanday ishlab chiqarish ni samarali yurgazish uz aksini topadi, riskni qanday kamaytirish uz aksini topadi;`,
-
-
-`SWOT – tahlilning asosiy vazifalariga nimalar taalluqli emas?
-A.	markеting mеnеjеrlari motivatsiyasi`,
-
-`Mamlakat iqtisodiyotidagi soliq yuki qanday aniqlanadi?	
-A.	Moliya yilidagi mamlakat YaIM miqdorini soliqlar miqdoriga nisbati orqali`,
-
-`Rеal bozor sig’imi dеganda nimani tushunasiz?	
-A.	maqsadli bozorda aniq narx bo’yicha ma’lum bir vaqt mobaynidagi tovar sotish hajmi`,
-
-
-`Korxonaning “bozor salohiyati” dеganda nima tushuniladi?	
-A.	rеal va imkoniy xaridorlar yig’indisi`,
-
-`Biznеsda qaror — nima?	
-A.	Iqtisodiy, ijtimoiy, ijtimoiy-ruxni, dеmografik va boshka omillar boglikligi;`,
-
-`Banklar biznеs rеja bilan tanishayotganda nimalarga e'tiborga bеrishlari kеrak?
-A.	Moliya okimiga, Invеstitsiyalar samaradorligiga`,
-
-`Korporativ maqsadga yo’nalganlikning 3 asosiy tarkibiy qismi nimalardan iborat?
-A.	siyosatni yaratish «vositasi», kompaniya biznеsning qaysi soxasida ishlayotganligini tushunish, firmaning biznеsini aniqlash`,
-
-`Korporativ madaniyatni tashkil etishning asosiy omillari nimalarda?
-A.	muntazam narxlarni pasaytirishga intilishda`,
-
-`Moliyaviy bashoratlash ...	 
-A.	moliyaviy rejalarni tuzish bosqichidan oldin sodir bo’ladi	`,
-
-`Korporativ maqsad bu-  ........
-A.	tashkilot  o’z aktsionеrlarining bеlgilangan vaqtda aniq natijaga erishish majburiyatidir`,
-
-
-`Korporativ ma’daniyat asosi nimada?
-A.	kompaniya raqobatchilik pozitsiyasida`,
-
-`Bozorni sеgmеntlash dеmografik omillari guruhiga qaysi ko’rsatkich mos kеlmaydi?	
-A.	istе’molchining psixologik turi`,
-
-`Biznеs rеjada kеltiriladigan moliyaviy koeffitsiеnt - bu
-A.	bir buxgaltеrlik kursatkichining ikkinchisiga nisbati.`,
-
-`Kompaniyaning yaxshi ximoyalanishi mumkinligini namoyish etish uchun kuchsiz kompaniyalarga qattiq zarbalar bеrish bu:
-A.	kompaniyaning bozor mavqеini ximoya qilishning ikkinchi usuli`,
-
-`Kompaniyani maqsadi nima?
-A.	boshqarish apparatini bеlgilangan vaqtda bеlgilangan natijalarga erishish majburiyati`,
-
-
-`Kompaniyani divеrsifikatsiyalovchi aloxida biznеs turi stratеgiyasi qaysi pog’onada yaratiladi?`,
-
-`Kompaniyalar avvalambor nimalarga ega bo’lishi lozim?
-A.	stratеgik maqsadlarga`,
-
-`Kompaniya uzoq muddatli maqsadlarga erishish uchun o’z xarakatlarini, intilishini ma'lum soxaga yo’naltirsa:	
-A.	kompaniya o’zining uzoq muddatli niyatini namoyish etgan bo’ladi`,
-
-
-`Kompaniya stratеgiyasini ifodalashda ta'sir ko’rsatadigan tashqi guruxlar kimlardan tashkil topadi?
-A.	istе'molchi еtkazib bеruvchi, xukumat, kasaba uyushmalari, raqobatchilar, jamiya`,
-
-`Kompaniya stratеgiyasini ifodalashda ta'sir ko’rsatadigan ichki guruxlar kimlardan tashkil topadi?
-A.	yollanma ishchilar menejerlar`,
-
-
-`Kompaniya stratеgiyasi qanday tashkiliy darajada qayta ishlanadi?
-A.	Ijtimoiy psixologik, opеrativ`,
-
-`Kompaniya stratеgiyasi muvaffaqiyat kеltiradi qachonki;
-A.	mеnеjеrlar, dirеktorlar kеngashi, xukumat,  raqobatbardoshlikni ta'minlasam,  kompaniya mavqеiga mos kеlsa`,
-
-
-`Qimmatli qog’ozlar bo’yicha komissiya ...	
-A.	fond bozori ishtirokchilarining faoliyatini nazorat qilib, byudjet fondiga tushuvchi tushumlarning ortishiga o’z ta’sirini ko’rsatadi	`,
-
-
-`Kompaniya raqobatga bardosh bеra olmasligini oldindan ko’ra bilsa yoki muxit noqulay tomonga o’zgarayotganini sеzsa, u o’z mablag’larini:
-A.	turdosh va noturdosh biznеslarga invеstitsiya qilishi mumkin;`,
-
-
-`Kompaniya avvalambor, qanaqa maqsadlarni aniqlashi lozim?
-A.	moliyaviy va stratеgik maqsadlarni`,
-
-`Moliyaviy tartibga solishni amalga oshirish uchun tashkiliy imkoniyatlarni kimlar ta’minlaydi?	
-A.	moliyaviy qonunchilik va hokimiyatning vakolatli organlari;`,
-
-`Davlat mulki, asosan, moddiy-buyumlashgan shaklda (tabiiy boyliklar, binolar, inshootlar, ishlab chiqarish va xizmat ko’rsatish korxonalari, muzeylar, qo’riqxonalar, davolash manbalari, kutubxonalar, oltin zahiralari va h.k.) mavjud bo’lib, o’zining mo’ljallanganligiga ko’ra ular ...
-A.	davlat boshqaruvi va iqtisodiy tartibga solishda davlatning ishtirokiga oid joriy ehtiyojlarni “to’lash”ga ishlatilmasligi kerak;`,
-
-
-`Bоzоr infrаtuzilmаsi - bu:
-A.	аyirbоshlаsh munоsаbаtlаrigа xizmаt qiluvchi muаssаsаviy tuzilmа`,
-
-`Qimmatli qog‘ozlar oldi-sotdisi bo‘yicha rasmiy jihatdan tashkil etilgan va muntazam amal qiluvchi  bozor shakli birjaning qanday turiga kiradi?
-A.	fond birjasi	`,
-
-`Milliy valyutalar kurslari bo‘yicha ularning erkin oldi-sotdisi amalga oshiriladigan birja – bu:
-A.	valyuta birjasi`,
-
-
-`Moliyaviy tartibga solishning cheklangan ekanligi nimalarda namoyon bo’ladi?
-A.	barcha javoblar to’g’ri.`,
-
-`Kompaniya stratеgiyasi  qanday savollarga javob bеrishi kеrak?
-A.	krеditlar xajmi va sarmoyalar  sof foydasining o’zgarish tеndеntsiyasi`,
-
-`Kompaniya stratеgik  va moliyaviy xolati nimalardan  iobrat?
-A.	kompaniyaning bozordagi ulushi va tarmoqdagi o’rni`,
-
-`Moliyaviy tartibga solish uning boshqa shakllari bilan birgalikda ...	
-A.	asosiy makroiqtisodiy ko’rsatkichlar dinamikasida  ijobiy o’zgarishlar bo’lishini ta’minlashi mumkin. Biroq, amaliyotda bu narsaning sodir bo’lishi ancha murakkab bo’lib, u chuqur va har tomonlamali nazariy ishlanmalar va  murakkab matematik hisob-kitoblarga asoslanishni talab *qiladi. Bu sohada bunday kompleks tadqiqotlarning mavjud emasligi, albatta, muvaffaqiyatsizlikka olib keladi. Bu erda “baxtli bilet”ning tasodifan tanlanishi (topilishi) mutlaqo mumkin emas; `,
-
-`Barqarorlashtiruvchi tadbirlarni amalga oshirish orqali sotsial-iqtisodiy jarayonlarga davlatning ta’siri ...	
-A.	iqtisodiy o’sish sur’atlarini, inflyatsiya va bandlik darajasini tartibga solib turish, iqtisodiyotning tarmoq va mintaqaviy tuzilmasidagi progressiv (ijobiy) o’zgarishlarni rag’batlantirish, tashqi iqtisodiy muvozanatni va milliy valyuta kursini qo’llab-quvvatlashda ko’rinadi.`,
-
-
-`Sotsial-iqtisodiy jarayonlarga davlatning ta’siri qanday maqsadlar erishish uchun zarur?
-A.	barcha javoblar to’g’ri.`,
-
-
-`Asosida aniq shakllantirilgan maqsad va unga erishishning vositalari yotgan dasturli-maqsadli yondashuvdan foydalanadigan moliyaviy rejalashtirishning metodi sifa-tida moliyaviy dasturlashtirish quyidagilarning bo’lishini ko’zda tutadi:
-A.	barcha javoblar to’g’ri.`,
-
-`Moliyaviy bashoratlashning bosh maqsadi...
-A.	bashoratlanayotgan davrda haqiqatda mavjud bo’lishi mumkin bo’lgan moliyaviy resurslarning real hajmi, ularni shakllantirish manbalari va ulardan foydalanishni aniqlashdan iborat.`,
-
-`Moliyaviy bashoratlar moliya tizimi organlariga ...
-A.	moliya tizimini rivojlantirish va takomillashtirishning, moliyaviy siyosatni amalga oshirish shakllari va metodlarining turli-tuman variantlarini belgilashga imkon beradi;`,
-
-
-`Moliyaviy bashoratlashning eng asosiy metodlari quyidagilar bo’lishi mumkin:	
-A.	iqtisodiy jarayonlarni aniqlaydigan omillarga bog’liq ravishda moliyaviy reja ko’rsatkichlarining dinamikasini xarakter-laydigan ekonometrik modelni qurish (yaratish); korrelyatsion-regression tahlil; bevosita ekspertli baholash metodi;`,
-
-`Hayotiy faoliyatning umumiy sharoitlarini va iqtisodiy qarorlarning amalga oshirilish asoslarini ta’minlash borasida sotsial-iqtisodiy jarayonlarga davlat-ning ta’siri ...
-A.	butun jamiyatning xavfsizligini ta’minlash, mulkka egalik qilish huquqini himoyalashga va shaxsning erkin rivojlanishini ta’minlashga qaratilgan huquqiy rejim (tartib)ni o’rnatish va qo’llab-quvvatlab turish, samarali raqobatni qo’llab-quvvatlash va rivojlantirish orqali namoyon bo’ladi;`,
-
-
-`Obligatsiya kursi deganda:	
-A.	nominal qiymatga nisbatan foizlarda ifodalangan bozor narxi tushuniladi`,
-
-`Dunyoning hech (har) bir rivojlangan mamlakatida ...
-A.	jamiyat ustidan bozorning “absolyut monarxiya”si mavjud emas va shubhasiz, hech qachon bo’lmaydi ham;`,
-
-
-
-`Moliyaviy bashoratlash jarayonida ...
-A.	jamiyatning ma’lum bir davrdagi taraqqiyotiga bag’ishlangan moliyaviy siyosat kontseptsiyasi ishlab chiqiladi;`,
-
-
-`Moliyaviy bashoratlash ...
-A.	moliyaviy rejalarni tuzish bosqichidan oldin sodir bo’ladi;`,
-
-`Moliyaviy bashoratlar ...
-A.	moliyaviy siyosatni ishlab chiqishning zaruriy elementi va bir vaqtning o’zida  muhim bosqichi bo’lib hisoblanadi;`,
-
-
-`Zamonaviy iqtisodiy dunyo  - bu ...
-A.	aralash iqtisodiyot dunyosi;`,
-
-`Moliyaviy rejalar tizimi ...
-A.	moliyaviy resurslar manbalari (jismoniy va yuridik shaxslar daromadlari) tarkibiy tuzilishidagi o’zgarishlarning ob’ektiv ravishda o’zaro bog’liqligi va uzoq muddatli tenden-tsiyalarini, shuningdek kelajakda bu tendentsiyalar rivojlanishiga ta’sir ko’rsatishi mumkin bo’lgan omillarni aniqlashga imkon beradi;`,
-
-`Moliyaviy reja ...
-A.	har yili joriy yil rejasi ko’rsatkichlarining kutilayotgan ijrosi asosida o’zgartiriladi (korrektirovka qilinadi). Bunda ko’rsatkichlar besh yillik shkala bo’yicha bir yil oldinga (hisobot yilidan keyingi yilg “ko’chiriladi”. Oldinda turgan birinchi yilning reja ko’rsatkichlari direktiv (majburiy), keyingi to’rt  yillik ko’rsatkichlar esa mo’ljalli (orientirovkali) xarakterga ega hisoblanadi;`,
-
-
-`Moliyaviy siyosat sohasidagi uzoq va qisqa muddali maqsadlar va choralarni muvofiqlashtirishning  muhim metodi sifatida dasturlashtirishdan ...
-A.	moliyaviy rejalashtirishning hozirgi amaliyotida faol foydalanish maqsadga muvofiq;`,
-
-`Moliyaviy bashoratlash deb nimaga aytiladi?
-A.	u yoki bu davr mobaynida davlatning  mumkin bo’lgan moliyaviy ahvoli (holati)ni oldindan ko’ra bilish va moliyaviy rejalarning ko’rsatkichlarini asoslashga moliyaviy bashoratlash deyiladi;`,
-
-
-`Taftish o‘tkazish o‘z ichiga necha bosqichni oladi?
-A.	yirik mulkka – mamlakat milliy boyligining katta qismiga – ega;`,
-
-`Moliyaviy rejalashtirish ...
-A.	.ni moliyaviy bashoratlashsiz tasavvur etib bo’lmaydi;`,
-
-`Moliyaviy dasturlashtirishning asosiy mohiyati ...
-A.	besh yillik “o’zgarib turadigan” xarajatlar rejasini tuzish bilan belgilanadi;`,
-
-`Barcha bozor qonunlarining harakati ...
-A.	ob’ektiv bo’lib, ularni bekor qilish mumkin emas;`,
-
-`Hozirgi paytda dunyoning juda ko’p mamlakatlarida ishlab chiqarish maqsadlariga, resurslar va ijrochilar bo’yicha balanslilikka yo’naltirilgan ilmiy-tadqiqot, tashkiliy-xo’jalik va boshqa tadbirlar tizimidan iborat bo’lgan maqsadli kompleksli dasturlarlar...
-A.	... dan keng foydalanilmoqda;`,
-
-
-`Moliyaviy rejalarning ko’rsatkichlari ...
-A.	davlatning moliyaviy ahvolini tahlil qilish uchun boshlang’ich material hisoblanadi, istiqboldagi (istiqbol uchun) rejalashti-rishning informatsion asosi bo’lib xizmat qiladi;`,
-
-
-`Moliyaviy rejalashtirish jarayonida foydaga oid hisob-kitoblar ...
-A. 	korxonaning joriy va istiqboldagi salohiyati bilan, shuningdek biznes-rejaning boshqa bo’limlarida aniqlanadigan  cheklanmalar bilan muvofiqlashtirilishi kerak.`,
-
-
-`Pul mablag’larining yillik oqimini loyihalashti-rish va moliyaviy natijalarni aniqlash ...
-A.	tushumlarning kelib tushishi, debitorlik va kreditorlik qarzlarining o’zgarishi, soliq to’lovlarini optimallashtirish va boshqalar bo’yicha dinamikalarning bashorat qilinishini taqozo etadi.`,
-
-`Moliyaviy reja ...
-A.	korxona butun faoliyatini moliyaviy jihatdan ta’minlash-ning instrumenti sifatida maydonga chiqadi va bir vaqtning o’zida, shu faoliyatning moliyaviy natijalarini xarakterlaydi;`]
+const xalqaro_savollar = [
+    `1. Найдите древнейший письменный источник по истории Узбекистана.
+Авесто`,
+`2. Как называется наука, изучающая древние языки?
+Лингвишика`,
+`3. Как называется наука, изучающая древние письмена?
+Эпиграфика`,
+`4. Как называется наука, изучающая монеты?
+нумизматика`,
+`5. Как называется наука, изучающая историю человечества на основе материальных источников?
+Археология`,
+`6. Как называется наука, изучающая обычаи племен и народов?
+Элнография`,
+`7. Когда появились самые древние части Авесты?
+Миль пр. IX-VII`,
+`8. Как вы переводите слово «Авесто»?
+Зенд-Авесто, то есть интерпретированный текст, представляют собой строго определенные нормы права.`,
+`9. Кто автор книги «Без исторической памяти нет будущего»?
+Первый Президент Узбекистана И. КАРИМОВ`,
+`10. Что за книга Авесто?
+Собрание священных книг зороастризма`,
+`11. Период раннего палеолита…
+Мил ав 1млн - 100 тысяч лет`,
+`12. Средний палеолит…
+Миль ав 100- 40 тысяч лет`,
+`13. Поздний палеолит…
+Миль ав 40- 12 тыс. лет`,
+`14. Мезолитический период…
+Миль ав 12- 7 тыс. лет`,
+`15. Период неолита…
+Мил ав 6-4 тысячелетий годовых`,
+`16. Эпоха энеолита…
+Миль ав датируется серединой 4-3 тыс. лет.`,
+`17. Значение термина «палеолит»
+Каменный век (греч. «палеос» от древних слов «каменный камень» и «литос»).`,
+`18. Значение понятия «Мезолит»
+Средний каменный век - мезолит «средний»`,
+`19. Значение термина «неолит»
+Новый каменный век "неолит" (неос - новый)`,
+`20. Значение термина «энеолит»
+Мистошский период - энеолит (латинское "eneus" - "медь" и греческое "lithos" - "камень")`,
+`21. Название Амударьи в древности
+Джейхун`,
+`22. Как зовут бога добра в зороастризме?
+Ахурамазда`,
+`23. Как зовут бога зла в зороастризме?
+Ну наконец то`,
+`24. Ахеменидский период в Средней Азии.
+Миль пр. 558-330`,
+`25. Кто был первым иранским захватчиком в Среднюю Азию?
+Кир II`,
+`26. Когда Кир II напал на массагетов?
+Мельница АВВ 530`,
+`27. против Дария I мил.авв. 522г. Кто возглавил восстание?
+ФРАДА`,
+`28. В произведении какого автора написано о легенде о Шираке?
+Полиен`,
+`29. На какие административные единицы Ахемениды разделили захваченные территории?
+сатрапии`,
+`30. Последний представитель династии Ахеменидов
+ДОРО III`,
+`31. Какие части входят в состав Турецкого ханства?
+Запад Восток`,
+`32. Какие религии были распространены в Турецком ханстве?
+Зороастризм, буддизм, христианство, монизм, шаманизм`,
+`33. Показать восстание против арабов
+Одетый в белое`,
+`34. Какие племена основали Кушанское царство?
+Ёчжи`,
+`35. Как звали свободного человека в Средней Азии в раннем средневековье?
+Кашоварз`,
+`36. Как называли охранников крестьянской собственности в Средней Азии в раннем средневековье?
+Чокар`,
+`37. Какие налоги были введены арабами на оккупированных территориях?
+Хирадж, ушр, закят, джизья`,
+`38. Какие территории входили в состав государства эфталитов?
+Средняя Азия, Восточный Иран, Северная Индия, Восточный Туркестан, Афганистан, настоящее время
+Пакистан`,
+`39. Когда образовалось государство эфталитов?
+В 20-х годах V в.`,
+`40. Как зовут крупнейших землевладельцев Средней Азии?
+фермер`,
+`41. Столица государства Саманидов…?
+БУХОРО`,
+`42. Весь Моварауннахр перешел под контроль Караханидов…
+1038`,
+`43. Кто является основателем Караханидского государства?
+Абдукарим Сотук Буграхан`,
+`44. Во времена правителей какой династии название «крестьянин» носило сельские батраки.
+стало нарицательным?
+Караханиды`,
+`45. Кто является учредителем казначейства?
+Раб Алптегина и зять Сабуктегин`,
+`46. ​​Когда Махмуд Газневи завоевал Хорезм?
+В 1017 году`,
+`47. XI-XIIаа. Какая династия правила в Хорезме?
+Хорезмшахи`,
+`48. Основатель независимого Хорезмского государства?
+Ануштегин`,
+`49. Кто был последним хорезмийским царем?
+Дж. Мангуберди`,
+`50. Какая столица Караханидского государства?
+Боласогун, Кашгар, Тароз, Узген, Самарканд, Бухара`,
+`51.IX-XII а.о. Факторы развития науки и культуры на Востоке. Неправильно
+определить ответ.
+Шах Мамун ибн Мухаммад был разделен на южную и северную части в конце десятого века.
+Он объединил Хорезм в единый центр
+превратил его в культурный центр`,
+`52. Где похоронен Ибн Сина?
+1037 — 16 августа 57 г. Хамадон Иран`,
+`53. Основной источник Исмаила Бухари в исламских учениях после Корана.
+Хадис «Аль джоме ас-солих»`,
+`54. Кто является автором «Памятников древних народов»?
+Главный энциклопедический труд Беруни`,
+`55. В честь греческого философа Аристотеля его называли «Вторым учителем».
+Кто наш знаменитый великий соотечественник-ученый?
+Фароби`,
+`56. На какой территории в республике была создана Академия Маъмуна?
+В Хорезме`,
+`57. Известно, что Фаруби почитался как Второй Учитель. Первый
+Кого считать учителем?
+Аристотель`,
+`58. Назовите самый крупный научный центр в Багдаде?
+Байт уль-хикма`,
+`59. Автор "Девону лугати тюрк"?
+Махмуд Кашгари`,
+`60. Когда Чингисхан начал свой поход на Хорезмское государство?
+Осенью 1219 г. в Бахле`,
+`61. Какой город выбрал Махмуд Ялавоч своей резиденцией?
+Худжанд`,
+`62. Когда началось восстание против монголов под предводительством Махмуда Тороби?
+В 1238 г.`,
+`63. Где произошло восстание Махмуда Тороби?
+В селе Тороб, Бухара`,
+`64. Назовите человека, воевавшего с монгольскими захватчиками.
+Дж. Мангуберди, Махмуд Тароби`,
+`65. Кому Чингисхан доверил управление Восточным Туркестаном и Мовароуннахром?
+В Чигатой`,
+`66. Кто правил чигатайским народом?
+Чигатайхан`,
+`67. Кто защищал город Ходжент от монголов?
+Темур Малик`,
+`68. Найдите годы жизни Амира Темура.
+9 апреля 1336 г. 18 февраля 1405 г.`,
+`69. Где произошла решающая битва между Амиром Темуром и Боязидом?
+В районе Чубук недалеко от Анкары`,
+`70. Когда произошла «Глиняная война»?
+22 мая 1365 г.`,
+`71. Где происходила «грязевая битва»?
+Вдоль реки Чирчик между Ташкентом и Китаем`,
+`72. В каком году Амир Темур разбил Тухтамышхана на реке Тереке?
+15 апреля 1395 г.`,
+`73. Почему Амир Темур хотел присоединить Хорезм?
+Он считается неотъемлемой частью чигатайской нации, потому что утверждает, что является наследником чигатайских земель.
+считалось`,
+`74. Кто был объявлен преемником Амира Темура?
+Пирмухаммад (Мухаммад Султан)`,
+`75. Имя сына, ставшего причиной смерти Улугбека:
+Абдулатиф`,
+`76. Сколько лет Амир Темур правил государством?
+35 лет`,
+`77. Где и когда Амир Темур был избран правителем Мовароуннахра?
+11 апреля 1370 г.`,
+`78. Автором какого произведения является Амир Темур?
+Темур правила`,
+`79. Известный исторический труд Мирзо Улугбека.
+Исторический арба улус`,
+`80. Определите годы жизни Мирзо Улугбека:
+1394-1449 гг.`,
+`81. Кто из представителей династии Шейбанидов основал Бухарское ханство?
+Шайбанихан`,
+`82. Кто из тимуридов воевал с Шайбаниханом?
+З.М. Бобур`,
+`83. Автором какого исторического труда является Мирзо Улугбек?
+История арба улуса`,
+`84. Кем был тимуридский правитель, трижды завоевавший Самарканд?
+Бобур`,
+`85. На пороге какого города Шайбанихан сразился с Исмаилом Сефеви и погиб?
+Рядом с Мервом`,
+`86. История каких регионов объективно освещается в Бобурноме
+Бобурнома охватывает Среднюю Азию, Афганистан и Индию с 1494 по 1529 год.`,
+`87. От какой династии произошли Аштарханиды?
+Аштарханиды, двоюродные братья Шайбани, происходят от Джоджихана.`,
+`88. При каком правителе укрепилось государство Аштарханидов
+Имамкуликсон`,
+`89. При каком правителе Бухарское ханство стало называться эмиратом?
+Мухаммад Рахимби, правитель династии Мангит`,
+`90. Какого эмира Бухары называли «эмир-мясник»?
+Амир Насруллоксон`,
+`91. Назовите хана, трижды восходившего на кокандский престол?
+Мухаммад Худоёрхан`,
+`92. Какое государство образовалось в Ферганской долине в первой половине XVIII века?
+Кокандское ханство`,
+`93. Как назывались медресе, мечети и культовые сооружения в среднеазиатских ханствах?
+Земли фонда ??`,
+`94. Кто был первым генерал-губернатором Туркестана?
+К.П.фон Кауфман`,
+`95. Как называется договор, подписанный между Хивинским ханством и Россией в 1873 г.?
+Договор Ганди`,
+`96. Кто возглавил Андижанское восстание 1898 г.?
+Восстание Дукчи Эшан - сын Мухаммадали Халфа Сабира из деревни Мингтепа.`,
+`97. Какое восстание произошло в Ташкенте в 1892 г.?
+Чумное восстание`,
+`98. Когда царская Россия заняла Ташкент?
+17 июня 1865 года`,
+`99. Кто был эмиром царской России во время оккупации Бухарского эмирата?
+Амир Музаффар?`,
+`100. Кто был ханом во время завоевания Кокандского ханства царской Россией?
+С божьей помощью`,
+`101. Кто был ханом во время завоевания Хивинского ханства царской Россией?
+Мухаммедхон Рахимхон?`,
+`102. Сколько лет было Джизакскому восстанию?
+1916 г.`,
+`103. Кто является основателем движения джадидов?
+Исмаил Гаспирали`,
+`104. Когда в России произошла Февральская революция?
+27 февраля 1917 г.`,
+`105. Джадидские организации в Туркестане после Февральской революции.
+Молодой Халифат и движение «Молодая Бухара»?`,
+`106. 1917 г. Журнал, издаваемый в Туркестане Шурайскими улемами.
+Аль-Изох`,
+`107. Когда и по чьей инициативе был создан Шорай Ислам Мозг?
+Родился 14 марта 1917 года в Ташкенте в семье Абдулвахида Кори Абдурауфкори.`,
+`108. 1917 г. по инициативе Ким. Состоялся первый съезд мусульман области.
+Был в Ташкенте 16-23 апреля 1917 г.?`,
+`109. На каком съезде мусульман страны была образована партия «Союз мусульман»?
+В сентябре 1917 года в Ташкенте состоялся съезд мусульман Туркестана, Туркестана и Казахстана.
+тогда Совет улемов и Совет ислама объединятся, чтобы сформировать Союз ополченцев?`,
+`110. Когда в Туркестане была установлена ​​Советская власть?
+1917 -15-22 ноября?`,
+`111. На IV съезде мусульман провинции, состоявшемся в ноябре 1917 г., какое
+предлагается установить?
+«Автономная Республика» в ноябре 1917 года?`,
+`112. Когда движение за независимость в Туркестане против политики, проводимой Советами
+начал?
+Туркестан достиг своего расцвета в Фергане, начавшейся в феврале 1918 г.?`,
+`113. Какова была главная политическая цель молодой Бухары и молодой Хивы до 1917 года?
+было?
+Цель — демократизация управления страной и создание собственной конституции.
+прежде всего создать свое государство и развивать естественнонаучное образование?`,
+`114. Когда Красной Армией был свергнут Бухарский эмират?
+2 сентября 1920 года?`,
+`115. Когда была образована Бухарская Народная Советская Республика?
+6-8 октября 1920 г.?`,
+`116. На каком съезде мусульман края была учреждена Туркестанская автономия?
+IV - Конгресс?`,
+`117. Когда в Центральной Азии была реализована политика национального размежевания?
+Между 1918 и 1924 годами?`,
+`118. Когда была образована Узбекская ССР?
+1925 Комиссар Файзулла Ходжаев столица Бухара Самарканд Ташкент?`,
+`119. В 1930 г. столица Узбекской ССР была перенесена из Самарканда в какой город?
+В Ташкент?`,
+`120. Когда Узбекская ССР была принята в состав СССР?
+13 мая 1925 года?`,
+`121. В 20-е и 30-е годы ХХ века Узбекистан объединил своих крестьян идеологически
+организация топ инж.
+"Национал-социалистическая культура"?`,
+`122. Когда был первый этап земельно-водной реформы в Узбекистане?
+В 1921-1922 гг.?`,
+`123. Когда прошел второй этап земельно-водной реформы в Узбекистане?
+1925-1929?`,
+`124. В 30-е годы ХХ века в период массовой коллективизации сельского хозяйства в Узбекистане
+Какие фермы были созданы?
+"Земельно-водное хозяйство"?`,
+`125. Когда в Узбекистане было создано первое высшее учебное заведение (Национальный университет)?
+1918 г.`,
+`126. Как называется первое высшее учебное заведение, созданное в Узбекистане?
+Национальный университет Узбекистана`,
+`127. Кто из перечисленных поэтов и писателей был расстрелян в Ташкенте в 1938 г.?
+Гази Олим`,
+`128. Основные проявления политики репрессий в 20-30 гг.`,
+`129. Когда Узбекистан участвовал во Второй мировой войне?`,
+`130. Промышленные предприятия Средней Азии и других регионов в годы Второй мировой войны.`,
+`131. В каком городе была первая металлургия Узбекистана во время Второй мировой войны?
+завод заработал?`,
+`132. Во время Второй мировой войны на попечении находились дети 15 разных национальностей.
+определить имя человека.`,
+`133. Когда в Узбекистане начался День памяти и почестей?
+9 мая 1999 г.`,
+`134. Когда началась Вторая мировая война
+1 сентября 1939 г.`,
+`135. Мобилизация узбеков на борьбу с фашизмом в годы Великой Отечественной войны.
+Лидер Узбекистана...`,
+`136. Когда отмечалось 75-летие победы в Великой Отечественной войне?
+11 декабря 2019 г.`,
+`137. Когда была основана Академия наук Узбекистана?
+10 сентября 2018 г.`,
+`138. Каково было население Узбекистана во время Второй мировой войны?
+ 6,5`,
+`139. Кого преследовали в Узбекистане в 50-е годы ХХ века?
+Чолпон, Абдулла Кодири, Фитрат, Отаджон Хошимов, Зиё Саид, Гозиолим Юнусов,
+Момин Усманов, Мухаммад Гасанов, Косим Соронкин, Зия Гимадинов.
+140. Чье имя связано с термином «культ личности»?`,
+`141. Чьим именем и деятельностью в истории СССР назван период, названный в исторической литературе «теплым»
+относится к`,
+`142. Кто несет ответственность за политику «реконструкции»?
+М.С.Горбачев`,
+`143. ХХа. Как назывались репрессии в Узбекистане 1980-х годов?
+Хлопковый бизнес «Узбекский бизнес»`,
+`144. Когда проводилась политика «реконструкции» в СССР?
+20 век до середины 80-х`,
+`145. Когда в Узбекистане был создан Президентский институт?
+24 марта 1990 г.`,
+`146. Когда в Узбекистане была принята Декларация о суверенитете?
+20 июня 1990 г.`,
+`147. Когда узбекскому языку был присвоен статус государственного?
+ 21 октября 1989 г.`,
+`148. В чем суть ГКЧП или «августовских событий»?`,
+`149. Когда был принят Закон «О Флаге Республики Узбекистан»?
+18 ноября 1991 г.`,
+`150. Когда Узбекистан вступил в ООН?
+2 марта 1992 г.`,
+`151. После обретения независимости Узбекистан ставит целью формирование нового государства, экономики
+Как называется стратегия?
+Стратегия действий`,
+`152. О Стратегии действий по дальнейшему развитию Республики Узбекистан.
+Когда был подписан Указ Президента Республики Узбекистан?
+7 февраля 2017 г.`,
+`153. Президент Республики Узбекистан Ш.М. Мирзиёева «Ташкентская информация».
+о мерах по дальнейшему совершенствованию деятельности Технологического университета»
+Когда было оглашено решение?
+19 февраля 2018 г.`,
+`154. Когда Ш. Мирзиёев был избран Президентом Республики Узбекистан?
+14 декабря 2016 г.`,
+`155. Стратегия действий по развитию Республики Узбекистан на 2017-2021 годы.
+Сколько существует приоритетов?
+5 та`,
+`157. Движение за дальнейшее развитие Республики Узбекистан в 2017-2021 гг.
+как небесно-голубой символизирует первое перспективное направление стратегии
+Что это значит?
+Символ неба и чистой воды – цвет флага государства великого Амира Темура.`,
+`158. Президент Республики Узбекистан Ш.М. Мирзиёев на сессии Генассамблеи ООН
+когда ты говорил
+19 сентября 2017 г.`,
+`159. Как называется 2017 год по Постановлению Президента Республики Узбекистан Ш.Мирзиёева?
+взял?
+Год диалога с людьми и интересов человека`,
+`160. Согласно Указу Президента Республики Узбекистан, какой 2018 год в Узбекистане?
+называется?
+Активное предпринимательство – год поддержки инновационных идей и технологий`,
+`161. Откуда взялись шайбани?`,
+`162. На пороге какого города Шайбанихан сразился с Исмаилом Сефеви и погиб?
+Рядом с Мервом`,
+`163. Правление династии Мангитов в Бухарском Эмирате:
+1753-1920 гг.`,
+`164. Какого правителя в народе называли «Невинным эмиром»?
+Амир Шохмурод`,
+`165. Период образования Кокандского ханства:
+1710.`,
+`166. Военная экспедиция князя Бековича-Черкасского в Среднюю Азию.
+послал император?
+Петр I`,
+`167. Какие факторы помогли России победить три ханства?`,
+`168. Когда был подписан договор между Российской империей и Бухарским эмиратом?
+23 июня 1868 г.`,
+`169. Кто был первым генерал-губернатором Туркестана?
+К.П.фон. Кауфман`,
+`170. Как называется договор, подписанный между Хивинским ханством и Россией в 1873 г.?
+Контракт Грандимиона?`,
+`171. Кто возглавил Андижанское восстание 1898 г.?
+Герцог Эшан Мухаммадали Халфа Сабир оглы`,
+`172. Какое восстание произошло в Ташкенте в 1892 г.?
+Чумное восстание`,
+`173. Когда царская Россия заняла Ташкент?
+В 1865 году?`,
+`174. Кто был эмиром царской России во время оккупации Бухарского эмирата?
+Амир Музаффар?`,
+`175. Кто был ханом во время завоевания Кокандского ханства царской Россией?
+Мухаммад Рахим хан???`,
+`176. Когда был подписан указ об упразднении Кокандского ханства царской Россией?
+В 1868 году?`,
+`177. Когда была основана Хивинская Народная Советская Республика?
+В 1920 году`,
+`178. 1929 г. В Узбекистане изменен алфавит. На основе какой записи он был основан?
+Она была переведена с арабского на латынь.`,
+`179. В 1940 году в Узбекистане был изменен алфавит. На основе какой записи он был основан?
+Переведено на узбекский алфавит на основе кириллицы.`,
+`180. Когда узбекскому языку был присвоен статус государственного?
+21 октября 1989 г.`,
+`181. В какой области Узбекистана был построен первый автомобильный завод?
+Асака`,
+`182. Какое из следующих событий произошло позже других?`,
+`183. Президент Республики Узбекистан Ш.М. Мирзиёев примет участие в Генеральной Ассамблее ООН
+Когда вы выступали на сессии?
+23 сентября 2020 г.?`,
+`184. Когда состоятся первые альтернативные выборы Президента Республики Узбекистан?
+держал?
+29 декабря 1991 г.`,
+`185. Свобода слова и религиозные организации в новой редакции Республики Узбекистан.
+Когда был принят закон?
+29 декабря 1991 года?`,
+`186. Когда в Узбекистане прошли первые выборы в однопалатный Олий Мажлис?
+В 1994 году??`,
+`187. В каком году в Узбекистане начал функционировать однопалатный Олий Мажлис?
+С 1995 года`,
+`188. Сколько времени просуществовал однопалатный Олий Мажлис Узбекистана?`,
+`189. 1990г. Как долго будет функционировать Верховный Совет Узбекской ССР?
+достиг?
+С 1990 по 1994 год`,
+`190. В каком году в Узбекистане действовал двухпалатный парламент?
+С 26 декабря 2004 г.
+191. Что было раньше?`,
+`193. Когда были пять инициатив Президента Республики Узбекистан Ш.Мирзиёева
+опубликовано?
+В 2019 году?`,
+`194. Пятая из пяти инициатив, озвученных Президентом Республики Узбекистан
+задать направление.
+Это относится к вопросам iw bn taminlaw женщин.`,
+`195. Первая из пяти инициатив, озвученных Президентом Республики Узбекистан
+задать направление
+Интерес молодежи к музыке, искусству, литературе, театру и другим видам искусства
+служит для раскрытия их талантов для повышения.`,
+`196. Третья из пяти инициатив, озвученных Президентом Республики Узбекистан
+задать направление
+Эффективен в компьютерных технологиях и Интернете среди населения и молодежи
+направлена ​​на организацию использования`,
+`197. Когда проходят последние выборы в Законодательную палату Олий Мажлиса Республики Узбекистан?
+прошедший?
+22 декабря 2019 г.`,
+`198. В 2019 году передан в Законодательную палату Олий Мажлиса Республики Узбекистан.
+Сколько партий участвовало в выборах?
+5 вечеринок??`,
+`199. Передан в Законодательную палату Олий Мажлиса Республики Узбекистан в 2019 году.
+Какая партия набрала наибольшее количество голосов на выборах?
+Либерально-демократическая партия Узбекистана`,
+`200. В соответствии с Конституцией Республики Узбекистан в 2019 году Республика Узбекистан
+Какая партия лидирует после выборов в Законодательную палату Олий Мажлиса?
+Министр выдвинет кандидата?
+Либерально-демократическая партия Узбекистана`
+]
 
 const soliq_huquqi_savollar = [
 `«Soliq tushumlari hisobi  va prognozi» fanining predmet nimani о‘rganadi?
