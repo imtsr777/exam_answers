@@ -1,432 +1,423 @@
 const xalqaro_savollar = [
-    `1. Найдите древнейший письменный источник по истории Узбекистана.
-Авесто`,
-`2. Как называется наука, изучающая древние языки?
-Лингвишика`,
-`3. Как называется наука, изучающая древние письмена?
-Эпиграфика`,
-`4. Как называется наука, изучающая монеты?
-нумизматика`,
-`5. Как называется наука, изучающая историю человечества на основе материальных источников?
-Археология`,
-`6. Как называется наука, изучающая обычаи племен и народов?
-Элнография`,
-`7. Когда появились самые древние части Авесты?
-Миль пр. IX-VII`,
-`8. Как вы переводите слово «Авесто»?
-Зенд-Авесто, то есть интерпретированный текст, представляют собой строго определенные нормы права.`,
-`9. Кто автор книги «Без исторической памяти нет будущего»?
-Первый Президент Узбекистана И. КАРИМОВ`,
-`10. Что за книга Авесто?
-Собрание священных книг зороастризма`,
-`11. Период раннего палеолита…
-Мил ав 1млн - 100 тысяч лет`,
-`12. Средний палеолит…
-Миль ав 100- 40 тысяч лет`,
-`13. Поздний палеолит…
-Миль ав 40- 12 тыс. лет`,
-`14. Мезолитический период…
-Миль ав 12- 7 тыс. лет`,
-`15. Период неолита…
-Мил ав 6-4 тысячелетий годовых`,
-`16. Эпоха энеолита…
-Миль ав датируется серединой 4-3 тыс. лет.`,
-`17. Значение термина «палеолит»
-Каменный век (греч. «палеос» от древних слов «каменный камень» и «литос»).`,
-`18. Значение понятия «Мезолит»
-Средний каменный век - мезолит «средний»`,
-`19. Значение термина «неолит»
-Новый каменный век "неолит" (неос - новый)`,
-`20. Значение термина «энеолит»
-Мистошский период - энеолит (латинское "eneus" - "медь" и греческое "lithos" - "камень")`,
-`21. Название Амударьи в древности
-Джейхун`,
-`22. Как зовут бога добра в зороастризме?
-Ахурамазда`,
-`23. Как зовут бога зла в зороастризме?
-Ну наконец то`,
-`24. Ахеменидский период в Средней Азии.
-Миль пр. 558-330`,
-`25. Кто был первым иранским захватчиком в Среднюю Азию?
-Кир II`,
-`26. Когда Кир II напал на массагетов?
-Мельница АВВ 530`,
-`27. против Дария I мил.авв. 522г. Кто возглавил восстание?
-ФРАДА`,
-`28. В произведении какого автора написано о легенде о Шираке?
-Полиен`,
-`29. На какие административные единицы Ахемениды разделили захваченные территории?
-сатрапии`,
-`30. Последний представитель династии Ахеменидов
-ДОРО III`,
-`31. Какие части входят в состав Турецкого ханства?
-Запад Восток`,
-`32. Какие религии были распространены в Турецком ханстве?
-Зороастризм, буддизм, христианство, монизм, шаманизм`,
-`33. Показать восстание против арабов
-Одетый в белое`,
-`34. Какие племена основали Кушанское царство?
-Ёчжи`,
-`35. Как звали свободного человека в Средней Азии в раннем средневековье?
-Кашоварз`,
-`36. Как называли охранников крестьянской собственности в Средней Азии в раннем средневековье?
-Чокар`,
-`37. Какие налоги были введены арабами на оккупированных территориях?
-Хирадж, ушр, закят, джизья`,
-`38. Какие территории входили в состав государства эфталитов?
-Средняя Азия, Восточный Иран, Северная Индия, Восточный Туркестан, Афганистан, настоящее время
-Пакистан`,
-`39. Когда образовалось государство эфталитов?
-В 20-х годах V в.`,
-`40. Как зовут крупнейших землевладельцев Средней Азии?
-фермер`,
-`41. Столица государства Саманидов…?
-БУХОРО`,
-`42. Весь Моварауннахр перешел под контроль Караханидов…
-1038`,
-`43. Кто является основателем Караханидского государства?
-Абдукарим Сотук Буграхан`,
-`44. Во времена правителей какой династии название «крестьянин» носило сельские батраки.
-стало нарицательным?
-Караханиды`,
-`45. Кто является учредителем казначейства?
-Раб Алптегина и зять Сабуктегин`,
-`46. ​​Когда Махмуд Газневи завоевал Хорезм?
-В 1017 году`,
-`47. XI-XIIаа. Какая династия правила в Хорезме?
-Хорезмшахи`,
-`48. Основатель независимого Хорезмского государства?
-Ануштегин`,
-`49. Кто был последним хорезмийским царем?
-Дж. Мангуберди`,
-`50. Какая столица Караханидского государства?
-Боласогун, Кашгар, Тароз, Узген, Самарканд, Бухара`,
-`51.IX-XII а.о. Факторы развития науки и культуры на Востоке. Неправильно
-определить ответ.
-Шах Мамун ибн Мухаммад был разделен на южную и северную части в конце десятого века.
-Он объединил Хорезм в единый центр
-превратил его в культурный центр`,
-`52. Где похоронен Ибн Сина?
-1037 — 16 августа 57 г. Хамадон Иран`,
-`53. Основной источник Исмаила Бухари в исламских учениях после Корана.
-Хадис «Аль джоме ас-солих»`,
-`54. Кто является автором «Памятников древних народов»?
-Главный энциклопедический труд Беруни`,
-`55. В честь греческого философа Аристотеля его называли «Вторым учителем».
-Кто наш знаменитый великий соотечественник-ученый?
-Фароби`,
-`56. На какой территории в республике была создана Академия Маъмуна?
-В Хорезме`,
-`57. Известно, что Фаруби почитался как Второй Учитель. Первый
-Кого считать учителем?
-Аристотель`,
-`58. Назовите самый крупный научный центр в Багдаде?
-Байт уль-хикма`,
-`59. Автор "Девону лугати тюрк"?
-Махмуд Кашгари`,
-`60. Когда Чингисхан начал свой поход на Хорезмское государство?
-Осенью 1219 г. в Бахле`,
-`61. Какой город выбрал Махмуд Ялавоч своей резиденцией?
-Худжанд`,
-`62. Когда началось восстание против монголов под предводительством Махмуда Тороби?
-В 1238 г.`,
-`63. Где произошло восстание Махмуда Тороби?
-В селе Тороб, Бухара`,
-`64. Назовите человека, воевавшего с монгольскими захватчиками.
-Дж. Мангуберди, Махмуд Тароби`,
-`65. Кому Чингисхан доверил управление Восточным Туркестаном и Мовароуннахром?
-В Чигатой`,
-`66. Кто правил чигатайским народом?
-Чигатайхан`,
-`67. Кто защищал город Ходжент от монголов?
-Темур Малик`,
-`68. Найдите годы жизни Амира Темура.
-9 апреля 1336 г. 18 февраля 1405 г.`,
-`69. Где произошла решающая битва между Амиром Темуром и Боязидом?
-В районе Чубук недалеко от Анкары`,
-`70. Когда произошла «Глиняная война»?
-22 мая 1365 г.`,
-`71. Где происходила «грязевая битва»?
-Вдоль реки Чирчик между Ташкентом и Китаем`,
-`72. В каком году Амир Темур разбил Тухтамышхана на реке Тереке?
-15 апреля 1395 г.`,
-`73. Почему Амир Темур хотел присоединить Хорезм?
-Он считается неотъемлемой частью чигатайской нации, потому что утверждает, что является наследником чигатайских земель.
-считалось`,
-`74. Кто был объявлен преемником Амира Темура?
-Пирмухаммад (Мухаммад Султан)`,
-`75. Имя сына, ставшего причиной смерти Улугбека:
-Абдулатиф`,
-`76. Сколько лет Амир Темур правил государством?
-35 лет`,
-`77. Где и когда Амир Темур был избран правителем Мовароуннахра?
-11 апреля 1370 г.`,
-`78. Автором какого произведения является Амир Темур?
-Темур правила`,
-`79. Известный исторический труд Мирзо Улугбека.
-Исторический арба улус`,
-`80. Определите годы жизни Мирзо Улугбека:
-1394-1449 гг.`,
-`81. Кто из представителей династии Шейбанидов основал Бухарское ханство?
-Шайбанихан`,
-`82. Кто из тимуридов воевал с Шайбаниханом?
-З.М. Бобур`,
-`83. Автором какого исторического труда является Мирзо Улугбек?
-История арба улуса`,
-`84. Кем был тимуридский правитель, трижды завоевавший Самарканд?
-Бобур`,
-`85. На пороге какого города Шайбанихан сразился с Исмаилом Сефеви и погиб?
-Рядом с Мервом`,
-`86. История каких регионов объективно освещается в Бобурноме
-Бобурнома охватывает Среднюю Азию, Афганистан и Индию с 1494 по 1529 год.`,
-`87. От какой династии произошли Аштарханиды?
-Аштарханиды, двоюродные братья Шайбани, происходят от Джоджихана.`,
-`88. При каком правителе укрепилось государство Аштарханидов
-Имамкуликсон`,
-`89. При каком правителе Бухарское ханство стало называться эмиратом?
-Мухаммад Рахимби, правитель династии Мангит`,
-`90. Какого эмира Бухары называли «эмир-мясник»?
-Амир Насруллоксон`,
-`91. Назовите хана, трижды восходившего на кокандский престол?
-Мухаммад Худоёрхан`,
-`92. Какое государство образовалось в Ферганской долине в первой половине XVIII века?
-Кокандское ханство`,
-`93. Как назывались медресе, мечети и культовые сооружения в среднеазиатских ханствах?
-Земли фонда ??`,
-`94. Кто был первым генерал-губернатором Туркестана?
-К.П.фон Кауфман`,
-`95. Как называется договор, подписанный между Хивинским ханством и Россией в 1873 г.?
-Договор Ганди`,
-`96. Кто возглавил Андижанское восстание 1898 г.?
-Восстание Дукчи Эшан - сын Мухаммадали Халфа Сабира из деревни Мингтепа.`,
-`97. Какое восстание произошло в Ташкенте в 1892 г.?
-Чумное восстание`,
-`98. Когда царская Россия заняла Ташкент?
-17 июня 1865 года`,
-`99. Кто был эмиром царской России во время оккупации Бухарского эмирата?
-Амир Музаффар?`,
-`100. Кто был ханом во время завоевания Кокандского ханства царской Россией?
-С божьей помощью`,
-`101. Кто был ханом во время завоевания Хивинского ханства царской Россией?
-Мухаммедхон Рахимхон?`,
-`102. Сколько лет было Джизакскому восстанию?
-1916 г.`,
-`103. Кто является основателем движения джадидов?
-Исмаил Гаспирали`,
-`104. Когда в России произошла Февральская революция?
-27 февраля 1917 г.`,
-`105. Джадидские организации в Туркестане после Февральской революции.
-Молодой Халифат и движение «Молодая Бухара»?`,
-`106. 1917 г. Журнал, издаваемый в Туркестане Шурайскими улемами.
-Аль-Изох`,
-`107. Когда и по чьей инициативе был создан Шорай Ислам Мозг?
-Родился 14 марта 1917 года в Ташкенте в семье Абдулвахида Кори Абдурауфкори.`,
-`108. 1917 г. по инициативе Ким. Состоялся первый съезд мусульман области.
-Был в Ташкенте 16-23 апреля 1917 г.?`,
-`109. На каком съезде мусульман страны была образована партия «Союз мусульман»?
-В сентябре 1917 года в Ташкенте состоялся съезд мусульман Туркестана, Туркестана и Казахстана.
-тогда Совет улемов и Совет ислама объединятся, чтобы сформировать Союз ополченцев?`,
-`110. Когда в Туркестане была установлена ​​Советская власть?
-1917 -15-22 ноября?`,
-`111. На IV съезде мусульман провинции, состоявшемся в ноябре 1917 г., какое
-предлагается установить?
-«Автономная Республика» в ноябре 1917 года?`,
-`112. Когда движение за независимость в Туркестане против политики, проводимой Советами
-начал?
-Туркестан достиг своего расцвета в Фергане, начавшейся в феврале 1918 г.?`,
-`113. Какова была главная политическая цель молодой Бухары и молодой Хивы до 1917 года?
-было?
-Цель — демократизация управления страной и создание собственной конституции.
-прежде всего создать свое государство и развивать естественнонаучное образование?`,
-`114. Когда Красной Армией был свергнут Бухарский эмират?
-2 сентября 1920 года?`,
-`115. Когда была образована Бухарская Народная Советская Республика?
-6-8 октября 1920 г.?`,
-`116. На каком съезде мусульман края была учреждена Туркестанская автономия?
-IV - Конгресс?`,
-`117. Когда в Центральной Азии была реализована политика национального размежевания?
-Между 1918 и 1924 годами?`,
-`118. Когда была образована Узбекская ССР?
-1925 Комиссар Файзулла Ходжаев столица Бухара Самарканд Ташкент?`,
-`119. В 1930 г. столица Узбекской ССР была перенесена из Самарканда в какой город?
-В Ташкент?`,
-`120. Когда Узбекская ССР была принята в состав СССР?
-13 мая 1925 года?`,
-`121. В 20-е и 30-е годы ХХ века Узбекистан объединил своих крестьян идеологически
-организация топ инж.
-"Национал-социалистическая культура"?`,
-`122. Когда был первый этап земельно-водной реформы в Узбекистане?
-В 1921-1922 гг.?`,
-`123. Когда прошел второй этап земельно-водной реформы в Узбекистане?
-1925-1929?`,
-`124. В 30-е годы ХХ века в период массовой коллективизации сельского хозяйства в Узбекистане
-Какие фермы были созданы?
-"Земельно-водное хозяйство"?`,
-`125. Когда в Узбекистане было создано первое высшее учебное заведение (Национальный университет)?
-1918 г.`,
-`126. Как называется первое высшее учебное заведение, созданное в Узбекистане?
-Национальный университет Узбекистана`,
-`127. Кто из перечисленных поэтов и писателей был расстрелян в Ташкенте в 1938 г.?
-Гази Олим`,
-`128. Основные проявления политики репрессий в 20-30 гг.`,
-`129. Когда Узбекистан участвовал во Второй мировой войне?`,
-`130. Промышленные предприятия Средней Азии и других регионов в годы Второй мировой войны.`,
-`131. В каком городе была первая металлургия Узбекистана во время Второй мировой войны?
-завод заработал?`,
-`132. Во время Второй мировой войны на попечении находились дети 15 разных национальностей.
-определить имя человека.`,
-`133. Когда в Узбекистане начался День памяти и почестей?
-9 мая 1999 г.`,
-`134. Когда началась Вторая мировая война
-1 сентября 1939 г.`,
-`135. Мобилизация узбеков на борьбу с фашизмом в годы Великой Отечественной войны.
-Лидер Узбекистана...`,
-`136. Когда отмечалось 75-летие победы в Великой Отечественной войне?
-11 декабря 2019 г.`,
-`137. Когда была основана Академия наук Узбекистана?
-10 сентября 2018 г.`,
-`138. Каково было население Узбекистана во время Второй мировой войны?
- 6,5`,
-`139. Кого преследовали в Узбекистане в 50-е годы ХХ века?
-Чолпон, Абдулла Кодири, Фитрат, Отаджон Хошимов, Зиё Саид, Гозиолим Юнусов,
-Момин Усманов, Мухаммад Гасанов, Косим Соронкин, Зия Гимадинов.
-140. Чье имя связано с термином «культ личности»?`,
-`141. Чьим именем и деятельностью в истории СССР назван период, названный в исторической литературе «теплым»
-относится к`,
-`142. Кто несет ответственность за политику «реконструкции»?
-М.С.Горбачев`,
-`143. ХХа. Как назывались репрессии в Узбекистане 1980-х годов?
-Хлопковый бизнес «Узбекский бизнес»`,
-`144. Когда проводилась политика «реконструкции» в СССР?
-20 век до середины 80-х`,
-`145. Когда в Узбекистане был создан Президентский институт?
-24 марта 1990 г.`,
-`146. Когда в Узбекистане была принята Декларация о суверенитете?
-20 июня 1990 г.`,
-`147. Когда узбекскому языку был присвоен статус государственного?
- 21 октября 1989 г.`,
-`148. В чем суть ГКЧП или «августовских событий»?`,
-`149. Когда был принят Закон «О Флаге Республики Узбекистан»?
-18 ноября 1991 г.`,
-`150. Когда Узбекистан вступил в ООН?
-2 марта 1992 г.`,
-`151. После обретения независимости Узбекистан ставит целью формирование нового государства, экономики
-Как называется стратегия?
-Стратегия действий`,
-`152. О Стратегии действий по дальнейшему развитию Республики Узбекистан.
-Когда был подписан Указ Президента Республики Узбекистан?
-7 февраля 2017 г.`,
-`153. Президент Республики Узбекистан Ш.М. Мирзиёева «Ташкентская информация».
-о мерах по дальнейшему совершенствованию деятельности Технологического университета»
-Когда было оглашено решение?
-19 февраля 2018 г.`,
-`154. Когда Ш. Мирзиёев был избран Президентом Республики Узбекистан?
-14 декабря 2016 г.`,
-`155. Стратегия действий по развитию Республики Узбекистан на 2017-2021 годы.
-Сколько существует приоритетов?
-5 та`,
-`157. Движение за дальнейшее развитие Республики Узбекистан в 2017-2021 гг.
-как небесно-голубой символизирует первое перспективное направление стратегии
-Что это значит?
-Символ неба и чистой воды – цвет флага государства великого Амира Темура.`,
-`158. Президент Республики Узбекистан Ш.М. Мирзиёев на сессии Генассамблеи ООН
-когда ты говорил
-19 сентября 2017 г.`,
-`159. Как называется 2017 год по Постановлению Президента Республики Узбекистан Ш.Мирзиёева?
-взял?
-Год диалога с людьми и интересов человека`,
-`160. Согласно Указу Президента Республики Узбекистан, какой 2018 год в Узбекистане?
-называется?
-Активное предпринимательство – год поддержки инновационных идей и технологий`,
-`161. Откуда взялись шайбани?`,
-`162. На пороге какого города Шайбанихан сразился с Исмаилом Сефеви и погиб?
-Рядом с Мервом`,
-`163. Правление династии Мангитов в Бухарском Эмирате:
-1753-1920 гг.`,
-`164. Какого правителя в народе называли «Невинным эмиром»?
-Амир Шохмурод`,
-`165. Период образования Кокандского ханства:
-1710.`,
-`166. Военная экспедиция князя Бековича-Черкасского в Среднюю Азию.
-послал император?
-Петр I`,
-`167. Какие факторы помогли России победить три ханства?`,
-`168. Когда был подписан договор между Российской империей и Бухарским эмиратом?
-23 июня 1868 г.`,
-`169. Кто был первым генерал-губернатором Туркестана?
-К.П.фон. Кауфман`,
-`170. Как называется договор, подписанный между Хивинским ханством и Россией в 1873 г.?
-Контракт Грандимиона?`,
-`171. Кто возглавил Андижанское восстание 1898 г.?
-Герцог Эшан Мухаммадали Халфа Сабир оглы`,
-`172. Какое восстание произошло в Ташкенте в 1892 г.?
-Чумное восстание`,
-`173. Когда царская Россия заняла Ташкент?
-В 1865 году?`,
-`174. Кто был эмиром царской России во время оккупации Бухарского эмирата?
-Амир Музаффар?`,
-`175. Кто был ханом во время завоевания Кокандского ханства царской Россией?
-Мухаммад Рахим хан???`,
-`176. Когда был подписан указ об упразднении Кокандского ханства царской Россией?
-В 1868 году?`,
-`177. Когда была основана Хивинская Народная Советская Республика?
-В 1920 году`,
-`178. 1929 г. В Узбекистане изменен алфавит. На основе какой записи он был основан?
-Она была переведена с арабского на латынь.`,
-`179. В 1940 году в Узбекистане был изменен алфавит. На основе какой записи он был основан?
-Переведено на узбекский алфавит на основе кириллицы.`,
-`180. Когда узбекскому языку был присвоен статус государственного?
-21 октября 1989 г.`,
-`181. В какой области Узбекистана был построен первый автомобильный завод?
-Асака`,
-`182. Какое из следующих событий произошло позже других?`,
-`183. Президент Республики Узбекистан Ш.М. Мирзиёев примет участие в Генеральной Ассамблее ООН
-Когда вы выступали на сессии?
-23 сентября 2020 г.?`,
-`184. Когда состоятся первые альтернативные выборы Президента Республики Узбекистан?
-держал?
-29 декабря 1991 г.`,
-`185. Свобода слова и религиозные организации в новой редакции Республики Узбекистан.
-Когда был принят закон?
-29 декабря 1991 года?`,
-`186. Когда в Узбекистане прошли первые выборы в однопалатный Олий Мажлис?
-В 1994 году??`,
-`187. В каком году в Узбекистане начал функционировать однопалатный Олий Мажлис?
-С 1995 года`,
-`188. Сколько времени просуществовал однопалатный Олий Мажлис Узбекистана?`,
-`189. 1990г. Как долго будет функционировать Верховный Совет Узбекской ССР?
-достиг?
-С 1990 по 1994 год`,
-`190. В каком году в Узбекистане действовал двухпалатный парламент?
-С 26 декабря 2004 г.
-191. Что было раньше?`,
-`193. Когда были пять инициатив Президента Республики Узбекистан Ш.Мирзиёева
-опубликовано?
-В 2019 году?`,
-`194. Пятая из пяти инициатив, озвученных Президентом Республики Узбекистан
-задать направление.
-Это относится к вопросам iw bn taminlaw женщин.`,
-`195. Первая из пяти инициатив, озвученных Президентом Республики Узбекистан
-задать направление
-Интерес молодежи к музыке, искусству, литературе, театру и другим видам искусства
-служит для раскрытия их талантов для повышения.`,
-`196. Третья из пяти инициатив, озвученных Президентом Республики Узбекистан
-задать направление
-Эффективен в компьютерных технологиях и Интернете среди населения и молодежи
-направлена ​​на организацию использования`,
-`197. Когда проходят последние выборы в Законодательную палату Олий Мажлиса Республики Узбекистан?
-прошедший?
-22 декабря 2019 г.`,
-`198. В 2019 году передан в Законодательную палату Олий Мажлиса Республики Узбекистан.
-Сколько партий участвовало в выборах?
-5 вечеринок??`,
-`199. Передан в Законодательную палату Олий Мажлиса Республики Узбекистан в 2019 году.
-Какая партия набрала наибольшее количество голосов на выборах?
-Либерально-демократическая партия Узбекистана`,
-`200. В соответствии с Конституцией Республики Узбекистан в 2019 году Республика Узбекистан
-Какая партия лидирует после выборов в Законодательную палату Олий Мажлиса?
-Министр выдвинет кандидата?
-Либерально-демократическая партия Узбекистана`
+    `1. Dasturiy ta'minotning hayot siklining qaysi bosqichida dasturiy ta'minotdagi kamchilikni tuzatish xarajatlari eng past (A)
+(A) Talabni tahlil qilish (mahsulotni qo'lda tayyorlash) `,
+`2. Testlash qilinayotgan modulning chaqiruvchisini birlik testida simulyatsiya qilish uchun foydalaniladigan modul:
+ (C) Drayv moduli `,
+`3. Test samaradorligini oshirish uchun u qanday bo'lishi kerak.
+ (D) Testlash ma'lumotlari sifatida xatolarni aniqlash tezligi yuqori bo'lgan ma'lumotlarni tanlanishi `,
+`4. Knuth qayta hisoblash koefitsentini toping:.
+(B) 3/8`,
+`5. Foydalanuvchilar ishtirok etishi kerak bo'lgan test bosqichi: (D)
+ (D) Qabul qilish testi`,
+`6. Dasturiy ta'minotni testlashda testlovchilar aniq nima qiladi. (B)
+ (B) Dasturiy ta'minotni testlashdan o'tkazuvchilarning maqsadi dasturiy ta'minotdagi kamchiliklarni imkon qadar erta aniqlashdir. `,
+`7. Quyidagi to‘rtta fikrdan qaysi biri to‘g‘ri (C)
+ (C) mustahkamlik ekvivalentligi klassi test ishi samarali ekvivalentlik sinfidagi qiymatni talab qiladi `,
+`8. Birlik testi tarkibiga kirmaydigan narsa (A)
+(A) Modul interfeysi testi `,
+`9. Dasturiy ta'minotni testlashdan o'tkazishni oq quti testiga yoki qora quti testiga ajratish uchun asos (C)
+ (C) Siz testlashdan o'tayotgan manba dasturini ko'ryapsizmi? `,
+`11. Mahsulot rejasi, jadvali va rasmiy ishlab chiqish jarayoniga ega bo'lgan dasturiy ta'minotni ishlab chiqish modeli (B)
+ (B) Modelni o'zgartirganda yozib olish`,
+`12. Agar test ishi ma'lum bir dasturiy ta'minot yo'li qamrovini amalga oshirsa, u dasturiy ta'minot yo'li qamrovini ham amalga oshirishi kerak (A).
+(A) Qamrov ta'rifi`,
+`13. Quyidagilardan qaysi gap noto'g'ri :D)
+ (D) Muvaffaqiyatli test - bu xatolar topilgan test. `,
+`14. Veb-saytda o'tkazilgan testlar orasida funktsional test nimani o'z ichiga oladi.
+(B) Bog'lanish testi`,
+`15. Birlik testlarini bajarishda odatda qanday usuli qo'llaniladi.
+ (B) oq quti testi qo'llaniladi, qora quti testi bilan to'ldiriladi; `,
+`17. Quyidagi tasniflardan qaysilari avtomatlashtirilgan dasturiy ta'minotni testlash o'tkazishning afzalliklariga tegishli emas (D)
+ (D) Dasturiy ta'minotni to'liq testlashdan o'tkazishi mumkin`,
+`18. Konfiguratsiya testi bu? (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`19. Quyidagi bandlar test rejasiga kiritilmasligi kerak (B)
+(B) Kutilgan natijalarni tekshirish`,
+`20. Quyidagi usullardan qaysi biri rasmiy tekshirishga kirmaydi: (D)
+ (D) Kodlash standartlari va spetsifikatsiyalari. `,
+
+`21. Dasturiy ta'minotni testdan o'tkazish maqsadi (B)
+(B) Dasturda iloji boricha ko'proq xatolarni topish`,
+`22. Quyidagi tarkib testlash tamoyiliga kirmaydigan: (D)
+ (D) Qanchalik ko‘p kamchilik topilsa, dasturiy ta’minotdagi kamchiliklar shunchalik kam bo‘ladi. `,
+`23. Dasturiy ta'minotdagi kamchiliklarning eng katta sababi (A)
+(A) Yo'riqnomalarni tayyorlash `,
+`24. Dasturiy ta'minotdagi kamchiliklarni tuzatishning eng yuqori narxi qaysi bosqichda sodir buladi: (D)
+(D) Tadbiq qilish`,
+`26. Vaziyatni qoplash maqsadi (A)
+(A) Hech bo'lmaganda bir marta bajarilgan har bir hukm uchun shart qiymatlarining barcha mumkin bo'lgan kombinatsiyalarini yarating. `,
+`Dinamik qora quti testlashi: (B)
+ (B) Testlash paytida kod va maxsus kod miqdorini taxmin qilish mumkin`,
+`29. Yuqori oqim testlashida test qilinayotgan birlikni sinash uchun qanday nomli birlik yozilishi kerak.
+(B) Testlashni ishlatuvchi moduli `,
+`30. Quyidagilardan qaysilari avtomatlashtirilgan dasturiy ta'minotni testdan o'tkazishning afzalliklari emas (D)
+(D) Dasturiy ta'minotni to'liq testdan o'tkazishi mumkin `,
+`31. Konfiguratsiya testi (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`32. Quyidagi bandlar test rejasiga kiritilmasligi kerak (B).
+ (B) Kutilgan natijalarni tekshirish `,
+`33. Quyidagi usullar qaysilari rasmiy testlashga kirmaydi: (D)
+(D) Kodlash standartlari va spetsifikatsiyalar`,
+` 34. Mahsulot qoʻllanmasi boʻlmaganda nimadan foydalaning: (A)
+(A) Qidiruv testi   `,
+`35. Xatoliklarni tuzatish bu- (D)
+ (D) Dasturiy ta'minotda xatolarni tuzatish jarayoni`,
+`36. Dasturiy ta'minotning pastki qismidagi test jarayoni nima deb ataladi.
+ (C) Birlik testi `,
+`38. Quyidagilardan qaysilari dasturiy kamchiliklar emas (A).
+(A) Testlovchi sub'ektiv ravishda asossiz deb topishi`,
+`39. Dasturiy ta'minotni ishlab chiqarilgandan so'ng kamchiliklarni tuzatish xarajatlari loyihani ishlab chiqishning dastlabki bosqichidagiga qaraganda necha marta yuqori(D).
+ (D) kamida 100 marta va undan ortiq`,
+`40. Qora quti testi va oq quti testi o'rtasidagi chegaralarni buzdi nimaga olib keladi. (A)
+(A) Kulrang quti testi `,
+`41. Dasturiy ta'minotni testdan o'tkazish: (c)
+C. Dasturiy ta'minotdagi xatolarni aniqlash va bartaraf etish, dasturiy ta'minot ishonchliligini oshirish`,
+`42. Dasturiy ta'minotni bajarish uchun dasturiy ta'minotni testdan o'tkazishda foydalanadigan faoliyat bu -
+A. Testlash jarayoni`,
+
+
+`43. Dasturiy ta'minotdagi kamchiliklarning eng katta sababi: (a)
+A. Dasturiy ta'minot talablari spetsifikatsiyasi`,
+`44. Quyidagi keltirilganlar dasturiy ta'minotdagi kamchilik holatining to'liq o'zgarishining noto'g'ri tavsifi hisoblanadi: (d)
+D. Faollashtirish-ta'mirlash-qayta ochish`,
+`45. Quyidagi tavsifda testlash va disk raskadrovkasida noto'g'ri fikirni toping(d)
+D. Testni faqat batafsil loyihalash tugagandan so'ng boshlash mumkin; nosozliklarni tuzatish batafsil shablon ma'lumotisiz amalga oshirilmaydi. `,
+`46. Dasturni nosozliklarini tuzatishning kutilgan natijasi yo'q, quyidagi fikirlardan qaysilari xatoning sababi bo'lishi mumkin emas. 
+B. Yozma taklif yozish formati standartlashtirilmagan. `,
+`47. Dasturiy ta'minotdagi kamchilikni tuzatishning eng qimmat bosqichi (a)
+A. Chiqarish bosqichi `,
+`48. Mantiqiy qamrov usuli bo'lmagan narsa (d).
+D. Interfeysdagi qamrov`,
+`49. Dasturiy ta'minotni testdan o'tkazish dasturiy ta'minot sifatini ta'minlashning muhim vositasidir. Quyidagi testlardan qaysi biri dasturiy ta'minotni tekshirishning eng asosiy qismi hisoblanadi? (B)
+B. birlik testi`,
+`50. Birlik testining asosiy vazifasi nimani o'z ichiga olmaydi.
+B. Global ma’lumotlar strukturasi `,
+`51. Birlik testida u testdan o'tgan birlikni amalga oshirish uchun chaqirilishi kerak bo'lgan boshqa funktsional birliklarni simulyatsiya qilish uchun qanday modul ishlatiladi (b).
+B. Soxta  moduli`,
+`52. Integratsiya testi rejasi qaysi bosqichining oxirida topshirilishi kerak.
+B. Loyihalashni rejasi`,
+`53. Dastur samaradorligining quyidagi tavsifi noto'g'ri (c).
+C. Dastlabki dasturning samaradorligi batafsil loyihalash bosqichida aniqlangan algoritm samaradorligi bilan hech qanday aloqasi yo'q. `,
+`54. Quyidagi tasniflardan qaysilari dasturning oqim sxemasini soddalashtirgandan so'ng olinadi, bu dasturni boshqarish oqimi strukturasini yanada aniqroq ko'rsatishi mumkin va birikma shartlarini o'z ichiga olmaydi.
+B. Boshqarish oqimi grafigi`,
+`55.Barqarorlik (ishonchlilik) testining vazifasi?
+	1. o'rtacha yuk darajasi bilan uzoq muddatli (ko'p soatlik) test paytida dasturning ishlashini tekshirish`,
+	
+`56. Rasmiy tekshiruvda qanday hujjatlar mavjud?
+	1. Dizayn hujjatlari va yordamchi hujjatlar`,
+`57. Rasmiy tekshiruv ishtirokchisi kim?
+	1. Menejer (rahbar); muallif; mutaxassislar (bir yoki bir nechta) `,
+`59. Test ishining "Muvaffaqiyatsiz" holati nimani anglatadi?
+	1. test ishini bajarish jarayonida kamchilik  aniqlanadi, bu test ishining kamida bir bosqichi uchun kutilgan natija haqiqiy natijaga mos kelmasligidan iborat`,
+	
+	
+`60. Ifodaga asoslangan testda nima tekshiriladi?
+	1. kodning alohida qism bo'limlari, masalan, x=10`,
+	
+`62. Sharshara dasturiy ta'minotini ishlab chiqish modelida test qachon amalga oshiriladi?
+	1. loyihaning o'rtasidan`,
+`63. Test talablarini kim ishlab chiqadi?
+	1. Test ishlab chiquvchilari`,
+	
+`64. Test ishlarining hajmi qanday aniqlanadi?
+	1. Kamchiliklar aniqlangan testlarning umumiy soni dastur kodining sifati va kamchiliklarni bartaraf etish uchun bajarilishi kerak bo'lgan ishlar bilan baholandi`,
+	
+`65. Loyiha hujjatlarining strukturaviy tarkibi nima?
+	1. tizimning turli bosqichlariga qo'yiladigan talablar (tarkibiy, funktsional va tizimli); tizim arxitekturasining tasnifi; dastur kodi; testlar; Tizimni amalga oshirish hujjatlari (tizimni o'rnatish va sozlash, tizimni ishlatish bo'yicha ko'rsatmalar va boshqalar) `,
+	
+`66. Barqarorlik (ishonchlilik) testining vazifasi`1. Dasturiy ta'minotning hayot siklining qaysi bosqichida dasturiy ta'minotdagi kamchilikni tuzatish xarajatlari eng past (A)
+(A) Talabni tahlil qilish (mahsulotni qo'lda tayyorlash) `,
+`2. Testlash qilinayotgan modulning chaqiruvchisini birlik testida simulyatsiya qilish uchun foydalaniladigan modul:
+ (C) Drayv moduli `,
+`3. Test samaradorligini oshirish uchun u qanday bo'lishi kerak.
+ (D) Testlash ma'lumotlari sifatida xatolarni aniqlash tezligi yuqori bo'lgan ma'lumotlarni tanlanishi `,
+`4. Knuth qayta hisoblash koefitsentini toping:.
+(B) 3/8`,
+`5. Foydalanuvchilar ishtirok etishi kerak bo'lgan test bosqichi: (D)
+ (D) Qabul qilish testi`,
+`6. Dasturiy ta'minotni testlashda testlovchilar aniq nima qiladi. (B)
+ (B) Dasturiy ta'minotni testlashdan o'tkazuvchilarning maqsadi dasturiy ta'minotdagi kamchiliklarni imkon qadar erta aniqlashdir. `,
+`7. Quyidagi to‘rtta fikrdan qaysi biri to‘g‘ri (C)
+ (C) mustahkamlik ekvivalentligi klassi test ishi samarali ekvivalentlik sinfidagi qiymatni talab qiladi `,
+`8. Birlik testi tarkibiga kirmaydigan narsa (A)
+(A) Modul interfeysi testi `,
+`9. Dasturiy ta'minotni testlashdan o'tkazishni oq quti testiga yoki qora quti testiga ajratish uchun asos (C)
+ (C) Siz testlashdan o'tayotgan manba dasturini ko'ryapsizmi? `,
+`11. Mahsulot rejasi, jadvali va rasmiy ishlab chiqish jarayoniga ega bo'lgan dasturiy ta'minotni ishlab chiqish modeli (B)
+ (B) Modelni o'zgartirganda yozib olish`,
+`12. Agar test ishi ma'lum bir dasturiy ta'minot yo'li qamrovini amalga oshirsa, u dasturiy ta'minot yo'li qamrovini ham amalga oshirishi kerak (A).
+(A) Qamrov ta'rifi`,
+`13. Quyidagilardan qaysi gap noto'g'ri :D)
+ (D) Muvaffaqiyatli test - bu xatolar topilgan test. `,
+`14. Veb-saytda o'tkazilgan testlar orasida funktsional test nimani o'z ichiga oladi.
+(B) Bog'lanish testi`,
+`15. Birlik testlarini bajarishda odatda qanday usuli qo'llaniladi.
+ (B) oq quti testi qo'llaniladi, qora quti testi bilan to'ldiriladi; `,
+`17. Quyidagi tasniflardan qaysilari avtomatlashtirilgan dasturiy ta'minotni testlash o'tkazishning afzalliklariga tegishli emas (D)
+ (D) Dasturiy ta'minotni to'liq testlashdan o'tkazishi mumkin`,
+`18. Konfiguratsiya testi bu? (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`19. Quyidagi bandlar test rejasiga kiritilmasligi kerak (B)
+(B) Kutilgan natijalarni tekshirish`,
+`20. Quyidagi usullardan qaysi biri rasmiy tekshirishga kirmaydi: (D)
+ (D) Kodlash standartlari va spetsifikatsiyalari. `,
+
+`21. Dasturiy ta'minotni testdan o'tkazish maqsadi (B)
+(B) Dasturda iloji boricha ko'proq xatolarni topish`,
+`22. Quyidagi tarkib testlash tamoyiliga kirmaydigan: (D)
+ (D) Qanchalik ko‘p kamchilik topilsa, dasturiy ta’minotdagi kamchiliklar shunchalik kam bo‘ladi. `,
+`23. Dasturiy ta'minotdagi kamchiliklarning eng katta sababi (A)
+(A) Yo'riqnomalarni tayyorlash `,
+`24. Dasturiy ta'minotdagi kamchiliklarni tuzatishning eng yuqori narxi qaysi bosqichda sodir buladi: (D)
+(D) Tadbiq qilish`,
+`26. Vaziyatni qoplash maqsadi (A)
+(A) Hech bo'lmaganda bir marta bajarilgan har bir hukm uchun shart qiymatlarining barcha mumkin bo'lgan kombinatsiyalarini yarating. `,
+`Dinamik qora quti testlashi: (B)
+ (B) Testlash paytida kod va maxsus kod miqdorini taxmin qilish mumkin`,
+`29. Yuqori oqim testlashida test qilinayotgan birlikni sinash uchun qanday nomli birlik yozilishi kerak.
+(B) Testlashni ishlatuvchi moduli `,
+`30. Quyidagilardan qaysilari avtomatlashtirilgan dasturiy ta'minotni testdan o'tkazishning afzalliklari emas (D)
+(D) Dasturiy ta'minotni to'liq testdan o'tkazishi mumkin `,
+`31. Konfiguratsiya testi (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`32. Quyidagi bandlar test rejasiga kiritilmasligi kerak (B).
+ (B) Kutilgan natijalarni tekshirish `,
+`33. Quyidagi usullar qaysilari rasmiy testlashga kirmaydi: (D)
+(D) Kodlash standartlari va spetsifikatsiyalar`,
+` 34. Mahsulot qoʻllanmasi boʻlmaganda nimadan foydalaning: (A)
+(A) Qidiruv testi   `,
+`35. Xatoliklarni tuzatish bu- (D)
+ (D) Dasturiy ta'minotda xatolarni tuzatish jarayoni`,
+`36. Dasturiy ta'minotning pastki qismidagi test jarayoni nima deb ataladi.
+ (C) Birlik testi `,
+`38. Quyidagilardan qaysilari dasturiy kamchiliklar emas (A).
+(A) Testlovchi sub'ektiv ravishda asossiz deb topishi`,
+`39. Dasturiy ta'minotni ishlab chiqarilgandan so'ng kamchiliklarni tuzatish xarajatlari loyihani ishlab chiqishning dastlabki bosqichidagiga qaraganda necha marta yuqori(D).
+ (D) kamida 100 marta va undan ortiq`,
+`40. Qora quti testi va oq quti testi o'rtasidagi chegaralarni buzdi nimaga olib keladi. (A)
+(A) Kulrang quti testi `,
+`41. Dasturiy ta'minotni testdan o'tkazish: (c)
+C. Dasturiy ta'minotdagi xatolarni aniqlash va bartaraf etish, dasturiy ta'minot ishonchliligini oshirish`,
+`42. Dasturiy ta'minotni bajarish uchun dasturiy ta'minotni testdan o'tkazishda foydalanadigan faoliyat bu -
+A. Testlash jarayoni`,
+
+
+`43. Dasturiy ta'minotdagi kamchiliklarning eng katta sababi: (a)
+A. Dasturiy ta'minot talablari spetsifikatsiyasi`,
+`44. Quyidagi keltirilganlar dasturiy ta'minotdagi kamchilik holatining to'liq o'zgarishining noto'g'ri tavsifi hisoblanadi: (d)
+D. Faollashtirish-ta'mirlash-qayta ochish`,
+`45. Quyidagi tavsifda testlash va disk raskadrovkasida noto'g'ri fikirni toping(d)
+D. Testni faqat batafsil loyihalash tugagandan so'ng boshlash mumkin; nosozliklarni tuzatish batafsil shablon ma'lumotisiz amalga oshirilmaydi. `,
+`46. Dasturni nosozliklarini tuzatishning kutilgan natijasi yo'q, quyidagi fikirlardan qaysilari xatoning sababi bo'lishi mumkin emas. 
+B. Yozma taklif yozish formati standartlashtirilmagan. `,
+`47. Dasturiy ta'minotdagi kamchilikni tuzatishning eng qimmat bosqichi (a)
+A. Chiqarish bosqichi `,
+`48. Mantiqiy qamrov usuli bo'lmagan narsa (d).
+D. Interfeysdagi qamrov`,
+`49. Dasturiy ta'minotni testdan o'tkazish dasturiy ta'minot sifatini ta'minlashning muhim vositasidir. Quyidagi testlardan qaysi biri dasturiy ta'minotni tekshirishning eng asosiy qismi hisoblanadi? (B)
+B. birlik testi`,
+`50. Birlik testining asosiy vazifasi nimani o'z ichiga olmaydi.
+B. Global ma’lumotlar strukturasi `,
+`51. Birlik testida u testdan o'tgan birlikni amalga oshirish uchun chaqirilishi kerak bo'lgan boshqa funktsional birliklarni simulyatsiya qilish uchun qanday modul ishlatiladi (b).
+B. Soxta  moduli`,
+`52. Integratsiya testi rejasi qaysi bosqichining oxirida topshirilishi kerak.
+B. Loyihalashni rejasi`,
+`53. Dastur samaradorligining quyidagi tavsifi noto'g'ri (c).
+C. Dastlabki dasturning samaradorligi batafsil loyihalash bosqichida aniqlangan algoritm samaradorligi bilan hech qanday aloqasi yo'q. `,
+`54. Quyidagi tasniflardan qaysilari dasturning oqim sxemasini soddalashtirgandan so'ng olinadi, bu dasturni boshqarish oqimi strukturasini yanada aniqroq ko'rsatishi mumkin va birikma shartlarini o'z ichiga olmaydi.
+B. Boshqarish oqimi grafigi`,
+`55.Barqarorlik (ishonchlilik) testining vazifasi?
+	1. o'rtacha yuk darajasi bilan uzoq muddatli (ko'p soatlik) test paytida dasturning ishlashini tekshirish`,
+	
+`56. Rasmiy tekshiruvda qanday hujjatlar mavjud?
+	1. Dizayn hujjatlari va yordamchi hujjatlar`,
+`57. Rasmiy tekshiruv ishtirokchisi kim?
+	1. Menejer (rahbar); muallif; mutaxassislar (bir yoki bir nechta) `,
+`59. Test ishining "Muvaffaqiyatsiz" holati nimani anglatadi?
+	1. test ishini bajarish jarayonida kamchilik  aniqlanadi, bu test ishining kamida bir bosqichi uchun kutilgan natija haqiqiy natijaga mos kelmasligidan iborat`,
+	
+	
+`60. Ifodaga asoslangan testda nima tekshiriladi?
+	1. kodning alohida qism bo'limlari, masalan, x=10`,
+	
+`62. Sharshara dasturiy ta'minotini ishlab chiqish modelida test qachon amalga oshiriladi?
+	1. loyihaning o'rtasidan`,
+`63. Test talablarini kim ishlab chiqadi?
+	1. Test ishlab chiquvchilari`,
+	
+`64. Test ishlarining hajmi qanday aniqlanadi?
+	1. Kamchiliklar aniqlangan testlarning umumiy soni dastur kodining sifati va kamchiliklarni bartaraf etish uchun bajarilishi kerak bo'lgan ishlar bilan baholandi`,
+	
+`65. Loyiha hujjatlarining strukturaviy tarkibi nima?
+	1. tizimning turli bosqichlariga qo'yiladigan talablar (tarkibiy, funktsional va tizimli); tizim arxitekturasining tasnifi; dastur kodi; testlar; Tizimni amalga oshirish hujjatlari (tizimni o'rnatish va sozlash, tizimni ishlatish bo'yicha ko'rsatmalar va boshqalar) `,
+	
+`66. Barqarorlik (ishonchlilik) testining vazifasi
+	1. o'rtacha ish darajasi bilan uzoq muddatli  test paytida dasturni ishlashini tekshirish`,
+	
+`67. Turli xil tizim konfiguratsiyalarida (e'lon qilingan platformalar, qo'llab-quvvatlanadigan drayverlar, turli xil kompyuter konfiguratsiyalari va boshqalar) dasturiy ta'minotning ishlashini tekshirishga qaratilgan maxsus test turi:
+
+	4. konfiguratsiya testi`,
+`68. Ilova yoki muhitga kiritilgan oʻzgarishlarni tekshirishga (kamchiliklarni tuzatish, kodlarni birlashtirish, boshqa operatsion tizimga, maʼlumotlar bazasiga, veb-serverga yoki dastur serveriga koʻchirish) avvaldan mavjud boʻlgan funksiyalarning kerakli darajada ishlashini tasdiqlashga qaratilgan test turi.
+	
+	3. regressiya testi`,
+	
+`69. Interfeysning talablarga muvofiqligini funktsional tekshirish nima:
+	1. foydalanuvchi interfeysi testi (GUI testi) `,
+	
+`70. Testning funktsional turlari:
+	4. barcha javoblar to'g'ri`,
+    
+`71. Tizim testining asosiy vazifasi:
+	2. butun tizimdagi funktsional va funktsional bo'lmagan talablarni tekshirish`,
+	
+
+
+`72. Kod qamrovi nima?
+	
+	2. testlar orqali bajariladigan kodning qamrovini baholash, test paytida testdan o'tmagan dasturiy ta'minot qismlarini kuzatish`,
+	
+`73. Dasturiy ta'minotni testdan o'tkazish sifatini baholash ko'rsatkichlaridan biri:
+	1. test qamrovi`,
+`74. Qaysi test usulida tester kodning ichki ishini bilishi kerak?
+	2. oq quti usuli`,	
+`76. Qaysi model loyiha davomida bir xil bo'lib qoladigan aniq belgilangan talablarni talab qiladi?
+	1. kaskadli`,
+	
+
+`77. Dasturiy ta'minot tushunchasi paydo bo'lgan paytdan boshlab va dasturiy ta'minotdan keyingi foydalanish mumkin bo'lmagan vaqtgacha bo'lgan vaqt davri:
+	1. dasturiy ta'minotning sikl aylanishi`,
+	
+`78. Komponent, butun dastur yoki tizimning ishdan chiqishi nima deb ataladi?
+	4. Muvaffaqiyatsizlik`,
+`79. Tekshirish ro'yxati nima?
+	2. bu nima testdan o'tkazilishini tavsiflovchi hujjatdir`,
+	 
+
+`80. Test stsenariylarining turlari:
+	1. ijobiy va salbiy`,
+`81. Test ishi nechta qismdan iborat?
+	2.	3`,
+`82. Test ishi nima?
+	4. bu testdan o'tayotgan funktsiyaning yoki uning bir qismining bajarilishini tekshirish uchun zarur bo'lgan qadamlar, aniq shartlar va parametrlarni tavsiflovchi fakt. `,
+`84. Test rejasi nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizim yoki uning tarkibiy qismlarini baholash jarayoni. `,
+`86. Validatsiya nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizimni yoki uning tarkibiy qismlarini baholash jarayoni`,
+`87. Tekshirish (verification) nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizimni yoki uning tarkibiy qismlarini baholash jarayoni`,
+`88. Dasturiy ta'minot sifati nima?
+	2. dasturiy ta'minotning belgilangan va nazarda tutilgan ehtiyojlarni qondirish qobiliyatiga bog'liq bo'lgan xususiyatlar to'plami`,
+	
+`89. Dasturning haqiqiy xatti-harakati va uning kutilgan xatti-harakati o'rtasidagi muvofiqlikni ma'lum bir tarzda tanlangan testlarning yakuniy to'plamida tekshirishga qaratilgan dasturiy mahsulotni tadqiq qilish, testdan o'tkazish jarayoni.
+	1. dasturiy ta'minotni testdan o'tkazish`,
+	
+`90. Moslashuv nima?
+	2. bu tashqi sharoitlarning uzluksiz o'zgarishi sharoitida kerakli nazorat sifatiga erishish uchun tizimning parametrlari va tuzilishini sozlash. `,
+`91. Quyidagi bandlardan qaysilari testlash rejasiga kiritilmasligi kerak (B).
+ (B) Kutilgan natijalarni tekshirish yo’li`,
+
+
+`92. Konfiguratsiya testi bu? (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`93. Test samaradorligini oshirish uchun u qanday bo'lishi kerak.
+ (D) Testlash ma'lumotlari sifatida xatolarni aniqlash tezligi yuqori bo'lgan ma'lumotlarni tanlanishi. `,
+`94. Resurslar tugaganda dasturiy ta'minotning ishlashini kuzatishga qaratilgan tizimli test nima deb ataladi.
+(B) Stress testi`,
+`95. Quyidagi usullardan qaysi biri rasmiy tekshirishga kirmaydi: (D)
+ (D) Kodlash standartlari va spetsifikatsiyalari`,
+`96. . Xatoliklarni tuzatish bu- (D)
+ (D) Dasturiy ta'minotdagi xatolarni tuzatish jarayoni`,
+`97. Qora quti testi va oq quti testi o'rtasidagi chegaralarni buzdi nimaga olib keladi. (A)
+(A) Kulrang quti testi `,
+`98. Dasturiy ta'minotni testdan o'tkazish: (c)
+C. Dasturiy ta'minotdagi xatolarni aniqlash va bartaraf etish, dasturiy ta'minot ishonchliligini oshirish`,
+`99. Test ishining hayot siklining qaysi holatida biron bir sababga ko'ra test ishini bajarish mumkin emas
+	1. Bloklangan`,
+`100. Test ishining "Muvaffaqiyatsiz" holati nimani anglatadi?
+	1. test ishini bajarish jarayonida kamchilik  aniqlanadi, bu test ishining kamida bir bosqichi uchun kutilgan natija haqiqiy natijaga mos kelmasligidan iborat`
+	1. o'rtacha ish darajasi bilan uzoq muddatli  test paytida dasturni ishlashini tekshirish`,
+	
+`67. Turli xil tizim konfiguratsiyalarida (e'lon qilingan platformalar, qo'llab-quvvatlanadigan drayverlar, turli xil kompyuter konfiguratsiyalari va boshqalar) dasturiy ta'minotning ishlashini tekshirishga qaratilgan maxsus test turi:
+
+	4. konfiguratsiya testi`,
+`68. Ilova yoki muhitga kiritilgan oʻzgarishlarni tekshirishga (kamchiliklarni tuzatish, kodlarni birlashtirish, boshqa operatsion tizimga, maʼlumotlar bazasiga, veb-serverga yoki dastur serveriga koʻchirish) avvaldan mavjud boʻlgan funksiyalarning kerakli darajada ishlashini tasdiqlashga qaratilgan test turi.
+	
+	3. regressiya testi`,
+	
+`69. Interfeysning talablarga muvofiqligini funktsional tekshirish nima:
+	1. foydalanuvchi interfeysi testi (GUI testi) `,
+	
+`70. Testning funktsional turlari:
+	4. barcha javoblar to'g'ri`,
+    
+`71. Tizim testining asosiy vazifasi:
+	2. butun tizimdagi funktsional va funktsional bo'lmagan talablarni tekshirish`,
+	
+
+
+`72. Kod qamrovi nima?
+	
+	2. testlar orqali bajariladigan kodning qamrovini baholash, test paytida testdan o'tmagan dasturiy ta'minot qismlarini kuzatish`,
+	
+`73. Dasturiy ta'minotni testdan o'tkazish sifatini baholash ko'rsatkichlaridan biri:
+	1. test qamrovi`,
+`74. Qaysi test usulida tester kodning ichki ishini bilishi kerak?
+	2. oq quti usuli`,	
+`76. Qaysi model loyiha davomida bir xil bo'lib qoladigan aniq belgilangan talablarni talab qiladi?
+	1. kaskadli`,
+	
+
+`77. Dasturiy ta'minot tushunchasi paydo bo'lgan paytdan boshlab va dasturiy ta'minotdan keyingi foydalanish mumkin bo'lmagan vaqtgacha bo'lgan vaqt davri:
+	1. dasturiy ta'minotning sikl aylanishi`,
+	
+`78. Komponent, butun dastur yoki tizimning ishdan chiqishi nima deb ataladi?
+	4. Muvaffaqiyatsizlik`,
+`79. Tekshirish ro'yxati nima?
+	2. bu nima testdan o'tkazilishini tavsiflovchi hujjatdir`,
+	 
+
+`80. Test stsenariylarining turlari:
+	1. ijobiy va salbiy`,
+`81. Test ishi nechta qismdan iborat?
+	2.	3`,
+`82. Test ishi nima?
+	4. bu testdan o'tayotgan funktsiyaning yoki uning bir qismining bajarilishini tekshirish uchun zarur bo'lgan qadamlar, aniq shartlar va parametrlarni tavsiflovchi fakt. `,
+`84. Test rejasi nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizim yoki uning tarkibiy qismlarini baholash jarayoni. `,
+`86. Validatsiya nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizimni yoki uning tarkibiy qismlarini baholash jarayoni`,
+`87. Tekshirish (verification) nima?
+	1. rivojlanishning hozirgi bosqichi natijalari ushbu bosqichning boshida shakllangan shartlarga javob beradimi yoki yo'qligini aniqlash uchun tizimni yoki uning tarkibiy qismlarini baholash jarayoni`,
+`88. Dasturiy ta'minot sifati nima?
+	2. dasturiy ta'minotning belgilangan va nazarda tutilgan ehtiyojlarni qondirish qobiliyatiga bog'liq bo'lgan xususiyatlar to'plami`,
+	
+`89. Dasturning haqiqiy xatti-harakati va uning kutilgan xatti-harakati o'rtasidagi muvofiqlikni ma'lum bir tarzda tanlangan testlarning yakuniy to'plamida tekshirishga qaratilgan dasturiy mahsulotni tadqiq qilish, testdan o'tkazish jarayoni.
+	1. dasturiy ta'minotni testdan o'tkazish`,
+	
+`90. Moslashuv nima?
+	2. bu tashqi sharoitlarning uzluksiz o'zgarishi sharoitida kerakli nazorat sifatiga erishish uchun tizimning parametrlari va tuzilishini sozlash. `,
+`91. Quyidagi bandlardan qaysilari testlash rejasiga kiritilmasligi kerak (B).
+ (B) Kutilgan natijalarni tekshirish yo’li`,
+
+
+`92. Konfiguratsiya testi bu? (C)
+ (C) Dasturiy ta'minotning ishlashini sinab ko'rish uchun turli xil uskunalardan foydalanish jarayoniga ishora qiladi `,
+`93. Test samaradorligini oshirish uchun u qanday bo'lishi kerak.
+ (D) Testlash ma'lumotlari sifatida xatolarni aniqlash tezligi yuqori bo'lgan ma'lumotlarni tanlanishi. `,
+`94. Resurslar tugaganda dasturiy ta'minotning ishlashini kuzatishga qaratilgan tizimli test nima deb ataladi.
+(B) Stress testi`,
+`95. Quyidagi usullardan qaysi biri rasmiy tekshirishga kirmaydi: (D)
+ (D) Kodlash standartlari va spetsifikatsiyalari`,
+`96. . Xatoliklarni tuzatish bu- (D)
+ (D) Dasturiy ta'minotdagi xatolarni tuzatish jarayoni`,
+`97. Qora quti testi va oq quti testi o'rtasidagi chegaralarni buzdi nimaga olib keladi. (A)
+(A) Kulrang quti testi `,
+`98. Dasturiy ta'minotni testdan o'tkazish: (c)
+C. Dasturiy ta'minotdagi xatolarni aniqlash va bartaraf etish, dasturiy ta'minot ishonchliligini oshirish`,
+`99. Test ishining hayot siklining qaysi holatida biron bir sababga ko'ra test ishini bajarish mumkin emas
+	1. Bloklangan`,
+`100. Test ishining "Muvaffaqiyatsiz" holati nimani anglatadi?
+	1. test ishini bajarish jarayonida kamchilik  aniqlanadi, bu test ishining kamida bir bosqichi uchun kutilgan natija haqiqiy natijaga mos kelmasligidan iborat`
 ]
 
 const soliq_huquqi_savollar = [
