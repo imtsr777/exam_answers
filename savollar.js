@@ -71,7 +71,7 @@ const xalqaro_savollar = [
 `   Kirish (manba) tilda manba dasturni olib, uni bajaradigan dastur ... deyiladi?
    J:Interpretator
 `,
-`... chiqish tilidagi gaplar va umuman, natijaviy dastur matnini tashkil etuvchi buyruqlar hosil qilish bilan bevosita bog‘liq bo‘lgan bosqichdir.
+`.. chiqish tilidagi gaplar va umuman, natijaviy dastur matnini tashkil etuvchi buyruqlar hosil qilish bilan bevosita bog‘liq bo‘lgan bosqichdir.
 Kod generatsiyasi
 `,
 `Algoritmik til dasturini mashina tiliga tarjima qiluvchi translyatorning nomi nima?
