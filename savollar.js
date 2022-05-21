@@ -94,7 +94,7 @@ Leksik tahlil (skaner)
 `,
 `... - kompilyatorning dastlabki dastur matnida sintaksisni ajratib ko'rsatishni amalga oshiradigan qismi.
 Sintaktik tahlil
-`
+`,
 `... - kompilyatorning kirish tili semantikasi nuqtai nazaridan dastlabki dastur matnining toʻgʻriligini tekshiradigan qismi.
 Semantik tahlil
 `,
