@@ -118,13 +118,13 @@ L(G)
 `,
 `Grammatika qoidalarini yaratish usuli nima?
 Notatsiya
-`
+`,
 `Grammatikani qurish shaklini aniqlang.
 Backus-Naura Shakli.
-`
+`,
 `Belgilar qatorlarining tartiblangan jufti (α, β) ... deyiladi.
 Qoida
-`
+`,
 `Xomskiyning grammatikasiga ko'ra, 0 tip…
 Fraza tuzilishi grammatikasi
 `,
@@ -177,7 +177,7 @@ Identifikatorlar jadvali - bu manba dastur elementlari haqidagi ma'lumotlarni sa
 Tilning elementar belgilaridan tashkil topgan va tilning boshqa tarkibiy birliklarini o'z ichiga olmaydigan tilning tarkibiy birligi.
 `,
 `Leksik tahlil nima?
-Leksik tahlil - kompilyatorning dastur belgilarini o'qiydigan va ulardan manba tilning so'zlarini tuzadigan qismi.
+Leksgrammatikaniik tahlil - kompilyatorning dastur belgilarini o'qiydigan va ulardan manba tilning so'zlarini tuzadigan qismi.
 `,
 `Leksik tahlildan foydalanadigan jadvallarni aniqlang.
 Terminal belgilar jadvali. Belgilar nomlari jadvali. Ruxsat etilgan jadval. Leksema kodlari jadvali
