@@ -1,636 +1,473 @@
 const xalqaro_savollar = [
-    `Hisoblash tizimlari qanday qismlarga bo'linadi ?
-    J: Dasturiy va apparat`,
-
-    `Kompyuterda muammolarni hal qilish uchun mo'ljallangan dasturlarning to'plami deyiladi
-    J: Dasturiy ta'minot`,
-
-    `Axborotni qayta ishlash uchun birlashtirilgan qurilmalar to'plami deyiladi
-    J: Apparat tizimi`,
-
-    `Tizim dasturiy ta'minoti -
-    J: Ma'lum bir shaxsiy kompyuter dasturi bilan bog'liq bo'lmagan va an'anaviy funktsiyalarni bajaradigan umumiy foydalanish dasturlari`,
-
-    `«Aloqa muharrirlari» nima?
-    J: Aloqa muharrirlari-Assembler, ob'ekt modullari va bir modulga ulanish orqali alohida-alohida olinganlarni birlashtirish uchun mo'ljallangan tizimni qayta ishlash dasturi.`,
-
-    `"Yuklagichlar" nima?
-    J: Yuklagichlar - dasturni qayta ishlash dasturiga (OP) yuklash va uning boshqaruvini o'tkazish. Ular, shuningdek, yuklagichlarni bog'laydigan alohida modullarni bog'laydi.`,
-
-    `"Makroprotsessorlar" nima?
-    J: Makroprotsessorlar - bu belgilarni qayta ishlash uchun mo'ljallangan dastur bo'lib, uning davomida ma'lum qisqa iboralar (makros qo'ng'iroqlar) uzun (makros kengaytmalar) bilan bog'lanadi. Makroprotsessorning kirish qismida makro qo'ng'iroqlardan ba'zi matnlar, chiqishda - makro kengaytmalar mavjud.
+    `Aksiz soligʻi stavkalari qaysi me’yoriy hujjat bilan belgilanadi?.	 Oʻzbekiston Respublikasining Davlat byudjeti toʻgʻrisidagi Qonuni bilan
 `,
-`    Qaysi hollarda "til konvertorlari" ishlatiladi?
-    J: Til konvertorlari-dastur matnini yuqori darajadagi bir tildan boshqa yuqori tilga aylantirishni amalga oshiradi.
+    `Foyda solig’ini to’lovchilari kimlar?	 O’zbekiston Respublikasining rezidentlari va norezidentlari, YaTTlar
 `,
-`    "Kutubxonachilar" nima?
-    J: Kutubxonachilar - bu kutubxona fayllarini yaratish va saqlash dasturlari bo'lib, ular bir qator manba matnlari, ob'ekt modullari bo'lishi mumkin.
+    `Yuridik shaxslarning asosiy vositalariga  yillik amortizatsiya me’yorlari qaysi hujjatda keltirilgan?	 Soliq kodeksida
 `,
-`    «Отладчики» nima ?
-    J: Отладчики  - bu faqat dasturni amalga oshirish jarayonida aniqlanishi mumkin bo'lgan xatolarni topish va mahalliylashtirish uchun mo'ljallangan dasturlar.
+    `Yuridik shaxslarning asosiy vositalariga  yillik amortizatsiya me’yorlari qaysi hujjatda keltirilgan?	 Soliq kodeksida
 `,
-    `"Deassembler" nima?
-    J: Disassembler - bu mashina kodlari ketma-ketligini assembler tiliga o'zgartiruvchi dastur.
+    `2020 yilda foyda solig’i stavkasi necha  foiz etib belgilandi?	 15 foiz
 `,
-`    «Kross - tizimlar» nima ?
-    J: Kross - tizimlar - bu boshqa VM ning kompyuter kodlarida taqdim etilgan bir VM dasturlarini olish uchun mo'ljallangan dasturlar.
+    `2021 yil uchun foyda soligining bazaviy stavkasi necha foiz qilib belgilandi?	 2021 yil uchun  foyda soligining bazaviy stavkasi 15 foiz qilib belgilandi.
 `,
-`    OS funktsiyalariga taalluqli bo'lmagan javob variantini ko'rsating.
-    J: kompyuter boshqaruvi
+    `2021 yil uchun qishloq xo'jalik mahsulotlarini ishlab chiqaruvchi korxonalar va baliq xujaliklari uchun  foyda soligining stavkasi necha foiz qilib belgilandi?	 2021 yil uchun qishloq xujalik mahsulotlarini ishlab chiqaruvchi korxonalar va baliq xujaliklari uchun  foyda soligining stavkasi 0 foiz qilib belgilandi.
 `,
-`    OT komponentlariga taalluqli bo'lmagan javob variantini ko'rsating.
-    J: yordamchi dasturlar, ma'lumotlar serveri
+    `2021 yil uchun tijorat banklari uchun foyda soligining stavkasi necha foiz qilib belgilandi?	 Tijorat banklari uchun foyda soligining stavkasi 20 foiz qilib belgilandi.
 `,
-    `Bu o'ziga xos nomga ega bo'lgan ixtiyoriy sonli baytlar ketma-ketligidir...
-    J: Fayl
+    `2021 yil uchun asosiy faoliyat turi mobil aloqa xizmatlari ko'rsatuvchi yuridik shaxslar uchun foyda soligining stavkasi necha foiz qilib belgilandi?	 Asosiy faoliyat turi mobil aloqa xizmatlari ko'rsatuvchi yuridik shaxslar uchun foyda soligining stavkasi 20 foiz qilib belgilandi.
 `,
-    `Faylni identifikatsiya qiluvchi ba'zi belgilar ketma-ketligiga ... deyiladi.
-    J: Nom
+    `2021 yil uchun tsement (klinker) ishlab chiqarishni amalga oshiruvchilar uchun  foyda soligining stavkasi necha foiz qilib belgilandi?	 Asosiy faoliyati tsement (klinker) ishlab chiqarishni amalga oshiruvchilar uchun foyda soligining stavkasi 20 foiz qilib belgilandi.
 `,
-`    Fayl mazmuni va ishlov berish dasturiga ko'rsatgich
-    J: Kengaytma
+    `Foyda solig'ining soliq solish ob’ekti nima?	 Soliq kodeksining 295 moddasiga asosan Soliq to’lovchi tomonidan olingan foyda  -  foyda solig’i bo’yicha soliq solish ob’ekti hisoblanadi.
 `,
-`    Qaysi javob fayl tizimi navlariga taalluqli emas
-    J: QIC, RYFS
+    `Tekin olingan mol-mulk (xizmatlar) foyda solig’i ob’ekti hisoblanadimi?	 Soliq kodeksining 299 moddasiga asosan soliq to’lovchi tomonidan tekin olingan mol-mulk va (yoki) xizmatlar soliq to’lovchining daromadi deb e’tirof etiladi va foyda solig’i ob’ekti hisoblanadi.
 `,
-    `Fayllar bilan ishlash uchun qaysi funksiya YO'Q
-    J: Masshtablash
+    `2021 yil uchun qo’shilgan qiymat soligining  stavkasi necha foiz qilib belgilandi?	 2021 yil uchun qo’shilgan qiymat soligining  stavkasi 15 va 0 foiz qilib belgilandi.
 `,
-`    Qancha turdagi fayl tizimi komponentlari tuzilmalari mavjud.
-    J: 3
+    `Jami daromadi bir milliard so’mdan oshmagan tadbirkorlar QQS va Foyda solig’ini to’lash o’rniga qaysi soliqni to’lovchisi bo’ladi?	Aylanmadan olinadigan soliq
 `,
-`    Kompyuter texnikasi va amaliy dasturlarini boshqarishni hamda ularning bir-biri va foydalanuvchi bilan o‘zaro ta’sirini ta’minlovchi dasturiy vositalar majmuasi ... deyiladi.
-    J: Operatsion tizim
+    `O’zbekiston Respublikasining rezidenti bo’lgan jismoniy shaxslardan olinadigan  daromad solig’i stavkasi necha foiz?	 12 foiz
 `,
-`    Nomlangan ma'lumotlar to'plamlarini yaratish, saqlash va ularga kirishni tashkil qilishni ta'minlaydigan komponent.
-    J: Fayl tizimi
+    `O’zbekiston Respublikasi Prezidentining 2019 yil 26 sentyabrdagi PF-5837-son “O’zbekiston Respublikasining soliq siyosatini yanada takomillashtirish chora-tadbirlari to’g’risida”gi Farmoniga asosan 2019 yilning 1 oktyabridan qo’shilgan qiymat solig’i stavkasi necha  foiz etib belgilandi?	 15 foiz
 `,
-`    Formal tillar nazariyasi nuqtai nazaridan kompilyatorning ikkita asosiy vazifasi nimadan iborat.
-   J: Analiz va sintez
+    `Qo‘shilgan qiymat solig‘i ob’ektiga nimalar kiradi?	 soliq solinadigan oborot, soliq solinadigan import
 `,
-`   Kirish (manba) tilda manba dasturni olib, uni bajaradigan dastur ... deyiladi?
-   J:Interpretator
+    `Mahalliy soliqlar qaysi qatorda keltirilgan?	 Yer solig’i, mol-mulk solig’i, 
 `,
-`.. chiqish tilidagi gaplar va umuman, natijaviy dastur matnini tashkil etuvchi buyruqlar hosil qilish bilan bevosita bog‘liq bo‘lgan bosqichdir.
-Kod generatsiyasi
+    `Boqimanda bu?	Qonun bilan belgilab berilgan soliqlar va yig’imlarni qonunda ko’rsatilgan muddatlarda to’liq va o’z vaqtida to’lamaslik hisoblanadi
 `,
-`Algoritmik til dasturini mashina tiliga tarjima qiluvchi translyatorning nomi nima?
-Assembler
+    `Soliq to’lovchilarning joylashishi mezoniga ko’ra qaysi soliq turlari stavkalari tabaqalashtirilgan?	 Qat'iy soliq
 `,
-`Manba (kirish) tildagi dasturni hosil bo'lgan (chiqish) tildagi ekvivalent dasturga o'tkazuvchi dastur ... deyiladi?
-Translyator
+    `Jismoniy shaxslarning jami yillik daromadi tarkibi nimadan iborat?	 Mehnatga haq to’lash tarzidagi daromadlar, mulkiy daromadlar, moddiy naf tarzidagi daromadlar va boshqa daromadlar
 `,
-`Manba dasturini mashina buyruqlari tilida yoki assembler tilida unga tenglashtirilgan dasturga tarjima qiladigan dastur … deyiladi?
-Kompilyator
+    `O’zbekiston Respublikasi Soliq kodeksida soliqqa tortishning qanday printsiplari keltirilgan?	Soliq solishning majburiyligi, aniqligi, adolatliligi, soliq tizimining yagonaligi, soliq to’g’risidagi qonun hujjatlarining oshkoraligi va soliq to’lovchining haqligi prezumptsiyasi printsipi
 `,
-`“Kompilyator” atamasi qaysi tildan olingan va u nimani anglatadi?
-ingliz tilidan "compiler", «tuzuvchi»
+    "O’zbekiston Respublikasi Soliq kodeksining nechanchi moddasida soliqlar va yig`imlarning turlari keltirilgan?	 17-modda",
+    `O’zbekiston Respublikasi soliq kodeksining Maxsus qismida qaysi masalalar yoritilgan?	 Soliqlar va boshqa majburiy to’lovlar hamda ularning elementlari
 `,
-`“Translyator” atamasi qaysi tildan olingan va u nimani anglatadi?
-Ingliz tilidan «translator», «tarjimon»
+    `O’zbekiston Respublikasi soliq kodeksining Maxsus qismida qaysi masalalar yoritilgan?	 Soliqlar va boshqa majburiy to’lovlar hamda ularning elementlari
 `,
-`... - kompilyatorning dastur belgilarini manba tilda o‘qiydigan va ulardan manba tilning so‘zlarini (leksemalarini) tuzadigan qismi.
-Leksik tahlil (skaner)
+    "Soliqlar to`lovchilar subyektiga ko’ra qanday guruhlanadi?	 Jismoniy va yuridik shaxslardan olinadigan soliqlar"
+,
+    `Aylanmadan olinadigan soliqni toʻlovchilar koʻrsatilgan toʻgri javobni belgilang?	 Soliq davrida tovarlarni (xizmatlarni) realizatsiya qilishdan olingan jami daromadi bir milliard soʻmdan oshmagan yuridik shaxslar
 `,
-`... - kompilyatorning dastlabki dastur matnida sintaksisni ajratib ko'rsatishni amalga oshiradigan qismi.
-Sintaktik tahlil
+    `Aylanmadan olinadigan soliq tatbiq etilmaydigan soliq toʻlovchilar toʻgʻri keltirilgan javobni tanlang?	 Aksiz soligʻi toʻlanadigan tovarlarni (xizmatlarni) ishlab chiqaruvchi va foydali qazilmalarni kavlab olishni amalga oshiruvchi yuridik shaxslarga 
 `,
-`... - kompilyatorning kirish tili semantikasi nuqtai nazaridan dastlabki dastur matnining toʻgʻriligini tekshiradigan qismi.
-Semantik tahlil
+    `Qishloq xoʻjaligi tovar ishlab chiqaruvchilariga 50 gektar va undan ortiq sugʻoriladigan ekin maydoni mavjud boʻlsa qaysi soliq turi tatbiq etilmaydi?	 Aylanmadan olinadigan soliq
 `,
-`Formal grammatika G(VT,VN,P,S) , bu yerda VT …
-Ko'p terminal belgilari
+    `Aholisi soni yuz ming nafar va undan koʻp kishidan iborat shaharlarda chakana savdo sohasidagi soliq toʻlovchilar uchun aylanmadan olinadigan soliq stavkasi necha foiz qilib belgilangan?	 4 foiz
 `,
-`Formal grammatika G(VT,VN,P,S) , bu yerda VN
-Ko'p terminal bo'lmagan belgilar
+    `Lombard xizmatlarini koʻrsatadigan yuridik shaxslar uchun aylanmadan olinadigan soliq stavkasi necha foiz qilib belgilangan?	 25 foiz
 `,
-`Formal grammatika G(VT,VN,P,S) , bu yerda P 
-Ko'p grammatik qoidalar
+    `Aholisi soni yuz ming nafar va undan koʻp kishidan iborat shaharlarda joylashgan ulgurji va chakana dorixona tashkilotlari uchun aylanmadan olinadigan soliq stavkasi necha foiz qilib belgilangan?	 3 foiz
 `,
-`Formal grammatika G(VT,VN,P,S) , bu yerda S
-Maqsad (boshlang'ich) grammatika belgisi
+    `Aylanmadan olinadigan soliqni toʻlash muddatlari toʻgʻri koʻrsatilgan javobni tanlang?	 Tegishli hisobot (soliq) davri uchun soliq hisobotini taqdim etish muddatidan kechiktirmay amalga oshiriladi.
 `,
-`G grammatikasi tomonidan berilgan til qanday belgilanadi
-L(G)
+    `Bojxona rasmiylashtiruvi boʻyicha xizmatlar koʻrsatadigan yuridik shaxslar (bojxona brokerlari) uchun aylanmadan olinadigan soliq stavkasini toʻgʻri koʻrsatilgan javobni tanlang?	 5 foiz.
 `,
-`Chomskiyning grammatikasiga ko'ra,nechta grammatikaning turlari bilan farqlanadi
-4
+    `Borish qiyin boʻlgan va togʻli tumanlarda joylashgan chakana savdo korxonalari uchun aylanmadan olinadigan soliq stavkasi necha foiz qilib belgilangan?	 1 foiz.
 `,
-`Grammatika qoidalarini yaratish usuli nima?
-Notatsiya
+    `Elektron tijorat subyektlarining Milliy reyestriga kiritilgan soliq toʻlovchilar uchun aylanmadan olinadigan soliq stavkasi necha foiz qilib belgilangan?	 2 foiz.
 `,
-`Grammatikani qurish shaklini aniqlang.
-Backus-Naura Shakli.
+    `Soliq kodeksiga asosan mol-mulk soligʻi toʻlovchilari boʻlgan yuridik shaxslar toifasini aniqlang?	 Oʻzbekiston Respublikasida soliq solish obyekti hisoblangan mol-mulkka ega boʻlgan yuridik shaxslar, hamda Oʻzbekiston Respublikasi xududida koʻchmas mulkka ega boʻlgan norezident yuridik shaxslar.
 `,
-`Belgilar qatorlarining tartiblangan jufti (α, β) ... deyiladi.
-Qoida
+    `2022 yilda yuridik shaxslarning mol-mulkiga solinadigan soliq stavkasi ……	1,50%
 `,
-`Xomskiyning grammatikasiga ko'ra, 0 tip…
-Fraza tuzilishi grammatikasi
+    `Oʻz vaqtida ishga tushirilmagan uskunalarga qanday tartibda soliq hisoblanadi?	 oʻz vaqtida ishga tushirilmagan uskunalar soliq solish obyekti tarkibiga kiritilmaydi.
 `,
-`Xomskiyning grammatikasiga ko'ra, 1 tip…
-Kontekstga sezgir va qisqartirilmaydigan grammatika
+    `Soliq kodeksiga binoan quyidagilardan qaysilari yuridik shaxslarning mol-mulk soligʻi obyekti tarkibiga kiradi?	 Temir yoʻllar, magistral truboprovodlar, aloqa va elektr uzatish liniyalari, shuningdek ushbu obyektlarning ajralmas texnologik qismi boʻlgan inshootlar.
 `,
-`Xomskiyning grammatikasiga ko'ra, 2 tip…
-Kontekstga sezgir bo'lmagan grammatika
+    `Qurilish tashkilotlari yoki imoratlarni quruvchilar balansida koʻrsatilgan turar-joy mulklari, ushbu koʻchmas mulk foydalanishga topshirilgandan keyin qachondan boshlab soliq solish obyektiga aylanadi?	 Qurilish tashkilotlari yoki imoratlarni quruvchilar balansida koʻrsatilgan turar-joy mulklari, ushbu koʻchmas mulk foydalanishga topshirilgandan keyin olti oy oʻtgach soliq solish obyektiga aylanadi. 
 `,
-`Xomskiyning grammatikasiga ko'ra, 3 tip…
-Muntazam grammatika
+    `Qurilish tashkilotlari yoki imoratlarni quruvchilar balansida koʻrsatilgan turar-joy mulklari, ushbu koʻchmas mulk foydalanishga topshirilgandan keyin qachondan boshlab soliq solish obyektiga aylanadi?	 Qurilish tashkilotlari yoki imoratlarni quruvchilar balansida koʻrsatilgan turar-joy mulklari, ushbu koʻchmas mulk foydalanishga topshirilgandan keyin olti oy oʻtgach soliq solish obyektiga aylanadi. 
 `,
-`Turli xil grammatika turlarini ko'rsating
-Yaratuvchi va tan oluvchi
+    `Qurilishi tugallanmagan obyektlarning, qurilishning normativ muddati belgilanmagan boʻlsa,  qurilishi tugallanmagan obyektlarga mol-mulk soligʻini hisoblash qaysi muddatdan soʻng kiritiladi?	 Ushbu obyektlarning qurilishiga vakolatli organning ruxsati olingan oydan e’tiboran yigirma toʻrt oy ichida qurilishi tugallanmagan obyektlarga kiradi.
 `,
-`Grammatika bu...
-Muayyan tilda gaplarni ifodalash usulining tavsifi
+    `Yuridik shaxslarning mol-mulkiga solinadigan soliq bazasi qanday aniqlanadi?	 Oʻrtacha yillik qoldiq qiymatiga nisbatan aniqlanadi.
 `,
-`“Rasmiy til”ga ta’rif bering.
-Rasmiy til - bu so'zlardan (satrlardan) tashkil topgan ma'lum bir jumlalar to'plami.
+    `Normativ (belgilangan) muddatda tugallanmagan qurilish obyektlari uchun yuridik shaxslarning mol-mulkiga solinadigan soliq bazasi qanday aniqlanadi?	 Oʻrtacha yillik qiymatiga nisbatan aniqlanadi.
 `,
-`Javob variantlaridan qaysi biri “leksik analizator” atamasi bilan sinonimdir.
-Skaner
+    `Yuridik shaxslarning mol-mulkiga solinadigan soliqning bazaviy soliq stavkasi necha foiz belgilangan?	 Yuridik shaxslarning mol-mulkiga solinadigan soliqning bazaviy stavkasi 2 foiz.
 `,
-`Leksik analizatorning xizmat jadvallari qancha guruhga bo'linadi
-3
+    `Normativ (belgilangan) muddatda tugallanmagan qurilish obyektlarining yuridik shaxslarning mol-mulk soliq stavkasini aniqlang?	 Normativ (belgilangan) muddatda tugallanmagan qurilish obyektlari soliq stavkasi 4 foiz qilib belgilangan.
 `,
-`... tilning elementar belgilaridan tashkil topgan va tilning boshqa tuzilmaviy birliklarini o‘z ichiga olmagan tilning tarkibiy birligidir.
-Leksema
+    `Soliq kodeksiga asosan qayta tiklanuvchi energiya manbalari qurilmalarining nominal quvvati 0.1 MVt va undan koʻp boʻlgan taqdirda bunday manbalardan energiya ishlab chiqaruvchilariga yuridik shaxslarning mol mulk soligʻidan imtiyoz necha yil qilib belgilangan?	 Ular foydalanishga joriy etilgan paytdan e’tiboran 10 yil muddatga imtiyoz beriladi.
 `,
-`... - chekli uzunlikdagi, alifbo belgilaridan tashkil topgan har qanday qator
-Gap
+    `Jismoniy shaxslarning mol-mulk soligʻini soliq davri uchun toʻlash muddati qachon?	 soliqni toʻlash teng ulushlarda 15-aprelga va 15-oktabrga qadar amalga oshiriladi 
 `,
-`... - ba'zi alifbo ustidagi har qanday jumlalar to'plami
-Til
+    `Soliq qonunchiligiga asosan shaharlarda joylashgan jismoniy shaxslarning 200 kv.m dan oshiq va 500 kv.m gacha boʻlgan turar joylari va kvartiralari uchun mol-mulkiga solinadigan soliq stavkasi qancha?	0,25%
 `,
-`... - chekli bo'sh bo'lmagan belgilar to'plami
-Alifbo
+    `Jismoniy shaxslarning mol-mulkini baholash boʻyicha organlar belgilangan kadastr qiymati boʻlmasi shartli kiymati qancha miqdorda olinadi?	 Toshkent shahri va viloyat markazlarida 210 000,0 ming.soʻm, boshqa shaharlar va qishloq joylarda 84 000,0 ming.soʻm 
 `,
-`Leksik analizatorlarni amalga oshirishning ikkita usuli qanday?
-Parallel va ketma-ket
+    `Jismoniy shaxs yoki oilaviy korxona turar joydan unda istiqomat qilish bilan bir vaqtda tovarlar ishlab chiqarish (ishlar bajarish, xizmat koʻrsatish) uchun foydalangan taqdirda mol-mulk soligʻi stavkasi qanday hisoblanadi?	 jismoniy shaxslar uchun belgilangan stavka boʻyicha
 `,
-`Identifikatorlar jadvallarini tashkil qilishning eng samarali usuli qanday?
-Xeshlash
+    `Koʻchmas mulkka boʻlgan huquqni davlat roʻyxatidan oʻtkazuvchi organlarda belgilangan tartibda roʻyxatga olinmagan yangi qurilgan turar joylar boʻyicha jismoniy shaxslarning mol-mulkiga solinadigan soliq mol-mulk shartli qiymatining necha barobari miqdoridan kelib chiqib soliq hisoblanadi?	 2 barobari
 `,
-`“Identifikatorlar jadvali” nima?
-Identifikatorlar jadvali - bu manba dastur elementlari haqidagi ma'lumotlarni saqlash uchun xizmat qiluvchi ma'lumotlar to'plami.
+    `Yangi imoratlar, binolar va inshootlar boʻyicha jismoniy shaxslarning mol-mulkiga solinadigan soliq qachondan boshlab toʻlanadi?	 mulk huquqi yuzaga kelgan oydan e’tiboran toʻlanadi
 `,
-`Tilning leksema yoki leksik birligi...?
-Tilning elementar belgilaridan tashkil topgan va tilning boshqa tarkibiy birliklarini o'z ichiga olmaydigan tilning tarkibiy birligi.
+    `Mol-mulk soligʻi boʻyicha imtiyozlarni qoʻllash maqsadida soliq solinmaydigan maydon necha kvadrat metr qilib belgilandi?	60
 `,
-`Leksik tahlil nima?
-Leksgrammatikaniik tahlil - kompilyatorning dastur belgilarini o'qiydigan va ulardan manba tilning so'zlarini tuzadigan qismi.
+    `Jismoniy shaxslar mol-mulkiga solinadigan soliqni hisoblab chiqarishda kadastr hujjatlarida belgilangan kadastr qiyimatiga nisbatan belgilanadigan eng kam me’yor qancha miqdorni tashkil qiladi?	 42 000,0 ming soʻm
 `,
-`Leksik tahlildan foydalanadigan jadvallarni aniqlang.
-Terminal belgilar jadvali. Belgilar nomlari jadvali. Ruxsat etilgan jadval. Leksema kodlari jadvali
+    `Soliq kodeksining 421-moddasida belgilangan imtiyozlar jismoniy shaxslar tomonidan tadbirkorlik faoliyati uchun foydalaniladigan yoxud yuridik shaxsga yoki yakka tartibdagi tadbirkorga ijaraga berilgan soliq solish obyektlariga nisbatan qoʻllaniladimi?	 yakka tartibdagi tadbirkorlarga imtiyoz koʻzda tutilmagan 
 `,
-`Nima terminal belgilar zamonaviy dasturlash tillarida ma'lumoti o'rtasidagi chegara belgilaridir
-Bo'shliqlar, operatsiya belgilari, sharh belgilar, ajratgichlar (vergul, nuqta-vergul)
+    `Meros boʻyicha oʻtgan mol-mulk uchun jismoniy shaxslarning mol-mulkiga solinadigan soliq merosxoʻrlar tomonidan qachondan boshlab toʻlanadi?	 Mulk huquqi vujudga kelgan oydan e’tiboran toʻlanadi 
 `,
-`Dasturlasgh tillari leksemalari hisoblanadi
-Til identifikatorlari va kalit so'zlar
+    `Soliq toʻlovchi mol-mulk soligʻidan imtiyoz olish huquqiga ega boʻlgani holda Toshkent shahrida hamda Toshkent viloyatida turar joy obyekti boʻlganda soliq imtiyozi qaysi biriga tadbiq etiladi?	 soliq toʻlovchining tanlashi boʻyicha faqat bitta obyektiga 
 `,
-`Chiqish daraxtini qurilish usullarini aniqlang
-Yuqoridan pastga. Pastdan yuqoriga
+    `Yangi tahrirdagi Soliq kodeksiga asosan, kimlar yuridik shaxslardan olinadigan yer soligi toʻlovchisi hisoblanadi?	 Mulk huquqi, egalik qilish, foydalanish yoki ijara huquqlari asosida yer uchastkalariga ega boʻlgan yuridik shaxslar, OʻzR. norezidentlari yuridik shaxslardan olinadigan yer soligʻini toʻlovchilari hisoblanadi.
 `,
-`"Cheklangan avtomat» nima uchun ishlatiladi?
-Cheklangan avtomat - har qanday satrlarni tanib olish uchun qurilma.
+    `Qanday obyekt yuridik shaxslarning yer soliq solish obyekti hisoblanadi?	 Mulk huquqi, egalik qilish, foydalanish yoki ijara huquqlar asosida yuridik shaxslarda boʻlgan yer uchastkalari.
 `,
-`... - bu kirishni amalga oshirish kerak bo'lgan kirish belgilarining umumiy oqimida bu satrlarni tanlash.
-Leksema chegarasini aniqlash
+    `Yer uchastkalariga boʻlgan mulk huquqi, egalik qilish, foydalanish yoki ijara huquqi yil mobaynida soliq toʻlovchiga oʻtgan boʻlsa, oʻsha yer uchastkalari qachondan soliq bazasi sifatida qaraladi?	 Yer uchastkalariga tegishli huquq vujudga kelganidan keyingi oydan e’tiboran hisoblab chiqariladi.
 `,
-`... bu belgilar zanjirining muayyan tilga tegishliligini aniqlashga imkon beruvchi maxsus avtomat
-Aniqlovchi (разборщик)
+    `Yer uchastkasining maydoni kamaytirilgan taqdirda, soliq bazasi yer uchastkasi maydoni qaysi oydan e’tiboran kamaytiriladi?	 Yer uchastkasining maydoni kamaytirilgan taqdirda, soliq bazasi yer uchastkasi maydoni kamaytirilgan oydan e’tiboran kamaytiriladi.
 `,
-`Har bir aniq dasturlash tilining mumkin bo'lgan leksemalarining tarkibi aniqlanadi
-Tilning sintaksisi
+    `Yuridik shaxslarda soliq imtiyoziga boʻlgan huquq vujudga kelgan taqdirda, soliq bazasi qaysi oydan e’tiboran kamaytiriladi?	 Yuridik shaxslarda soliq imtiyoziga boʻlgan huquq vujudga kelgan taqdirda, soliq bazasi ushbu huquq vujudga kelgan oydan e’tiboran kamaytiriladi.
 `,
-`Grammatik chiqarish daraxti deyiladi ...
-ba'zi chiqarish zanjiriga mos keladigan graf (daraxt)
+    `Tasdiqlangan loyihaga muvofiq melioratsiya ishlari amalga oshirilayotgan sugʻoriladigan yerlar − ishlar boshlanganidan e’tiboran necha yil muddatga imtiyoz ega?	 Besh yil muddatg
 `,
-`Qanday chiqarish chap taraf deb ataladi
-Agar birinchi chiqarishning har bir bosqichida sentensial shakldagi eng chap noterminal grammatika qoidalarini ishlab chiqadigan qoidalar bilan almashtirilsa
+    `Qayta tiklanadigan manbalaridan energiya ishlab chiqaruvchilar qayta tiklanadigan energiya manbalari (nominal quvvati 0.1 MVt va koʻproq) uskunalari bilan band yer uchastkalari boʻyicha ular foydalanishga kiritilgan vaqtdan necha muddatga soliqdan ozod etiladi?	 Oʻn yil muddatg
 `,
-`Qanday chiqarish o'ng tomon deb ataladi
-Agar har bir bosqichda chiqish eng o'ngdagi noterminal qoida bilan almashtirilsa
+    `Qishloq xoʻjaligiga moʻljallanmagan yerlar boʻyicha yer soligʻi hisoboti soliq organlariga qanchon taqdim etiladi?	 Joriy soliq davrining 10 yanvariga qadar.
 `,
-`Tahlil qilish muammosi
-Leksemalar chegaralarini topish va ularni tanlash
+    `Qishloq xoʻjaligiga moʻljallangan yerlar boʻyicha yer soligʻi hisoboti soliq organlariga qanchon taqdim etiladi?	 Joriy soliq davrining 1 mayiga qadar.
 `,
-`Sentensial shakl nima?
-bu qoidalar faqat terminal belgilarida ifodalanadi
+    `Toshkent shahrida joylashgan yuridik shaxslar uchun yer soligʻini hisoblashda nechta hudud mavjud?	 1,2,3,4,5-hududlar.
 `,
-`Sintaktik analizator termini o'rniga boshqa  yana qanday termin  ishlatiladi
-Parser
+    `Jismoniy shaxsga yer ajratilgan holda u ushbu yerdan foydalanmasa yer soligʻi toʻlaydimi?	 Belgilangan tartibda berilgan yer uchastkalari uchun yer soligʻi yer uchastkasidan foydalanish faktidan qat’iy nazar, jismoniy shaxslar tomonidan toʻlanadi 
 `,
-`Sintaksik analizator uchun kirish nima?
-leksemalar va leksik analizator jadvallari ketma-ketligi
+    `Qanday fuqarolarga yer soligʻidan imtiyoz beriladi?	 I va II guruh nogironlari, yolgʻiz pensionerlar, boquvchisini yoʻqotgan koʻp bolali oilalar
 `,
-`Sintaksik analizator uchun chiqish nima?
-tahlil daraxti va leksik analizator jadvallari
+    `Koʻchirib keltirilgan fuqarolarga kelib joylashgan yer uchastkalari boʻyicha - yer uchastkalari berilgan paytdan e’tiboran…?	 Imtiyoz qoʻllanilmaydi 
 `,
-`Javoblarning qaysi biri sintaktik analizatorning vazifalariga TAALLUQLI EMAS
-to'g'ri sintaksis konstruktsiyalari uchun xotirani ajratish
+    `Jismoniy shaxslarga tegishli boʻlgan noturar joy obyektlari uchun yer soligʻidan imtiyoz mavjudmi?	 Imtiyoz nazarda tutilmagan 
 `,
-`LL(k) grammatikasidagi 1 harf nimani anglatadi
-Kirish satrini chapdan o'ngga ko'rish
+    `Yer uchastkasi maydoni kamaytirilgan taqdirda, yer soligʻini toʻlash...?	 Yer uchastkasi kamaytirilgan oydan e’tiboran toʻxtatiladi 
 `,
-`LR(k) grammatikasidagi 1 harf nimani anglatadi
-Kirish satrini chapdan o'ngga ko'rish
+    `Soliq kodeksining 429-moddasiga asosan yer maydonlaridan hujjatlarsiz yoxud yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatlarda koʻrsatilganidan kattaroq hajmda foydalanilganda yer soligʻining summasiga ekvivalent miqdorda: yuridik shaxslarga - nechchi baravari miqdorida jarima solishga sabab boʻladi?	 toʻrt baravari miqdorida 
 `,
-`2 harfi LL(k) grammatikasi degan ma'noni anglatadi
-Zanjirning chap chiqishi qurilish
+    `Soliq kodeksining 437-moddasiga asosan yer maydonlaridan hujjatlarsiz yoxud yer uchastkasiga boʻlgan huquqni tasdiqlovchi hujjatlarda koʻrsatilganidan kattaroq hajmda foydalanilganda yer soligʻining summasiga ekvivalent miqdorda: jismoniy shaxslarga - nechchi baravari miqdorida jarima solishga sabab boʻladi?	 uch baravari miqdorida 
 `,
-`LR(k) grammatikasidagi 2 harf nimani anglatadi
-Zanjirning o'ng chiqishi qurilish
+    `Noturar joy obyekti koʻp qavatli binoda joylashgan boʻlsa mazkur noturar obyektidan yer soligʻi qanday hisoblanadi	 Qavatlar soniga boʻlingan holda hisoblanadi 
 `,
-`Muayyan ma'noga ega bo'lgan belgilar (leksemalar) ning to'liq ketma-ketligi deyiladi ...
-Sintaktik qurilish
+    `Jismoniy shaxslarning yer soligʻini soliq davri uchun toʻlash muddati qachon?	 15-aprel va 15-oktabrga qadar teng ulushlarda amalga oshiriladi 
 `,
-`Sinktatik analizator qurish uchun nechta va qanaqa metodlar ishlatiladi
-2: jadvalga asoslangan va dasturiy ta'minotga asoslangan
+    `Soliq toʻlovchi yer soligʻidan imtiyoz olish huquqiga ega boʻlgani holda Toshkent shahrida hamda Toshkent viloyatida turar joy obyekti boʻlganda soliq imtiyozi qaysi biriga tadbiq etiladi?	 soliq toʻlovchining tanlashi boʻyicha faqat bitta obyektiga 
 `,
-`Qanday grammatikalar yuqoridan pastga algoritmlar bilan bog'liq
-LL(k) grammatikali
+    `Fuqarolarga uy joy qurish uchun ajratilgan yerlar boʻyicha belgilangan normativdan ortiq yer maydonlari uchun bazaviy soliq stavkalariga qancha koʻpaytiruvchi koeffitsent qoʻllagan holda soliqlar hisoblanadi	1,5
 `,
-`Qanday grammatikalar pastdan yuqoriga algoritmlar bilan bog'liq
-LR(k) grammatikali
+    `Soliq organlari har yili qaysi muddatda soliq summasi va uni toʻlash muddatlari koʻrsatilgan toʻlov xabarnomasini jismoniy shaxslarga topshiradi?	 1 martdan kechiktirmay 
 `,
-`Qaysi usul quyi oqim parserlar sinfi uchun asosiy hisoblanadi
-Rekursiv tushish usuli
+    `Suv resurslaridan foydalanganlik uchun soliq solish obyekti deb nimaga aytiladi?	 Yer usti va yer osti manbalaridan olib foydalaniladigan suv resurslari.
 `,
-`Qaysi usul ishlab chiqarishning o'ng tomonini ushbu ishlab chiqarishning chap tomonidagi belgi bilan almashtirishga asoslangan.
-O'tkazish usuli
+    `Quyidagilardan qaysilari suv resurslaridan foydalanganlik uchun soliq solish obyekti sifatida qaralmaydi?	 Gidroelektrostansiyalar gidravlik turbinalarining harakati uchun foydalaniladigan suv resurslari.
 `,
-`Pastdan yuqoriga analizatorlar sinfi uchun qaysi usul asosiy hisoblanadi
-O'tkazish usuli
+    `Suv resurslarining soliq bazasi deb nimaga aytiladi?	 Foydalanilgan suvning hajmi.
 `,
-`Qaysi usul berilgan sinfning barcha mumkin bo'lgan konstruktsiyalari uchun dastur yozishni o'z ichiga oladi
-jadval asosida boshqariladigan
+    `Suv resurslarining soliq bazasi qanday tartibda aniqlanadi?	 Suv hajmi suvdan foydalanishning buxgalteriya hisobi hujjatlarida aks ettirilgan suv oʻlchagich asboblar koʻrsatkichlari asosida aniqlanadi.
 `,
-`Qaysi usul ma'lum bir til uchun dastur yozishni o'z ichiga oladi
-dasturiy ta'minotga asoslangan
+    `Soliq organlariga vodoprovod tarmogʻiga suv resurslarining yer usti va yer osti manbalaridan kelib tushadigan suv xajmlari nisbati toʻgʻrisidagi ma’lumotnoma kim tomonidan va qachon taqdim etiladi?	 Suv yetkazib berishni amalga oshiruvchi yuridik shaxslar, joriy soliq davrining 15 yanvarigacha soliq organlariga taqdim etiladi.
 `,
-`Sinktatik analizator qurish uchun nechta va qanaqa algoritmlar ishlatiladi
-2: quyi(top-down) и yuqori(bottom-up)
+    `Soliq organlari suv hajmlari nisbati toʻgʻrisidagi ma’lumotnomani olgandan keyin qancha muddat ichida soliq toʻlovchilariga yetkazib beradi?	 Uch kun ichida ushbu ma’lumotlarni soliq toʻlovchilar e’tiboriga yetkazishi lozim.
 `,
-`Qaysi usul grammatika qoidalarini to'g'ridan-to'g'ri tanib oluvchi boshqaruv tuzilmalariga "tikish" ga asoslanadi.
-Rekursiv tushish usuli
+    `Suv resurslaridan foydalanganlik uchun soliq summasi qanday tartibda aniqlanadi?	 Soliq bazasi va belgilangan soliq stavkalaridan kelib chiqib hisoblanadi.
 `,
-`Sintaksis daraxtining qirralari nimaga mos keladi?
-Operatsiya
+    `Belgilangan limitlar doirasida yer usti va yer osti manbalaridan olinadigan suv resurslari uchun soliq stavkasi miqdori qaysi Qonun hujjatiga asosan belgilanadi?	 Oʻzbekiston Respublikasi Davlat Byudjeti toʻgʻrisidagi Qonuni.
 `,
-`Sintaktik daraxtning barglariga nima mos keladi
-Operand
+    `Oʻzbekiston Respublikasining norezidentlari boʻlgan yuridik shaxslar hamda yakka tartibdagi tadbirkorlar tomonidan suv resurslaridan foydalanganlik uchun soliq hisoboti qaysi muddatlarda taqdim etadi?	 soliq davridan keyingi yilning 20 yanvarigach
 `,
-`Sintaktik graflarni yaratish uchun qancha qoidalar qo'llaniladi
-6
+    `Dehqon xoʻjaliklari suv resurslaridan foydalanganlik uchun soliq summasini toʻlash qaysi muddatlarda amalga oshiriladi?	 soliq davridan keyingi yilning 1 maygach
 `,
-`Sintaktik grafda qoida terminalining belgisi paydo bo'lishi quyidagicha ko'rsatiladi
-dumaloq(oval)
+    `Suv resurslaridan hujjatlarsiz foydalanilganda qanday ta’sir choralar koʻriladi?	 Soliq kodeksining 445-moddasiga asosan Suv resurslaridan ruxsat beruvchi hujjatlarsiz foydalanilganda belgilangan soliq stavkalarining besh baravari miqdorida belgilanadi.
 `,
-`Sintaktik grafda qoidaning noterminal belgisi paydo bo'lishi quyidagicha ko'rsatiladi
-to'rtburchak
+    `Avtotransport vositalarini yuvishga ixtisoslashgan korxonalar uchun suv resurslaridan foydalanganlik uchun soliq stavkalari har kub metr uchun qanday belgilangan?	 Yer usti suv resurslari manbalari boʻyicha - 1 380, Yer osti suv resurslari manbalari - 1 730 
 `,
-`Sintaksik grafda ba'zi qoidalar ro'yxatining ko'rinishi quyidagicha ko'rsatiladi
-bir necha qatorda parallel jarayon
+    `Soliq davrida Suv resurslaridan foydalanganlik uchun soliq summasi bazaviy hisoblash miqdorining (bhm) ikki yuz baravaridan koʻproqni tashkil etadigan yuridik shaxslar tomonidan (aylanmadan olinadigan soliqni toʻlovchilar mustasno) boʻnak toʻlovlari – qaysi muddatda va qanday ulushda toʻlanadi?	 har oyning 20 sanasidan kechiktirmay yillik soliq summasining oʻn ikkidan bir qismi miqdorida 
 `,
-`Sintaktik grafda qoida qismini takrorlash paydo bo'lishi quyidagicha ko'rsatiladi
-davriy qaytish shaklida
+    `Yer qa’ridan foydalanuvchilar quyidagi soliqlar va maxsus toʻlovlarni toʻlaydilar:...?	 yer qa’ridan foydalanganlik uchun soliq; bonus (imzoli va tijoratbop topilma bonuslar).
 `,
-`Gapni grammatik analiz vaqtida jarayonni boshqarishni tavsiflaydi
-sintaksis grafi
+    `Yer qa’ridan foydalanganlik uchun soliqni Soliq solish obyekti bu...?	 Foydali qazilmani qazib olish (ajratib olish) hajmi yer qa’ridan foydalanganlik uchun soliq solish obyektidir.
 `,
-`. ... - matematik  akslantirishning yo'nalishli harakati diagrammasi.
-sintaksis daraxti 
+    `Yer qa’ridan foydalanganlik uchun soliq stavkasi qaysi hujjatga asosan belgilanadi?	 Oʻzbekiston Respublikasi Soliq kodeksi bilan belgilanadi 
 `,
-`Bu hosil bo'lgan dasturni ishga tushirish vaqtida bir marta ajratilgan va natijada olingan dasturni bajarish muddati uchun amal qiladigan xotira maydoni.
-Global xotira maydoni
+    `Yer qa’ridan foydalanganlik uchun soliqni Soliq solish bazasi qanday aniqlanadi?	 keltirilgan barcha bandlar toʻgʻri 
 `,
-`Bu hosil bo'lgan dasturning ba'zi bir qismini bajarish boshida ajratilgan va ushbu fragmentni bajarish oxirida bo'shatish mumkin bo'lgan xotira maydoni.
-Local xotira maydoni
+    `Yuridik shaxslar uchun Yer qa’ridan foydalanganlik uchun soliqni hisobot davri qanday?	 bir oy. 
 `,
-`Bu kompilyatsiya vaqtida hajmi ma'lum bo'lgan xotira maydoni
-Ststik xotira maydoni
+    `Jismoniy shaxslar uchun Yer qa’ridan foydalanganlik uchun soliqni hisobot davri qanday?	 kalendar yil.
 `,
-`Bu kompilyatsiya vaqtida hajmi noma'lum bo'lgan xotira maydoni
-Dinamik xotira maydoni
+    `Yer qa’ridan foydalanganlik uchun soliq boʻyicha soliq davrini aniqlang?	 kalendar yil.
 `,
-`Optimallashtirish jarayoni uchun qanday ikkita mezon qo'llaniladi
-band qilingan xotira miqdori va dasturni bajarilish tezligi
+    `Yer qa’ridan foydalanganli uchun soliqni yuridik shaxslar tomonidan toʻlash muddatini koʻrsating?	 hisob-kitob taqdim etiladigan muddatdan kechiktirmay toʻlanadi
 `,
-`Optimallashtirish jarayoni qanday bosqichdan iborat
-Sintez fazasi
+    `Yer qa’ridan foydalanganli uchun soliqni yuridik shaxslar tomonidan hisob-kitobni taqdim etish muddatini koʻrsating?	 ortib boruvchi yakun bilan yilning har oyda, hisobot davridan keyingi oyning 20 kunidan kechiktirmay
 `,
-`Dastlabki dasturning leksik birliklarini ushbu leksik birlik uchun zarur bo'lgan xotira maydonining manzili, hajmi va atributlari bilan xaritalash jarayoni.
-Xotirani taqsimlash
+    `Yer qa’ridan foydalanganli uchun soliqni jismoniy shaxslar tomonidan hisob-kitobni taqdim etish muddatini koʻrsating?	 yilda bir marta, soliq davridan keyingi yilning 1-fevralidan kechiktirmay 
 `,
-`Massivlar uchun hajmni hisoblash qoidasining javob variantini belgilang
-elementlar soni va bitta element uchun xotira hajmining kopaytmasi
+    `Yer qa’ridan foydalanganli uchun soliqni jismoniy shaxslar tomonidan toʻlash muddatini koʻrsating?	 soliq hisobotini taqdim etish muddatidan kechiktirmay
 `,
-`Strukturalar  uchun hajmni hisoblash qoidasi uchun javob variantini ko'rsating (nomli maydonlar bilan yozuvlar)
-barcha maydonlar bo'yicha xotira o'lchamlari yig'indisi
+    `2021 yil 1 sentyabrdan boshlab byudjet muassasalari va tashkilotlari xodimlarining mehnatga haq toʻlashning eng kam miqdori oyiga necha soʻm etib belgilandi?	 822 000 soʻm
 `,
-`Birlashmalar  uchun hajmni hisoblash qoidasining javob variantini ko'rsating (birlashmalar, umumiy maydonlar, variantlari bo'lgan yozuvlar)
-maksimal maydon hajmi
+    `Ijtimoiy soliq toʻlovchilar hisoblanmaydigan javobni belgilang	 Paxta yigʻim-terimi boʻyicha mavsumiy qishloq xoʻjaligi ishlariga jalb qilingan jismoniy shaxslar
 `,
-`Ob'ektlarni (sinflarni) amalga oshirish uchun hajmni hisoblash qoidasiga javob variantini ko'rsating)
-bir xil nomlangan maydonlar bilan xotira hajmi va ob'ektga yo'naltirilgan tilning xizmat ma'lumotlari uchun xotira
+    `Qaysi javobda ijtimoiy soliqning soliq solish obyekti koʻrsatilgan?	 Ish beruvchining xodimlar mehnatiga haq toʻlashga doir xarajatlari
 `,
-`Samaraliroq natijaviy ob'yekt dasturini olish uchun kompilyatsiya qilingan dasturda operatsiyalarni qayta tartiblash va o'zgartirish bilan bog'liq ishlov berish deyiladi...
-optimallashtirish jarayoni
+    `Ijtimoiy soligʻini toʻlovchilar kimlar?	 Yuridik shaxslar va jismoniy shaxslarning ayrim toifalari
 `,
-`Xotira maydoni
-bu qandaydir tarzda mantiqiy birlashtirilgan ma'lumotlar uchun ajratilgan xotira yacheykalari blokidir.
+    `Ijtimoiy soliq toʻlovchilarning ayrim toifalari uchun pasaytirilgan soliq stavkalari kaysi meyoriy xujjatga asosan belgilanishi mumkin?	 Oʻzbekiston Respublikasi Prezidenti qaroriga asosan
 `,
-`Operandlardan oldin operatsiya belgisi bo'lgan Polsha yozuvi ... deyiladi.
-prefiksli
+    `Ixtisoslashtirilgan sexlar, uchastkalar va korxonalarda ishlovchi nogironligi boʻlgan shaxslar uchun ijtimoiy soliq stavkasini necha foiz?	 4,7 foiz
 `,
-`Operandlardan keyin operatsiya belgisi bo'lgan Polsha yozuvi ... deyiladi.
-postfiksli
+    `Davlat ulushi 50 foiz va undan ortiq boʻlgan korxonalarga ijtimoiy soliq stavkasi necha foiz?	 12 foiz
 `,
-`Ikki turdagi uzilishlar qanday?
-apparat va dasturiy ta'minot uzilishlari
+    `Byudjet tashkilotlariga ijtimoiy soliq stavkasi necha foiz?	 25 foiz
 `,
-`a+b Ifoda uchun triada qanday aniqlanadi
-+(a,b)
+    `Yakka tartibdagi tadbirkorlar ijtimoiy soliqni qancha miqdorda toʻlaydilar?	 Oyiga bazaviy hisoblash miqdorining 1 baravaridan kam bulmagan miqdorda
 `,
-`Ifoda uchun tetrada qanday aniqlanadi
-+(a,b,R)
+    `Yakka tartibdagi tadbirkorlar tomonidan ijtimoiy soliq qaysi muddatda toʻlanadi?	 har oyda, tadbirkorlik faoliyati amalga oshirilgan oyning oʻn beshinchi kunidan kechiktirmay
 `,
-`a+b Ifoda uchun postfiks polsha yozuvi qanday aniqlanadi
-ab+
+    `Dehqon xoʻjaliklarining a’zolari tomonidan ijtimoiy soliq qaysi muddatda toʻlanadi?	 hisobot yilining 1 oktyabrigacha
 `,
-`a+b Ifoda uchun prefiks polsha yozuvi qanday aniqlanadi
-+ab
+    `“Usta-shogird” maktablari oʻquvchilari tomonidan ular yigirma besh yoshga toʻlguniga qadar ishlagan davrida yiliga qancha miqdorda ijtimoiy soliq toʻlanadi.	 bazaviy hisoblash miqdorining 2,5 baravaridan kam boʻlmagan
 `,
-`Javob variantini ko'rsating, bu erda ichki tasvirlash shakli ishlatiladi: <operatsiya>(<operand1><operand2><natija)
-Tetrada
+    `“Hunarmand” uyushmasining hunarmandchilik faoliyati subyektlari boʻlgan, qishloq tumanlarida roʻyxatdan oʻtgan va faoliyatini amalga oshirayotgan a’zolari tomonidan oʻz faoliyatining dastlabki ikki yilida oyiga qancha miqdorda ijtimoiy soliq toʻlanadi.	 bazaviy hisoblash miqdorining 50 foizi miqdorida
 `,
-`Javob variantini ko'rsating, bu erda ichki tasvirlash shakli ishlatiladi: <operatsiya>(<operand1><operand2>)
-Triada 
+    `Yakka tartibdagi tadbirkor bilan mehnat munosabatlarida boʻlgan jismoniy shaxslar tomonidan oyiga qancha miqdorda ijtimoiy soliq toʻlanadi.	 bazaviy hisoblash miqdorining 50 foizi miqdorida
 `,
-`Javob variantini ko'rsating, bu erda ichki tasvirlash shakli ishlatiladi: (<operand1><operand2><operatsiya>)
-Qavssiz yozuv
+    `“SOS – Oʻzbekiston Bolalar mahallalari” uyushmalari uchun ijtimoiy soliq stavkasi necha foiz?	 7 foiz
 `,
-`Javob variantini ko'rsating, bu erda ichki tasvirlash shakli ishlatiladi:
- < команда>(<operand1><operand2>)
-Assembler kodi
+    `Byudjet tashkilotlari ijtimoiy soliq tushumlarining necha foizi byudjetdan tashqari Pensiya jamgʻarmasiga taqsimlanadi?	 99,2 foiz
 `,
-`Haqiqiy rejim uchun mo'ljallangan dasturlarni bajarish qobiliyatini ta'minlovchi tizim.... deyiladi
-uzilish tizimi
+    `Byudjet tashkilotlari boʻyicha ijtimoiy soliq tushumlarining necha foizi Bandlikka koʻmaklashish davlat jamgʻarmasiga taqsimlanadi?	 0,4 foiz
 `,
-` (00h-07h) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-Markaziy protsessor uzilishlari
+    `Byudjet tashkilotlari ijtimoiy soliq tushumlarining necha foizi Oʻzbekiston Kasaba uyushmalari federatsiyasi kengashiga taqsimlanadi?	 0,4 foiz
 `,
-`(08h-0Fh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-1-darajali uzilish nazoratchilari
+    `Jismoniy shaxslar daromad solig’i stavkasi qaysi stavka turiga mos keladi?	 Proportsional
 `,
-`(10h-1Fh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-BIOS uzilishlari 
+    "O’zbekiston Respublikasining “Davlat soliq xizmati to’g`risida”gi Qonuni qachon qabul qilingan?	 1997 yil 29 avgust",
+    `Qaysi vakolatli organ soliq turlarini joriy etish huquqiga ega?	 O’zbekiston Respublikasi Oliy Majlisi
 `,
-`(20h-3Fh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-DOS uzilishlari
+    `Qo’shilgan qiymat solig’ini to’lovchi yoki uni to’lashni  ixtiyoriy tanlagan YaTTlar uchun QQS stavkasi qancha?	 15 foiz
 `,
-`(51h-5Fh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-Tarmoq uzilishlari
+    `Korxonalarning soliq majburiyatiga nimalar kiradi?	Soliqlarni va yig’imlarni to’g’ri hisoblab chiqarish hamda o’z vaqtida to’lash 
 `,
-`(70h-77h) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-2-darajali uzilish nazoratchilari
+    `Soliq nazoratiga  to’g’ri ta’rif berilgan javobni belgilang?	Vakolatli organlarning soliq to’lovchilar va soliq agentlari tomonidan soliq to’g’risidagi qonun hujjatlariga rioya etilishi ustidan nazorat qilishga doir faoliyati soliq nazoratidir
 `,
-`(60h-6Fh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-Foydalanuvchi uzilishlari
+    `Soliq nazorati qaysi shakllarda amalga oshiriladi?	 Soliq tekshiruvlari, soliq monitoringi
 `,
-`(78h-FFh) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-Turli maqsadlar uchun uzilishlar
+    `Soliq tekshiruvlari nechta turdan iborat? 	 Kameral soliq tekshiruv, sayyor soliq tekshiruv, soliq audit
 `,
-`(40h-50h) uzilishlar qaysi uzilishlar tizimi guruhiga tegishli
-Qoshimcha BIOS uzilishlari 
+    `QQS va foyda solig’ini  ixtiyoriy to’layotgan YaTT joriy soliq davri yakunlari bo’yicha daromadlari 1 mlr so’mdan oshmasa, qachondan aylanmadan olinadigan soliqni to’lashga qayta o’tishga haqli?	 kamida 12 oydan keyin 
 `,
-`Shaxsiy kompyuterlarda qancha turdagi uzilishlar mavjud va ular qanday belgilanadi
-256 (00..ff)
+    `Soliq davri davomida tovarlarni realizatsiya qilishdan olgan jami daromadi 1 mlr so’mdan oshgan YaTT qachondan QQS va  foyda solig’ini to’lashga o’tadi?	 bunday oshish ro’y bergan oydan keyingi oyning birinchi sanasidan boshlab
 `,
-`y=a+b*c Ifoda uchun postfiks qavssiz yozuvni belgilang
-yabc*+=
+    `Yakka tartibdagi tadbirkorlar uchun soddalashtirilgan tartibdagi foyda solig’i bazasi jami daromadning necha foizi miqdorida belgilanadi?	 25 foiz
 `,
-`y=a+b*c Ifoda uchun prefiks qavssiz yozuvni belgilang
-=y+a*bc 
+    `Yakka tartibdagi tadbirkorlar tomonidan foyda solig’i bazasini hisoblab chiqarishning soddalashtirilgan tartibini qo’llash uchun soliq organlariga qanday xujjat taqdim etiladi?	 bildirishnoma
 `,
-`y=a/b-c Ifoda uchun postfiks qavssiz yozuvni belgilang 
-yab/c-=
+    `Foyda solig’i bazasini hisoblab chiqarishning soddalashtirilgan tartibini tanlagan yangidan ro’yxatdan o’tkazilgan YaTTlar qachondan ushbu tartibni qo’llay oladi?	 faoliyatini amalga oshirish boshlangan paytdan
 `,
-`y=a/b-c Ifoda uchun prefiks qavssiz yozuvni belgilang
-=y-/abc
+    `Foyda solig’i bazasini hisoblab chiqarishning soddalashtirilgan tartibini tanlagan foyda solig’ini to’lashga ixtiyoriy o’tgan YaTTlar qachondan ushbu tartibni qo’llay oladi?	 soliq bazasini soddalashtirilgan tartibda hisoblab chiqarish haqidagi arizani taqdim etgan oydan keyingi oyning birinchi sanasidan boshlab
 `,
-`y=(a+b)*c Ifoda uchun postfiks qavssiz yozuvni belgilang
-yab+c*=
+    `YaTTlar foyda solig’i bazasini hisoblab chiqarishning soddalashtirilgan tartibidan ixtiyoriy voz kechgan holda  umumiy tartibiga qachondan boshlab o’tadi?	 kelgusi soliq davridan
 `,
-`Protsessorning qaysi elementi xotiradan ko'rsatmalarni olish va ularning dekodlanishini boshqaradi.
-Nazoratchi 
+    `YaTTlar tomonidan foyda solig’i bazasini hisoblab chiqarishning umumiy tartibiga o’tish to’g’risidagi bildirishnoma soliq organiga qachongacha taqdim etiladi?	 soliq davri boshlanishidan kamida 1 oy oldin 
 `,
-`Protsessorning qaysi elementi ma'lumotlar ustida arifmetik va mantiqiy amallarni bajaradi
-Arifmetik- mantiqiy qurilma
+    `2020 yilda soliqni hisoblash va to’lashning soddalashtirilgan tartibi bo’yicha nima o’zgartirishlar kiritildi?	2020 yilda hisoblash va to’lashning soddalashtirilgan tartibi bekor qilindi.
 `,
-`Protsessorning qaysi elementi ko'rsatmalarning vaqtinchalik saqlovchisi hisoblanadi.
-Registr 
+    `2020 yilda yakka tartibdagi tadbirkorlar va oilaviy tadbirkorlik a’zolari uchun daromad solig’i qaysi tartibda to’lanadi?	 Yakka tartibdagi tadbirkorlar va oilaviy tadbirkorlik a’zolari  xohishlariga ko’ra, jismoniy shaxslarning daromad solig’i (qat’iy belgilangan miqdorda) yoki yillik jami daromad bo’yicha deklaratsiyaga muvofiq haqiqatda olingan daromad miqdoridan kelib chiqib soliq to’lash huquqi eg
 `,
-`Umumiy maqsadli protsessor registrlari
-AX,BX,CX,DX
+    `Fiskal siyosatning ajralmas va asosiy bo’lagi bu ...	 Soliq siyosati
 `,
-`Protsessorning  segment registrlari
-CS, DS, ES, SS
+    `Soliq siyosati barqarorligini ta’minlashda nima ishlab chiqilishi lozim	 strategiyasi va taktikasi
 `,
-`Mantiqiy holat protsessor registrlari
-FLAGS
+    `Amalga oshirilishi lozim bo’lgan tadbirlar xususiyati va muddatini e’tiborga olib soliq siyosati:	 soliq siyosati strategiyasi va soliq siyosati taktikasiga bo’linadi
 `,
-`Ofset protsessor registrlari
-BP, SI, DI, SP, IP
+    `Soliq siyosati strategiyasida nima ifodalanadi?	 uzoqroq muddatga mo’ljallangan soliqqa oid iqtisodiy  munosabatlarni asosiy yo’nalishlari va chora-tadbirlari   
 `,
-`Assembler so'zi qaysi tildan olingan va nimani anglatadi
-Inglizcha so'z, "kollektor"
+    `Soliq siyosati taktikasi	qisqa muddatli va kichik masshtabli moliyaviy chora-tadbirlar
 `,
-`Qaysi variant assemblerlash dasturiy ta’minotiga taalluqli emas
-Lazy Assembler, HASM
+    `Soliq solishning majburiyligi printsipi keltirilgan qatorni toping.	 har bir shaxs belgilangan soliqlar va boshqa majburiy to’lovlarni to’lashi shart 
 `,
-`Assemblerda buyruqlar nechta usulda beriladi
-4
+    `Soliq solishning aniqligi printsipi keltirilgan qatorni toping.	 soliqlar va boshqa majburiy to’lovlar aniq bo’lishi kerak
 `,
-`Assembler tili mashina kodining simvolli belgilash buyrug'i
-Instruksiya 
+    `Soliq solishning adolatliligi printsipi keltirilgan qatorni toping	 soliq solish umumiydir 
 `,
-`Assambleya tilining qism dasturini belgilash buyrug'i
-Makrokomanda 
+    `Soliq tizimining yagonaligi printsipi keltirilgan qatorni toping	 soliq tizimi O’zbekiston Respublikasining butun hududida barcha soliq to’lovchilarga nisbatan yagonadir
 `,
-`Assambleya tili operatsiyalarini ko’rsatish buyrug’i
-Direktiva   
+    `Soliq to’g’risidagi qonun hujjatlarining oshkoraligi printsipi keltirilgan qatorni toping 	 soliq solish masalalarini tartibga soluvchi normativ-huquqiy hujjatlar rasmiy nashrlarda e’lon qilinishi shart
 `,
-`Assambleya tili buyrug’ini tan olmaslik buyrug’i
-Kommentariy 
+    `Soliq to’lovchining haqligi prezumptsiyasi printsipi keltirilgan qatorni toping	 Soliq to’g’risidagi qonun hujjatlaridagi bartaraf etib bo’lmaydigan barcha qarama-qarshiliklar va noaniqliklar soliq to’lovchining foydasiga talqin qilinadi
 `,
-`Operandlarni qo'shish uchun qaysi assembly tili buyrug’i qo'llaniladi
-Add
+    `O’zbekiston Respublikasi Konstitutsiyasida soliq tizimiga tegishli moddalarni ko’rsating	 51, 123
 `,
-`Operandlarni ayirish uchun qaysi assembly tili buyrug’i qo'llaniladi
-Sub
+    `Amaldagi Soliq Kodeksi necha moddadan iborat?	 483 moddadan
 `,
-`Operandlarni ko’paytirish uchun qaysi assembly tili buyrug’i qo'llaniladi
-Mul
+    `O’zbekiston Respublikasi Soliq kodeksi quyidagilarning qaysi birining huquqlarini, majburiyatlarini, vazifalarini belgilaydi?	 Soliq to’lovchilarning
 `,
-`Operandlarni bo’lish uchun qaysi assembler tili buyrug’i qo'llaniladi
-Div
+    `Soliq imtiyozining turlarini ko’rsating?	 To’liq, qisman, vaqtinchalik.
 `,
-`Operandlar qiymatlarini almashish uchun qaysi assembler tili buyrug’i qo'llaniladi
-Xchg 
+    `Soliq majburiyati: 	 Soliq to’lovchining soliq to’g’risidagi qonun hujjatlariga muvofiq yuzaga keladigan majburiyati.
 `,
-`Operandlar qiymatlarini solishtirish uchun qaysi assembler tili buyrug’i qo'llaniladi
-Cmp
+    `Soliq majburiyati: 	 Soliq to’lovchining soliq to’g’risidagi qonun hujjatlariga muvofiq yuzaga keladigan majburiyati.
 `,
-`Registrlarda qiymatlarni o'rnatish uchun qaysi assembler tili buyrug’I qo'llaniladi
-Mov
+    `Soliq ma’murchiligi elementlariga quyidagilar kiradi	 Soliq tizimi va soliq organlari strukturasi, soliq hisobotlarini tekshirish va tahlil etish, soliq imtiyozlarini taqdim etish tartibi, soliq qonunchiligini buzganlik uchun javobgarlik, soliq prognozi va statistikasini yuritish, soliqlarni tartibga solish
 `,
-`Registr qiymatini stekga joylash uchun qaysi assembler tili buyrug’i qo'llaniladi
-Push
+    `Yangi tahrirdagi Soliq kodeksiga asosan soliq nazorati qanday shakllarda amalga oshiriladi?	 soliq tekshiruvlari va soliq monitoringi
 `,
-`Registr qiymatini stekdan chiqarish uchun qaysi assembler tili buyrug’i qo'llaniladi
-Pop
+    `Soliq to‘lash uchun daromadning miqdori, manbai, mulk hajmi va boshqalar xususida yozilgan ariza nima deyiladi?	 Deklaratsiya
 `,
-`Assambler tilini takrorlash bo'yicha ko'rsatma
-Loop
+    `O‘zbekiston Respublikasining Soliq kodeksiga muvofiq vakolatli organlarga qaysi organlar kiradi?	 Soliq organlari, Bojxona organlari hamda yig‘imlarni undirish funksiyasini amalga oshiruvchi davlat organlari va tashkilotlar
 `,
-`Assemblerning registr qiymatini bir birlikka oshirish bo'yicha ko'rsatmasi
-Inc
+    `Royalti bu nima?	 Har qanday nomoddiy aktivdan foydalanganlik yoki foydalanish huquqi uchun to‘lov
 `,
-`Assemblerning registr qiymatini bir birlikka kamaytirish bo'yicha ko'rsatmasi
-Dec
+    `Xodimlar tomonidan ish beruvchidan soliq davri mobaynida qiymati qancha bo‘lgan natura shaklida olingan sovg‘alari soliqqa tortilmaydi?	 mehnatga haq to‘lashning eng kam miqdorining 2,11 baravarigacha bo‘lgan qiymatdagi
 `,
-`Assambler tili registrlari qiymati ishorasini o'zgartirish bo'yicha ko'rsatma
-Neg
+    `Xodimlar tomonidan ish beruvchidan soliq davri mobaynida qiymati qancha bo‘lgan moddiy yordam  soliqqa tortilmaydi?	 mehnatga haq to‘lashning eng kam miqdorining 4,22 baravarigacha bo‘lgan qiymatdagi
 `,
-`Assambler tili turini o'zgartirish bo'yicha ko'rsatma
-Cbw
+    `Oʼzbekiston Respublikasi Prezidentining «Oʼzbekiston Respublikasining soliq siyosatini takomillashtirish kontseptsiyasi toʼgʼrisida»gi PF-5468-son farmoni qachon qabul qilingan?	 29.06.2018 y
 `,
-`Assambler tili mantiqiy qo'shish buyrug'i
-And
+    `Nazorat-kassa texnikasining yoki hisob-kitob terminali qoʼllanilishi majburiy boʼlgani holda, qoʼllamasdan xizmatlar koʼrsatganlik, rad etganlik qancha miqdorda jarimaga tortiladi?	 besh million soʼm miqdorida jarima solishga sabab boʼladi
 `,
-`Assambler tili mantiqiy ko’paytirish buyrug'i
-Or
+    `Soliq organlarida roʼyxatga olinmagan NKMni qoʼllagan yoki kvitantsiyalar yoki ularga tenglashtirilgan hujjatlarni berganlik qancha miqdorda jarimaga tortiladi?	 Etti million soʼm miqdorida jarima solishga sabab boʼladi
 `,
-`Assembler tilini qo'shishning mantiqiy inkori ko'rsatmasi
-Xor
+    `Davlat byudjeti qaysi organ tomonidan qabul qilinadi?	 Oʼzbekiston Respublikasi Oliy Majlisi tomonidan
 `,
-`Assambler tili mantiqiy inkor buyrug'i
-Not
+    `Qaysi soliq davlat byudjeti daromadlarida eng yuqori salmoqni tashkil etadi?	 Qoʼshilgan qiymat soligʼi
 `,
-`Assambler tili o’ngga surish buyrug'i
-Shr
+    `Soliqqa tortishning kadastrli usulining o’ziga xos xususiyati nimada?	 Soliqning to’lanish payti daromadning olinishi payti bilan aslo bog’liq bo’lmaydi.
 `,
-`Assambler tili chapga surish buyrug'i
-Shl
+    `Xo’jalik yurituvchi sub’ektlarga nisbatan soliq yuki qaysi darajada aniqlanadi? 	 Mikrodarajada soliq yuki.
 `,
-`Assambler tili siklik chapga surish buyrug'i
-Rol
+    `Oʼzbekiston Respublikasi qaysi qonuniga yoki Prezidentining qaysi qaroriga asosan 2021 yil byudjet parametrlari tasdiqlandi?	 OʼRQ 657; PQ 4938;
 `,
-`Assambler tili siklik o’ngga surish buyrug'i
-Ror
+    `Soliqlarning qanday o’ziga xos belgilari mavjud?	 Majburiylik, davlat byudjetiga tushishi, qat’iylik, ekvivalentsizlik
 `,
-`Tenglik taqqoslash operatori assembler tilining shartli o'tish (Jxx) ko'rsatmasida qanday belgilanadi.
-JE
+    `Soliqlar va boshqa majburiy to’lovlarni to’lash muddatlarini o’tkazib yuborilgan har bir kuni uchun qancha miqdorda penya hisoblanadi.	0,05%
 `,
-`Teng emas taqqoslash operatori assembler tilining shartli o'tish (Jxx) ko'rsatmasida qanday belgilanadi.
-JNE
+    `“Soliq yukini kamaytirish hisobiga barchaga bir xil adolatli soliq rejimini joriy etish, soliq imtiyozlarini bosqichma-bosqich bekor qilish lozim” - degan fikr kimga tegishli.	 Mirziyoyev Sh.
 `,
-`Kichik  taqqoslash operatori assembler tilining shartli o'tish (Jxx) ko'rsatmasida qanday belgilanadi.
-JL
+    `Qo’shilgan qiymat solig’ini hisoblashda nollik stavka qachon qo’llaniladi?	 Tovarlarni chet el valyutasida eksportga realizatsiya qilishga
 `,
-`Katta taqqoslash operatori assembler tilining shartli o'tish (Jxx) ko'rsatmasida qanday belgilanadi.
-JG
+    `O’zbekiston Respublikasi Prezidentining  2018 yil 29 iyundagi “O’zbekiston Respublikasining soliq siyosatini takomillashtirish kontseptsiyasi to’g’risida”gi PF-5468-sonli Farmonida nechta tizimli muammo ko’rsatib o’tilgan?	 7 ta
 `,
-`mov  ax, 20h
-mov  cx, 4
-rcl ax,cx 
-buyruqlar bajarilgandan so'ng o'nlik sanoq tizimidagi AX registrining qiymatni  aniqlang
-512
+    `“Fuqarolarimiz soliqdan qochish emas, uni vaqtida to’lashdan manfaatdor bo’lishi kerak”, - degan fikr kimga tegishli.	 Mirziyoyev Sh.
 `,
-`mov  ax, 20h
-mov  cx, 4
-rcr ax,cx
-buyruqlar bajarilgandan so'ng o'nlik sanoq tizimidagi AX registrining qiymatni  aniqlang
-2
+    `Resurs soliqlarig.....lari kiradi.	 yer solig’i, suv resurslardan foydalanganlik uchun soliq, Yer qa’ridan foydalanganlik uchun soliq.
 `,
-`mov  ax, 200
-mov  bx, 120
-add ax,bx
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-143
+    `O’zbekiston Respublikasining “2022 yil uchun O’zbekiston Respublikasining davlat byudjeti to’g’risida”gi O’RQ-741-sonli Qonuni qachon qabul qilingan?	 2021 yil 29 dekabrda 
 `,
-`mov  ax, 10h
-mov  cx, 3
-m: dec ax
-loop m
-buyruqlar bajarilgandan so'ng o'nlik sanoq tizimidagi AX registrining qiymatni  aniqlang
-13`,
-
-`mov  ax, 10h
-mov  cx, 3
-m: dec ax
-loop m
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-D`,
-
-`mov  ax, 10
-mov  cx, Ah
-m: inc ax
-loop m
-buyruqlar bajarilgandan so'ng o'nlik sanoq tizimidagi AX registrining qiymatni  aniqlang
-20
+    `Oʼzbekistonda 2020 yilda soliq turlari 13 tadan nechtaga kamaytirildi?	9
 `,
-`mov  ax, 10
-mov  cx, Ah
-m: inc ax
-loop m
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-14
+    `Iqtisodiyotni rivojlantirish va tartibga solishda ayrim soha va tarmoqlarga beriladigan imtiyoz, afzallik va ustuvorliklar nima deyiladi?	 Preferentsiya
 `,
-`mov  ax, 27h
-shl ax,1
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-4E
+    `Jismoniy shaxslarning ish haqidan hisoblangan daromad soligʼining summasini davlat byudjetiga oʼtkazib beruvchi shaxs bu?	 Soliq agenti
 `,
-`mov  ax, 27h
-shr ax,1
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-13
+    `1990 yillarning boshida mamlakatimizda QQS necha foiz etib belgilangan edi?	30%
 `,
-`mov  ax, aaaah
-mov bx,9999h
-sub ax,bx
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-4369
+    `2018 yilda jismoniy shaxslarning daromadiga solinadigan soliq stavkalari necha foiz etib belgilangan edi?	 0%, 7,5%, 16,5%, 22,5%
 `,
-`mov  ax, 1000
-mov bx,5h
-mul bx
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-1388
+    `Tovarlar narxiga kiritilgan va xaridor tomonidan toʼlanadigan soliqlar quyidagicha nomlanadi:	 Qoʼshilgan qiymat soligʼi
 `,
-`mov  ax, 1000
-mov bx,100h
-div bx
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-3`,
-
-`mov  ax, 1000
-mov bx,100h
-div bx
-buyruqlar bajarilgandan so'ng 16 lik sanoq tizimidagi AX registrining qiymatni  aniqlang
-E8`,
-
-`mov  ax,  FFh
-mov bx,AAh
-mul bx
-buyruqlar bajarilgandan so'ng o’nlik sanoq tizimidagi AX registrining qiymatni  aniqlang
-43350
-`
-]
-
+    `Soliq (yigʼim) toʼlamaganlik uchun jarimaning miqdori qancha?	 20 foiz
+`,
+    `Xizmatlar koʼrsatishda mustaqil ravishda shaxsiy mehnati bilan ishtirok etadigan, oʼz faoliyatidan daromad oladigan, YaTT sifatida roʼyxatga olinmaydigan va yollanma xodimlar mehnatidan foydalanmaydigan jismoniy shaxslar nima deb ataladi?	 Oʼzini oʼzi band qilgan fuqarolar
+`,
+    `Oʼzini oʼzi band qilgan shaxslar _________ orqali roʼyxatdan oʼtishi mumkin.	 “Soliq” mobil ilovasi
+`,
+    `Oʼzini oʼzi band qilgan shaxs sifatida roʼyxatdan oʼtishning afzalliklari nimada?	 Hamma javob toʼgʼri
+`,
+    `2020 yilda yagona ijtimoiy toʼlov oʼrniga joriy etilgan soliq – bu?	 Ijtimoiy soliq
+`,
+    `2020 yilda yagona soliq toʼlovi oʼrniga joriy etilgan soliq – bu?	 Аylanmadan olinadigan soliq
+`,
+    `2020 yilda jismoniy shaxslarning deklaratsiya topshirish muddati qachon?	 1 avgustgacha
+`,
+    `2021 yilda jismoniy shaxslarning deklaratsiya topshirish muddati qachon?	 1 aprelgacha
+`,
+    `Jismoniy shaxslar tomonidan ijaraga berilgan mol-mulki uchun daromad soligʼi necha foiz?	12%
+`,
+    `Kimning taʼlim kontrakti uchun oʼtkazilgan ish haqlaridan daromad soligʼi ushlanmaydi?	 Hamma javoblar toʼgʼri
+`,
+    `Yuridik shaxs tashkil etmagan holda tadbirkorlik faoliyatini amalga oshiradigan jismoniy shaxs nima deb ataladi?	 Yakka tartibdagi tadbirkor
+`,
+    `Jismoniy shaxslardan undiriladigan daromad soligʼi iqtisodiy mohiyatiga koʼra qanday soliq?	 toʼgʼri soliq
+`,
+    `Tovarlarni eksport qilishda qoʼshilgan qiymat soligʼi qanday stavkada hisoblanadi?	 nol darajali
+`,
+    `Ipoteka kreditlarini va ular boʼyicha hisoblangan foizlarni soliq davri davomida jami qancha soʼmgacha boʼlgan miqdorda qoplashga yoʼnaltirilganda daromad soligʼidan imtiyoz qoʼllaniladi?	 15 mln. soʼmgacha
+`,
+    `Jismoniy shaxslardan olinadigan daromad soligʼi stavkalari qaysi meʼyoriy hujjat bilan belgilanadi?	 Oʼzbekiston Respublikasining Soliq kodeksi bilan
+`,
+    `Oʼzbekiston Respublikasining rezidenti boʼlgan jismoniy shaxslardan olinadigan daromad soligʼi stavkasi necha foiz?	 12 foiz
+`,
+    `Rezident jismoniy shaxslarning dividendlar va foizlar tarzidagi daromadlariga necha foizlik stavkada soliq solinadi?	 5 foiz
+`,
+    `Norezident jismoniy shaxsning dividendlar va foizlar tarizidagi daromadlariga necha foizlik stavkada soliq solinadi?	 10 foiz
+`,
+    `Norezident jismoniy shaxsning fraxtdan olinadigan daromadlariga necha foizlik stavkada soliq solinadi?	 6 foiz
+`,
+    `2022 yil 1 maydan Norezident jismoniy shaxsning mehnat shartnomalari va fuqarolik-huquqiy xususiyatdagi shartnomalar boʼyicha olingan daromadlariga necha foizlik stavkada soliq solinishi belgilanmoqda?	 12 foiz
+`,
+    `Toʼlov manbaida hisoblab chiqarilgan jismoniy shaxslardan olinadigan daromad soligʼi soliq agenti tomonidan qachon toʼlanadi?	 soliq toʼlovchiga daromadlarni toʼlash bilan bir vaqtda, lekin soliq hisobotini taqdim etish muddatlaridan kechiktirmay
+`,
+    `Daromadlar natura shaklida amalga oshirilganda jismoniy shaxslardan olinadigan daromad soligʼi qachon toʼlanadi?	 Natura tarzidagi toʼlov amalga oshirilgan oy tugaganidan keyin 5 kun ichida
+`,
+    `Daromadlar boʼyicha soliq solishdan ozod etilgan shaxslar soliq imtiyoziga boʼlgan huquq yoʼqotilgan taqdirda soliq agentiga qancha muddatda maʼlum qilishi kerak.	 imtiyozga boʼlgan huquqni yoʼqotgan paytidan eʼtiboran 15 kun ichida
+`,
+    `Jismoniy shaxslar tomonidan jami yillik daromad toʼgʼrisidagi deklaratsiya qachongacha taqdim etiladi?	 hisobot yilidan keyingi yilning 1 aprelidan kechiktirmay
+`,
+    `Rezidentga aylangan chet ellik jismoniy shaxs oldingi soliq davri uchun jami yillik daromadi toʼgʼrisida deklaratsiyani qachongacha taqdim etadi?	 joriy yilning 1 apreliga qadar
+`,
+    `Deklaratsiyada aniqlangan xatolar toʼgʼrisida xabarnomani olgan soliq toʼlovchi necha kun ichida deklaratsiyaga zarur boʼlgan oʼzgartirishlarni kiritishi shart?	 10 kun ichida
+`,
+    `Oʼzbekiston Respublikasining rezidenti boʼlgan jismoniy shaxslar deklaratsiya asosida hisoblab chiqarilgan soliqni qaysi sanasidan kechiktirmay toʼlashlari kerak?	 1 iyunidan
+`,
+    `Mol-mulkni ijaraga berishdan daromad oladigan jismoniy shaxslar dastlabki tarzdagi deklaratsiyani qaysi muddatda taqdim etadi?	 ijaradan daromadlar paydo boʼlgan kundan eʼtiboran birinchi oy tugaganidan keyin 5 kun muddatda
+`,
+    `Mol-mulkni ijaraga beruvchi jismoniy shaxslar uchun ijara toʼlovining eng kam stavkalari qaysi qaysi meʼyoriy hujjat bilan belgilanadi?	 Oʼzbekiston Respublikasining Davlat byudjeti toʼgʼrisidagi Qonuni bilan
+`,
+    `Mol-mulkni ijaraga berishdan daromad oladigan jismoniy shaxslar soliqni taqdim etilgan dastlabki deklaratsiya asosida qachon toʼlaydi?	 daromad olingan oydan keyingi oyning 15-kunigacha har oyda
+`,
+    `Mol-mulk ijarasi boʼyicha yil mobaynida toʼlangan va yilik hisoblangan soliq summalari oʼrtasidagi farq qachongacha soliq toʼlovchidan undirilishi yoki unga qaytarilishi lozim?	 kelgusi yilning 1 iyunidan kechiktirmay
+`,
+    `Mol-mulkni ijaraga berishdan daromad oladigan jismoniy shaxslar jami yillik daromad toʼgʼrisidagi deklaratsiyani qachongacha topshiradi?	 hisobot yilidan keyingi yilning 1 aprelidan kechiktirmay
+`,
+    `Ijaraga beruvchi jismoniy shaxs koʼchmas mulk ijara shartnomasini shartnoma tuzilgan kundan eʼtiboran necha kundan kechiktirmay soliq organida hisobga qoʼyishi shart?	10
+`,
+    `Uy-joyni ijaraga berish shartnomasi necha yildan ortiq boʼlmagan muddatga tuziladi?	5
+`,
+    `Mol-mulkni ijaraga berishdan daromad oladigan jismoniy shaxslar deklaratsiya asosida necha foizlik daromad soligʼini toʼlaydi?	12
+`,
+    `Yakka tartibdagi tadbirkorlar tomonidan jismoniy shaxslardan olinadigan daromad soligʼini toʼlashning necha xil tartibi mavjud	 2 xil
+`,
+    `Faoliyat koʼrsatayotgan tadbirkorlik subʼektlari daromad soligʼini toʼlash tartibini tanlash toʼgʼrisidagi bildirish xatini belgilangan muddatda taqdim etmasa qanday tartibda soliq toʼlaydi?	 daromad soligʼini qatʼiy belgilangan miqdorlarda toʼlaydi
+`,
+    `Jismoniy shaxslardan olinadigan daromad soligʼining qatʼiy belgilangan miqdorlardagi soliq summalari qaysi meʼyoriy xujjat bilan tasdiqlanadi?	 Oʼzbekiston Respublikasining Davlat byudjeti toʼgʼrisidagi Qonuni bilan
+`,
+    `Yakka tartibdagi tadbirkorlar tomonidan daromad soligʼini qatʼiy belgilangan miqdorlarda toʼlash muddati qachon?	 har oyda, tadbirkorlik faoliyati amalga oshirilgan oyning 15-sanasidan kechiktirmay
+`,
+    `Yangi roʼyxatdan oʼtgan tadbirkorlik subʼektlari qatʼiy belgilangan miqdordagi daromad soligʼini qaysi oydan boshlab toʼlaydi?	 tadbirkorlik subʼekti sifatida davlat roʼyxatidan oʼtkazilgan oydan keyingi oydan
+`,
+    `Daromad soligʼini deklaratsiya asosida toʼlaydigan faoliyatini amalga oshirayotgan yakka tartibdagi tadbirkorlar dastlabki tarzdagi deklaratsiyani qachongacha topshirishi lozim?	 joriy yilning 1 fevralidan kechiktirmay
+`,
+    `Daromad soligʼini deklaratsiya asosida toʼlashni tanlagan yangi roʼyxatdan oʼtgan tadbirkorlik subʼektlari dastlabki tarzdagi deklaratsiyani qachongacha topshirishi lozim?	 davlat roʼyxatidan oʼtkazilgan oyning oxiriga qadar
+`,
+    `Yakka tartibdagi tadbirkorlar tomonidan deklaratsiya asosida daromad soligʼini toʼlash muddatlari qachon?	 daromad olingan oydan keyingi oyning 15-kunigacha har oyda
+`,
+    `Yakka tartibdagi tadbirkorlar tomonidan jami yillik daromad toʼgʼrisidagi deklaratsiyani qachongacha taqdim etadi?	 hisobot yilidan keyingi yilning 1 aprelidan kechiktirmay
+`,
+    `Yakka tartibdagi tadbirkorlar tomonidan deklaratsiya asosida toʼlanadigan daromad soligʼi stavkasi qaysi meʼyoriy hujjat bilan belgilangan?	 Oʼzbekiston Respublikasining Soliq kodeksi bilan
+`,
+    `Yakka tartibdagi tadbirkorlar deklaratsiya asosida daromad soligʼini necha foizlik stavkada toʼlaydi?	12 foiz
+`,
+    `Tovarlarni realizatsiya qilishdan olgan daromadlari yuz million soʼmdan oshgan yakka tadbirkorlar qachongacha soliq toʼlash tartibini tanlash boʼyicha bildirishnomani yuborishi lozim?	 olgan daromadlari yuz million soʼmdan oshgan sanadan 5 kundan kechiktirmay
+`,
+    `Daromadlari yuz million soʼmdan oshgan yakka tadbirkorlar soliq toʼlash tartibini tanlash boʼyicha bildirishnomani taqdim etmasa qanday soliq toʼlaydi?	 aylanmadan olinadigan soliq toʼlaydi
+`,
+    "O’zbekiston Respublikasi Soliq kodeksining nechanchi moddasida soliqlar va yig`imlarning turlari keltirilgan?	 17-modda"]
 
 
 
